@@ -1,0 +1,193 @@
+@font-face {
+    /* titilium light */
+    font-family: 'titillium';
+    src: url("../font/TitilliumText22L004.otf");
+}
+@font-face {
+        /* titilium medium  */
+        font-family: 'titillium2';
+        src: url("../font/TitilliumText22L002.otf");
+}
+
+html { 
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing:border-box;
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'titillium';
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+.formName{    
+    font-size: 42px;
+    text-shadow: 0.7px 0.7px #0e0d0d;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 400px;
+    height: 450px;
+    background-color: #f3f3f3;
+    padding: 10px 20px 30px 20px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 15px #6e6e6e8f;
+}
+.wrapper{
+    margin: 10px 10px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.name{ /* label*/
+    border: 1px solid #6e6e6e8f;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+}
+.insideLabel{
+    border-right: 1px solid #6e6e6e8f;
+    margin-right: 10px;
+    width: 50px;
+    height: 30px;
+    display: inline-flex;
+    align-content: center;
+}
+.insideIconUsername{ /* span*/
+    height: 4,0-9
+    0px;
+    width: 100%;
+    background-image: url("../img/glyphicons_003_user.png");
+    display: block;
+    background-repeat: no-repeat;
+    margin: 5px 2px 5px 6px;
+}
+.insideIconPass{ /* span*/
+    height: 40px;
+    width: 100%;
+    background-image: url("../img/glyphicons_203_lock.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 5px 2px 5px 6px;
+}
+.insideIconPass2{ /* span*/
+    height: auto;
+    width: 100%;
+    background-image: url("../img/glyphicons_203_lock.png");
+    background-repeat: no-repeat;
+    display: block;
+}   
+.insideIconEmail{ /* span*/
+    height: auto;
+    width: 100%;
+    background-image: url("../img/glyphicons_010_envelope.png");
+    display: block;
+    background-repeat: no-repeat;
+    
+}
+.insideIconLocation{ /* span*/
+    height: auto;
+    width: 100%;
+    background-image: url("../img/glyphicons_242_google_maps.png");
+    display: block;
+    background-repeat: no-repeat;
+    margin-left: 13px;
+}
+input:focus{
+    outline: none;
+}
+input {
+    margin-left: 10px;
+    display: inline-flex;
+    background-color: #f3f3f3;
+    font-family: 'titillium2';
+    font-size: 20px;
+    width: 390px;
+    height: 24px;
+    border: none;
+    border-radius: 3px;
+}
+::placeholder {
+    color: #6e6e6e8f;
+    font-family: 'titillium';
+  }
+  .labelCheck{
+    margin-left: 5px;
+    color: #6e6e6e8f;;
+    font-family: 'titillium2';
+    font-weight: 700;
+    text-align: right;
+    font-size: 20px;
+  }
+button{
+    width: 390px;
+    height: 60px;
+    background: #91ce43;
+    text-shadow: 1px 0.7px #729f39; 
+    border: 0.5px solid #729f39;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'titillium2';
+    margin: 0px;
+}
+button:hover{
+    background:  #8cc245; 
+    cursor: pointer;
+}
+.form-control {
+    width: 390px;
+    margin-top: 8px;
+    --form-control-color: #91ce43;
+    font-size: 19px;
+    color: #6e6e6e8f;;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 25px auto;
+    gap: 10px;
+    
+}
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #f3f3f3;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid #6e6e6e8f;;
+    border-radius: 5px;
+    display: grid;
+    place-content: center; 
+  }
+  input[type="checkbox"]::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 16px 16px var(--form-control-color);
+    border-radius: 2px;
+    align-items: center;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
