@@ -1,15 +1,15 @@
 @font-face {
     /* titilium light */
     font-family: 'titillium';
-    src: url("../font/TitilliumText22L004.otf");
+    src: url("./font/TitilliumText22L004.otf");
 }
 @font-face {
         /* titilium medium  */
         font-family: 'titillium2';
-        src: url("../font/TitilliumText22L002.otf");
+        src: url("./font/TitilliumText22L002.otf");
 }
 html { 
-    background-image: url("../img/background.png");
+    background-image: url("./img/background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -80,7 +80,7 @@ body{
 .insideIconUsername{ /* span*/
     height: 90px;
     width: 100%;
-    background-image: url("../img/glyphicons_003_user.png");
+    background-image: url("./img/glyphicons_003_user.png");
     display: block;
     background-repeat: no-repeat;
     margin: 5px 2px 5px 6px;
@@ -88,7 +88,7 @@ body{
 .insideIconPass{ /* span*/
     height: 50px;
     width: 100%;
-    background-image: url("../img/glyphicons_203_lock.png");
+    background-image: url("./img/glyphicons_203_lock.png");
     background-repeat: no-repeat;
     display: block;
     margin: 2px 2px 7px 7px;
@@ -96,13 +96,13 @@ body{
 .insideIconPass2{ /* span*/
     height: 50px;
     width: 100%;
-    background-image: url("../img/glyphicons_203_lock.png");
+    background-image: url("./img/glyphicons_203_lock.png");
     background-repeat: no-repeat;
     display: block;
     margin: 2px 2px 7px 7px;
 }   
 .insideIconEmail{ /* span*/
-    background-image: url("../img/glyphicons_010_envelope.png");
+    background-image: url("./img/glyphicons_010_envelope.png");
     height: 40px;
     width: 100%;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ body{
     background-repeat: no-repeat;
     display: block;
     margin: 2px 10px;
-    background-image: url("../img/glyphicons_242_google_maps.png");
+    background-image: url("./img/glyphicons_242_google_maps.png");
     
 }
 input:focus{
@@ -283,7 +283,7 @@ input[type="checkbox"]:checked::before {
 .insideIconPhone{ /* span*/
     height: 50px;
     width: 100%;
-    background-image: url("../img/phone.png");
+    background-image: url("./img/phone.png");
     background-repeat: no-repeat;
     display: block;
     margin: 2px 2px 7px 9px;
