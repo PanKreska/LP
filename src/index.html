@@ -17,6 +17,8 @@
     <div class="container">
 
         <picture>
+            <source src="<%= require('./img/gekonLogo.avif').default %>" type="image/avif">
+            <source src="<%= require('./img/gekonLogo.webp').default %>" type="image/webp">
             <img src="<%= require('./img/gekonLogo.png').default %>" alt="logo" class="logo">
         </picture>
 
@@ -31,7 +33,7 @@
                         <span class="insideLabel">
                             <span class="insideIconUsername" ></span>
                         </span>
-                        <input type="text" placeholder="Username" />
+                        <input type="text" id="name" placeholder="Username" />
                     </label>
                 </div>
 
@@ -40,7 +42,7 @@
                         <div class="insideLabel">
                             <span class="insideIconPass" tooltip="Minimum 6 znaków"></span>
                         </div>
-                        <input type="password" placeholder="Password"  pattern=".{6,}">
+                        <input type="password" id="password" placeholder="Password"  pattern=".{6,}">
                     </label>
                 </div>
 <!-- Jaki for dla labela w pass2?   -->
@@ -49,7 +51,7 @@
                         <div class="insideLabel">
                             <span class="insideIconPass2"></span>
                         </div>
-                        <input type="password" placeholder="Confirm Password">
+                        <input type="password" id="password2" placeholder="Confirm Password">
                     </label>
                 </div>
 
@@ -58,7 +60,7 @@
                         <span class="insideLabel">
                             <span class="insideIconEmail"></span>
                         </span>
-                        <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </label>
                 </div>
 
@@ -67,7 +69,7 @@
                         <div class="insideLabel">
                             <span class="insideIconLocation"></span>
                         </div>
-                        <input type="text" placeholder="Your Location">
+                        <input type="text" id="location" placeholder="Your Location">
                     </label>
                 </div>
 
@@ -100,20 +102,20 @@
         <div class="registerForm">
             <form action="#">
                 <div class="wrapper">
-                    <label for="name" class="name">
+                    <label for="name2" class="name">
                         <span class="insideLabel">
                             <span class="insideIconUsername"></span>
                         </span>
-                        <input type="text" placeholder="Your Name">
+                        <input type="text" id="name2" placeholder="Your Name">
                     </label>
                 </div>
 
                 <div class="wrapper">
-                    <label for="email" class="name">
+                    <label for="email2" class="name">
                         <span class="insideLabel">
                             <span class="insideIconEmail"></span>
                         </span>
-                        <input type="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <input type="email" id="email2" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </label>
                 </div>
 
@@ -149,20 +151,20 @@
         <div class="singInForm">
             <form action="#">
                 <div class="wrapper">
-                    <label for="name" class="name">
+                    <label for="name3" class="name">
                         <span class="insideLabel">
                             <span class="insideIconUsername"></span>
                         </span>
-                        <input type="text" placeholder="Username">
+                        <input type="text" id="name3" placeholder="Username">
                     </label>
                 </div>
 
                 <div class="wrapper">
-                    <label for="password" class="name">
+                    <label for="password3" class="name">
                         <div class="insideLabel">
                             <span class="insideIconPass" tooltip="Minimum 6 znaków"></span>
                         </div>
-                        <input type="password" placeholder="Password" pattern=".{6,}">
+                        <input type="password" id="password3" placeholder="Password" pattern=".{6,}">
                     </label>
                 </div>
 
@@ -197,11 +199,11 @@
         <div class="recoverForm">
             <form action="#">
                 <div class="wrapper">
-                    <label for="email" class="name">
+                    <label for="email3" class="name">
                         <span class="insideLabel">
                             <span class="insideIconEmail"></span>
                         </span>
-                        <input type="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <input type="email" id="email3" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </label>
                 </div>
 
@@ -210,7 +212,7 @@
                         <div class="insideLabel">
                             <span class="insideIconPhone"></span>
                         </div>
-                        <input type="tel" placeholder="Enter your Phone number">
+                        <input type="tel" id="phone" placeholder="Enter your Phone number">
                     </label>
                 </div>
 
@@ -241,11 +243,11 @@
         <div class="subscribeForm">
             <form action="#">
                 <div class="wrapper">
-                    <label for="email" class="name">
+                    <label for="email4" class="name">
                         <span class="insideLabel">
                             <span class="insideIconEmail"></span>
                         </span>
-                        <input type="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <input type="email" id="email4" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </label>
                 </div>
 
