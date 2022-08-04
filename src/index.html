@@ -17,8 +17,8 @@
     <div class="container">
 
         <picture>
-            <source src="<%= require('./img/gekonLogo.avif').default %>" type="image/avif">
-            <source src="<%= require('./img/gekonLogo.webp').default %>" type="image/webp">
+            <source srcset="<%= require('./img/gekonLogo.avif').default %>" type="image/avif">
+            <source srcset="<%= require('./img/gekonLogo.webp').default %>" type="image/webp">
             <img src="<%= require('./img/gekonLogo.png').default %>" alt="logo" class="logo">
         </picture>
 
@@ -267,6 +267,8 @@
         </div>
     </div>
     <picture>
+        <source srcset="<%= require('./img/gekonLogo.avif').default %>" type="image/avif">
+        <source srcset="<%= require('./img/gekonLogo.webp').default %>" type="image/webp">
         <img src="<%= require('./img/gekonLogo.png').default %>" alt="logo" class="logo">
     </picture>
     
