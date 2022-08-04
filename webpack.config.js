@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const tasksNames = ['1','2']
+
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
@@ -39,6 +41,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html"
-        })
+        }),
+        ...tasksNames.map(fileName => new HtmlWebpackPlugin({
+            filename: `tasks/${fileName}.html`,
+            template: `./src/tasks/${fileName}.html`
+            })
+        )
     ]
 };
