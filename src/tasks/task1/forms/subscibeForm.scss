@@ -1,0 +1,24 @@
+.subscribeForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 400px;
+    height: 150px;
+    background-color: var(--background-color-forms);
+    padding: 10px 20px 30px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 0px 15px var(--textAndBorder-color);
+}
+.btnSubsribe, .btnNo {
+    width: 165px;
+    font-size: 20px;
+}
+.btnNo {
+    margin-left: 40px;
+    background-color: var(--btnNoColor);
+}
+.btnNo:hover {
+    background-color: var(--btnNoHoverColor);
+}

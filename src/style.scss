@@ -1,5 +1,38 @@
+@import  "./tasks/task1/forms/registerForm.scss"; 
+@import  "./tasks/task1/forms/sendMailForm.scss";
+@import  "./tasks/task1/forms/singInForm.scss";
+@import  "./tasks/task1/forms/recoverForm.scss";
+@import  "./tasks/task1/forms/subscibeForm.scss";
+
+:root {
+    // colors
+    --textAndBorder-color: rgba(110, 110, 110, 0.5);
+    --background-color-forms: rgb(243, 243, 243) ;
+    --text-shadow: rgb(14, 13, 13);
+    --buttons: rgb(145, 206, 67);
+    --buttonHover: rgb(140, 194, 69);
+    --buttonBorder: rgb(114, 159, 57);
+    --buttonTextShadow: rgb(114, 159, 57);
+    --buttonDoneColor: rgb(185, 216, 154);
+    --btnNoColor: rgb(245, 94, 112);
+    --btnNoHoverColor: rgb(223, 84, 100);
+    --white :rgb(255, 255, 255);
+    // font
+    --font: 'Titillium Web', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-medium: 600; 
+    // border-radius
+    --border-radius:  3px;
+    // pictures
+    --userName: url("./tasks/task1/img/glyphicons_003_user.png");
+    --password: url("./tasks/task1/img/glyphicons_203_lock.png");
+    --email: url("./tasks/task1/img/glyphicons_010_envelope.png");
+    --location: url("./tasks/task1/img/glyphicons_242_google_maps.png");
+    --phone: url("./tasks/task1/img/glyphicons_139_phone.png");
+    --background: url("./tasks/task1/img/background.png");
+}
 html { 
-    background-image: url("./img/background.png");
+    background-image: var(--background);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,10 +42,18 @@ html {
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: var(--font);
     font-weight: 600;
 }
-/* Register form */
+.tasks{
+    background-color:rgba(255, 153, 10, 0.89);
+    text-align: center;
+}
+.tasks p {
+    display: inline-block; 
+    margin-right: 20px; 
+    margin-left: 20px;
+}
 .container{
     margin-top: 100px;
     margin-bottom: 50px;
@@ -27,158 +68,103 @@ body{
     opacity: 0.4;
     margin-top: 20px;
 }
-.formName{    
-    font-size: 42px;
-    text-shadow: 0.7px 0.7px #0e0d0d;
-    color: #fff;
-    margin-top: 20px;
-    text-align: center;
-}
-.registerForm {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    width: 400px;
-    height: 450px;
-    background-color: #f3f3f3;
-    padding: 10px 20px 30px 20px;
-    border-radius: 2px;
-    box-shadow: 0px 0px 0px 15px #6e6e6e8f;
-}
+// common settings forms
 .wrapper{
     margin: 22px 10px;
     height: 40px;
     margin-bottom: 15px;
 }
-.name{ /* label*/
-    border: 1px solid #6e6e6e8f;
+.name{ /* label class*/
+    border: 1px solid var(--textAndBorder-color);
     display: inline-flex;
     align-items: center;
     padding: 4px;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     width: 100%;
     height: 40px;
 }
 .insideLabel{
-    border-right: 1px solid #6e6e6e8f;
+    border-right: 1px solid var(--textAndBorder-color);
     margin-right: 10px;
     width: 50px;
     height: 30px;
     display: inline-flex;
     align-content: center;
 }
-.insideIconUsername{ /* span*/
+.formName{  /* div name form*/   
+    font-size: 42px;
+    text-shadow: 0.7px 0.7px var(--text-shadow);
+    color: var(--white);
+    margin-top: 20px;
+    text-align: center;
+}
+.insideIconUsername, .insideIconPass, .insideIconPass2, .insideIconEmail, .insideIconLocation{ /* common settings*/
     height: 30px;
     width: 100%;
-    background-image: url("./img/glyphicons_003_user.png");
     display: block;
     background-repeat: no-repeat;
+}
+.insideIconUsername{ /* span with icon user*/
+    background-image: var(--userName);
     margin: 5px 2px 5px 6px;
 }
-.insideIconPass{ /* span*/
-    height: 30px;
-    width: 100%;
-    background-image: url("./img/glyphicons_203_lock.png");
-    background-repeat: no-repeat;
-    display: block;
+.insideIconPass{ /* span with icon password and password2*/
+    background-image: var(--password);
     margin: 2px 2px 7px 7px;
 }
-.insideIconPass2{ /* span*/
-    height: 30px;
-    width: 100%;
-    background-image: url("./img/glyphicons_203_lock.png");
-    background-repeat: no-repeat;
-    display: block;
+.insideIconPass2{ /* span with icon password2*/
+    background-image: var(--password);
     margin: 2px 2px 7px 7px;
 }   
-.insideIconEmail{ /* span*/
-    background-image: url("./img/glyphicons_010_envelope.png");
-    height: 30px;
-    width: 100%;
-    background-repeat: no-repeat;
-    display: block;
+.insideIconEmail{ /* span with icon email*/
+    background-image: var(--email);
     margin: 7px 2px 5px 6px;
-    
-}
-.insideIconLocation{ /* span*/
-    height: 30px;
-    width: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    margin: 2px 10px;
-    background-image: url("./img/glyphicons_242_google_maps.png");
-    
-}
-input:focus{
-    outline: none;
 }
 input {
     margin-left: 10px;
     display: inline-flex;
-    background-color: #f3f3f3;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 300;
+    background-color: var(--background-color-forms);
+    font-family: var(--font);
+    font-weight: var(--font-weight-light);
     font-size: 20px;
     width: 390px;
     height: 24px;
     border: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
+}
+input:focus{
+    outline: none;
 }
 ::placeholder {
-    color: #6e6e6e8f;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 300;
+    color: var(--textAndBorder-color);
+    font-family: var(--font);
+    font-weight: var(--font-weight-light);
   }
-.labelCheck{
-    margin-left: 1px;
-    color: #6e6e6e8f;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 600;
-    text-align: right;
-    font-size: 20px;
-}
-.btnRegister {
-    margin-top: -5px;
-}
 button{
     width: 390px;
     height: 60px;
-    background: #91ce43;
-    text-shadow: 1px 0.7px #729f39; 
-    border: 0.5px solid #729f39;
-    color: #fff;
-    border-radius: 5px;
+    background: var(--buttons);
+    text-shadow: 1px 0.7px var(--buttonTextShadow); 
+    border: 0.5px solid var(--buttonBorder);
+    color: var(--white);
+    border-radius: var(--border-radius);
     font-size: 30px;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 600;
+    font-family: var(--font);
+    font-weight: var(--font-weight-medium);
     margin: 0px;
 }
 button:hover{
-    background:  #8cc245; 
+    background:  var(--buttonHover); 
     cursor: pointer;
-}
-.form-control {
-    width: 390px;
-    margin-top: 30px;
-    --form-control-color: #91ce43;
-    font-size: 19px;
-    color: #6e6e6e8f;;
-    line-height: 1.5;
-    display: grid;
-    grid-template-columns: 25px auto;
-    gap: 10px;
-    
 }
 input[type="checkbox"] {
     appearance: none;
-    background-color: #f3f3f3;
+    background-color: var(--background-color-forms);
     margin: 0;
     width: 30px;
     height: 30px;
-    border: 1.5px solid #6e6e6e8f;;
-    border-radius: 5px;
+    border: 1.5px solid var(--textAndBorder-color);
+    border-radius: var(--border-radius);
     display: grid;
     place-content: center; 
 }
@@ -189,142 +175,11 @@ input[type="checkbox"]::before {
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     box-shadow: inset 16px 16px var(--form-control-color);
-    border-radius: 2px;
+    border-radius: var(--border-radius);
     align-items: center;
 } 
 input[type="checkbox"]:checked::before {
     transform: scale(1);
-}
-/* Send Mail Form */
-.form-control2 {
-    width: 390px;
-    margin-top: 8px;
-    --form-control-color: #91ce43;
-    font-size: 19px;
-    color: #6e6e6e8f;;
-    line-height: 1.5;
-    display: grid;
-    grid-template-columns: 25px auto;
-    gap: 10px;
-    margin-top: 170px;
-}
-.labelCheck2 {
-    margin-left: 10px;
-}
-#textarea  {
-    color: #6e6e6e8f;
-    background-color: #f3f3f3;
-    font-size: 20px;
-    border: 1.5px solid #6e6e6e8f;;
-    border-radius: 2px;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 300;
-    width: 383px;
-    height: 180px;
-    padding-top: 10px;
-    resize: none;
-}
-.btnSendEmail {
-    margin-top: -15px;
-}
-/* Sing In Form */
-.singInForm {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    width: 400px;
-    height: 220px;
-    background-color: #f3f3f3;
-    padding: 10px 20px 30px 20px;
-    border-radius: 2px;
-    box-shadow: 0px 0px 0px 15px #6e6e6e8f;
-}
-.form-control3 {
-    /* width: 390px; */
-    margin-top: 8px;
-    --form-control-color: #91ce43;
-    font-size: 19px;
-    color: #6e6e6e8f;;
-    line-height: 1.5;
-    display: grid;
-    grid-template-columns: 25px auto;
-    gap: 10px;
-}
-.labelCheck3 {
-    margin-left: 10px;
-    width: 130px;
-}
-.btnSingIn {
-    width: 150px;
-    margin-left: 45px;
-}
-.wrapper2 {
-    display: flex;
-    align-items:center;
-    align-items: baseline;
-}
-/* Recovere Form */
-.recoverForm {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    width: 400px;
-    height: 230px;
-    background-color: #f3f3f3;
-    padding: 10px 20px 30px 20px;
-    border-radius: 2px;
-    box-shadow: 0px 0px 0px 15px #6e6e6e8f;
-}
-.insideIconPhone{ /* span*/
-    height: 50px;
-    width: 100%;
-    background-image: url("./img/glyphicons_139_phone.png");
-    background-repeat: no-repeat;
-    display: block;
-    margin: 2px 2px 7px 9px;
-}
-.wrapper3 {
-    display: flex;
-    align-items:center;
-    align-items: baseline;
-}
-.btnSend, .btnDone {
-    width: 165px;
-    font-size: 20px;
-}
-.btnDone {
-    margin-left: 40px;
-    background-color: #b9d89a;
-}
-
-/* Subscribe Form */
-.subscribeForm {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    width: 400px;
-    height: 150px;
-    background-color: #f3f3f3;
-    padding: 10px 20px 30px 20px;
-    border-radius: 2px;
-    box-shadow: 0px 0px 0px 15px #6e6e6e8f;
-}
-.btnSubsribe, .btnNo {
-    width: 165px;
-    font-size: 20px;
-}
-.btnNo {
-    margin-left: 40px;
-    background-color: #f55e70;
-}
-.btnNo:hover {
-    background-color: #df5464;
 }
 // tooltip hasła
 [tooltip]
@@ -339,13 +194,13 @@ input[type="checkbox"]:checked::before {
     position: absolute;
     top: 100%;
     left: 0;
-    background: rgb(165, 165, 165);
-    color: #fff;
+    background: var(--textAndBorder-color);
+    color: var(--white);
     padding: 5px;
-    border: 2px #ccc solid;
+    border: 2px var(--textAndBorder-color) solid;
     transition: .5s ease-in-out;
     transition-property: opacity, visibility;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 [tooltip]:hover::before
 {

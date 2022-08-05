@@ -1,0 +1,36 @@
+.singInForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 400px;
+    height: 220px;
+    background-color: var(--background-color-forms);
+    padding: 10px 20px 30px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 0px 15px var(--textAndBorder-color);
+}
+.form-control3 {
+    /* width: 390px; */
+    margin-top: 8px;
+    font-size: 19px;
+    color: var(--textAndBorder-color);
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 25px auto;
+    gap: 10px;
+}
+.labelCheck3 {
+    margin-left: 10px;
+    width: 130px;
+}
+.btnSingIn {
+    width: 150px;
+    margin-left: 45px;
+}
+.wrapper2 {
+    display: flex;
+    align-items:center;
+    align-items: baseline;
+}
