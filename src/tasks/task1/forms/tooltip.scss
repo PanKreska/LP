@@ -1,0 +1,26 @@
+// tooltip hasła
+[tooltip]
+{
+    position: relative;
+}
+[tooltip]::before
+{
+    content: attr(tooltip);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--textAndBorder-color);
+    color: var(--white);
+    padding: 5px;
+    border: 2px var(--textAndBorder-color) solid;
+    transition: .5s ease-in-out;
+    transition-property: opacity, visibility;
+    border-radius: var(--border-radius);
+}
+[tooltip]:hover::before
+{
+    opacity: 1;
+    visibility: visible;
+}

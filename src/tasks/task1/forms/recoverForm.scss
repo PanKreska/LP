@@ -1,34 +1,103 @@
-.recoverForm {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    width: 400px;
-    height: 230px;
-    background-color: var(--background-color-forms);
-    padding: 10px 20px 30px 20px;
-    border-radius: var(--border-radius);
-    box-shadow: 0px 0px 0px 15px var(--textAndBorder-color);
+.container{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+    .formName{  /* div name form*/   
+        font-size: 42px;
+        text-shadow: 0.7px 0.7px var(--text-shadow);
+        color: var(--white);
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .recoverForm {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        width: 400px;
+        height: 230px;
+        background-color: var(--background-color-forms);
+        padding: 10px 20px 30px 20px;
+        border-radius: var(--border-radius);
+        box-shadow: 0px 0px 0px 15px var(--textAndBorder-color);
+
+        form{
+
+            .wrapper{
+                margin: 22px 10px;
+                height: 40px;
+                margin-bottom: 15px;
+                
+                .name{ /* label class*/
+                    border: 1px solid var(--textAndBorder-color);
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 4px;
+                    border-radius: var(--border-radius);
+                    width: 100%;
+                    height: 40px;
+
+                    .insideLabel{
+                        border-right: 1px solid var(--textAndBorder-color);
+                        margin-right: 10px;
+                        width: 50px;
+                        height: 30px;
+                        display: inline-flex;
+                        align-content: center;
+
+                        .insideIconEmail{ /* span with icon email*/
+                            background-image: var(--email);
+                            margin: 7px 2px 5px 6px;
+                            height: 30px;
+                            width: 100%;
+                            display: block;
+                            background-repeat: no-repeat;
+                        }
+                        .insideIconPhone{ /* span with icon phone*/
+                            height: 50px;
+                            width: 100%;
+                            background-image: var(--phone);
+                            background-repeat: no-repeat;
+                            display: block;
+                            margin: 2px 2px 7px 9px;
+                        }
+                    }
+                    .inputs {
+                        margin-left: 10px;
+                        display: inline-flex;
+                        background-color: var(--background-color-forms);
+                        font-family: var(--font);
+                        font-weight: var(--font-weight-light);
+                        font-size: 20px;
+                        width: 390px;
+                        height: 24px;
+                        border: none;
+                        border-radius: var(--border-radius);
+                    }
+                    .inputs:focus{
+                        outline: none;
+                    }
+                    ::placeholder {
+                        color: var(--textAndBorder-color);
+                        font-family: var(--font);
+                        font-weight: var(--font-weight-light);
+                      }
+                }
+            } 
+        }
+        .wrapper3 {
+            display: flex;
+            align-items:center;
+            align-items: baseline;
+        }   
+    } 
 }
-.insideIconPhone{ /* span*/
-    height: 50px;
-    width: 100%;
-    background-image: var(--phone);
-    background-repeat: no-repeat;
-    display: block;
-    margin: 2px 2px 7px 9px;
-}
-.wrapper3 {
-    display: flex;
-    align-items:center;
-    align-items: baseline;
-}
-.btnSend, .btnDone {
-    width: 165px;
-    font-size: 20px;
-}
-.btnDone {
-    margin-left: 40px;
-    background-color: var(--buttonDoneColor);
-}
+// After export refactor icon code
+// .insideIconUsername, .insideIconPass, .insideIconPass2, .insideIconEmail, .insideIconLocation{ /* common settings*/
+//     height: 30px;
+//     width: 100%;
+//     display: block;
+//     background-repeat: no-repeat;
+// }

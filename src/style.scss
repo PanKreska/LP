@@ -3,6 +3,8 @@
 @import  "./tasks/task1/forms/singInForm.scss";
 @import  "./tasks/task1/forms/recoverForm.scss";
 @import  "./tasks/task1/forms/subscibeForm.scss";
+@import  "./tasks/task1/forms/tooltip.scss";
+@import  "./tasks/task1/forms/buttons.scss";
 
 :root {
     // colors
@@ -37,6 +39,8 @@ html {
     background-position: center;
     background-size: cover;
     box-sizing:border-box;
+    padding: 0;
+    margin: 0;
   }
 
 body{
@@ -54,10 +58,6 @@ body{
     margin-right: 20px; 
     margin-left: 20px;
 }
-.container{
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
 .logo{
     display: block;
     margin-left: auto;
@@ -67,143 +67,4 @@ body{
     height: 100%;
     opacity: 0.4;
     margin-top: 20px;
-}
-// common settings forms
-.wrapper{
-    margin: 22px 10px;
-    height: 40px;
-    margin-bottom: 15px;
-}
-.name{ /* label class*/
-    border: 1px solid var(--textAndBorder-color);
-    display: inline-flex;
-    align-items: center;
-    padding: 4px;
-    border-radius: var(--border-radius);
-    width: 100%;
-    height: 40px;
-}
-.insideLabel{
-    border-right: 1px solid var(--textAndBorder-color);
-    margin-right: 10px;
-    width: 50px;
-    height: 30px;
-    display: inline-flex;
-    align-content: center;
-}
-.formName{  /* div name form*/   
-    font-size: 42px;
-    text-shadow: 0.7px 0.7px var(--text-shadow);
-    color: var(--white);
-    margin-top: 20px;
-    text-align: center;
-}
-.insideIconUsername, .insideIconPass, .insideIconPass2, .insideIconEmail, .insideIconLocation{ /* common settings*/
-    height: 30px;
-    width: 100%;
-    display: block;
-    background-repeat: no-repeat;
-}
-.insideIconUsername{ /* span with icon user*/
-    background-image: var(--userName);
-    margin: 5px 2px 5px 6px;
-}
-.insideIconPass{ /* span with icon password and password2*/
-    background-image: var(--password);
-    margin: 2px 2px 7px 7px;
-}
-.insideIconPass2{ /* span with icon password2*/
-    background-image: var(--password);
-    margin: 2px 2px 7px 7px;
-}   
-.insideIconEmail{ /* span with icon email*/
-    background-image: var(--email);
-    margin: 7px 2px 5px 6px;
-}
-input {
-    margin-left: 10px;
-    display: inline-flex;
-    background-color: var(--background-color-forms);
-    font-family: var(--font);
-    font-weight: var(--font-weight-light);
-    font-size: 20px;
-    width: 390px;
-    height: 24px;
-    border: none;
-    border-radius: var(--border-radius);
-}
-input:focus{
-    outline: none;
-}
-::placeholder {
-    color: var(--textAndBorder-color);
-    font-family: var(--font);
-    font-weight: var(--font-weight-light);
-  }
-button{
-    width: 390px;
-    height: 60px;
-    background: var(--buttons);
-    text-shadow: 1px 0.7px var(--buttonTextShadow); 
-    border: 0.5px solid var(--buttonBorder);
-    color: var(--white);
-    border-radius: var(--border-radius);
-    font-size: 30px;
-    font-family: var(--font);
-    font-weight: var(--font-weight-medium);
-    margin: 0px;
-}
-button:hover{
-    background:  var(--buttonHover); 
-    cursor: pointer;
-}
-input[type="checkbox"] {
-    appearance: none;
-    background-color: var(--background-color-forms);
-    margin: 0;
-    width: 30px;
-    height: 30px;
-    border: 1.5px solid var(--textAndBorder-color);
-    border-radius: var(--border-radius);
-    display: grid;
-    place-content: center; 
-}
-input[type="checkbox"]::before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 16px 16px var(--form-control-color);
-    border-radius: var(--border-radius);
-    align-items: center;
-} 
-input[type="checkbox"]:checked::before {
-    transform: scale(1);
-}
-// tooltip hasła
-[tooltip]
-{
-    position: relative;
-}
-[tooltip]::before
-{
-    content: attr(tooltip);
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--textAndBorder-color);
-    color: var(--white);
-    padding: 5px;
-    border: 2px var(--textAndBorder-color) solid;
-    transition: .5s ease-in-out;
-    transition-property: opacity, visibility;
-    border-radius: var(--border-radius);
-}
-[tooltip]:hover::before
-{
-    opacity: 1;
-    visibility: visible;
 }
