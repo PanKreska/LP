@@ -1,0 +1,162 @@
+.container{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.formName{  /* div name form*/   
+    font-size: 42px;
+    text-shadow: 0.7px 0.7px var(--text-shadow);
+    color: var(--white);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.defaultForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 400px;
+    background-color: var(--background-color-forms);
+    padding: 20px 20px 10px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 0px 15px var(--textAndBorder-color);
+
+    form{
+        .wrapper{
+            display: flex;
+            margin-bottom: 15px;
+            justify-content: space-between;
+            align-items: baseline;
+
+            .divtext {
+                color: var(--textAndBorder-color);
+                background-color: var(--background-color-forms);
+                font-size: 20px;
+                border: 1.5px solid var(--textAndBorder-color);
+                border-radius: var(--border-radius);
+                font-family: var(--font);
+                font-weight: var(--font-weight-light);
+                width: 100%;
+                min-height: 180px;
+                white-space: pre-wrap;
+                max-width: 94%;
+                padding: 10px;
+                
+                &.divtext:focus{
+                    outline: none;
+                }
+            }
+
+            .name{ /* label class*/
+                border: 1px solid var(--textAndBorder-color);
+                display: flex;
+                align-items: center;
+                padding: 6px;
+                border-radius: var(--border-radius);
+                width: 100%;
+
+                .insideLabel{
+                    border-right: 1px solid var(--textAndBorder-color);
+                    margin-right: 10px;
+                    width: 40px;
+                    display: flex;
+
+                    .iconGeneral {
+                        width: 75%;
+                        display: block;
+                        background-repeat: no-repeat;
+                        padding-top: 80%;
+                        background-position: center;
+                        background-size: contain;
+
+                        &.username{ /* span with icon user*/
+                            background-image: var(--userName);
+                        }
+                        &.password{ /* span with icon password*/
+                            background-image: var(--password);
+                        }
+                        &.confirmPassword{ /* span with icon confirmPassword*/
+                            background-image: var(--password);
+                        }   
+                        &.email{ /* span with icon email*/
+                            background-image: var(--email);
+                        }
+                        &.location{ /* span with icon location*/
+                            background-image: var(--location);
+                        }
+                        &.phone{ /* span with icon phone*/
+                            background-image: var(--phone);
+                        }
+                    } 
+                }
+                .inputs {
+                    margin-left: 10px;
+                    display: inline-block;
+                    background-color: var(--background-color-forms);
+                    font-family: var(--font);
+                    font-weight: var(--font-weight-light);
+                    font-size: 20px;
+                    width: 100%;
+                    border: none;
+                    border-radius: var(--border-radius);
+                    line-height: 30px;
+
+                    &.inputs:focus{
+                        outline: none;
+                    }
+                }
+                
+                ::placeholder {
+                    color: var(--textAndBorder-color);
+                    font-family: var(--font);
+                    font-weight: var(--font-weight-light);
+                  }
+            }
+        }
+    }  
+    
+    .form-control {
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: 25px auto;
+        gap: 25px;
+        word-spacing: 1px;
+    
+        .inputer {
+            appearance: none;
+            background-color: var(--background-color-forms);
+            margin: 0;
+            width: 30px;
+            height: 30px;
+            border: 1.5px solid var(--textAndBorder-color);;
+            border-radius: var(--border-radius);
+            display: grid;
+            place-content: center; 
+        }
+        .inputer::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 16px 16px var(--buttonHover);
+            border-radius: 2px;
+            align-items: center;
+        } 
+        .inputer:checked::before {
+            transform: scale(1);
+        }
+    
+        .labelCheck{
+            margin-left: 1px;
+            color: var(--textAndBorder-color);
+            font-family: var(--font);
+            font-weight: var(--font-weight-medium);
+            // text-align: left;
+            font-size: 20px;
+        }
+    }  
+}
+
