@@ -9,283 +9,268 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     
     <base href="/">    
 </head>
 <body>
-        <div class="tasks">
-            <p><a href="../index.html">Powrót</a></p>
+
+<div class="container-fluid p-0">
+    <div class="row">
+        <!-- Task bar -->
+        <div class="tasks col-md-12">
+                <p><a href="../index.html">Powrót</a></p>
         </div>
-    
-<!-- Logo -->
-    <div class="container">
-        <div class="logo">
-            <picture>
-                <source srcset="<%= require('./task1/img/gekonLogo.avif').default %>" type="image/avif">
-                <source srcset="<%= require('./task1/img/gekonLogo.webp').default %>" type="image/webp">
-                <img src="<%= require('./task1/img/gekonLogo.png').default %>" alt="logo" class="logo">
-            </picture>
-        </div>
-    </div>
 
-<!-- Register Form -->
-    <div class="container">
-        <div class="formName">
-            Register Form
-        </div>
-        <div class="defaultForm">
-            <form action="#">
-                <div class="wrapper">
-                    <label for="nameInput" class="name">
-                        <span class="insideLabel">
-                            <span class="iconGeneral username" ></span>
-                        </span>
-                        <input class="inputs" type="text" id="nameInput" placeholder="Username" />
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label for="passwordInput" class="name">
-                        <div class="insideLabel">
-                            <span class="iconGeneral password" tooltip="Minimum 6 znaków"></span>
-                        </div>
-                        <input class="inputs" type="password" id="passwordInput" placeholder="Password"  pattern=".{6,}"  autocomplete="new-password">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label for="confirmPasswordInput" class="name">
-                        <div class="insideLabel">
-                            <span class="iconGeneral confirmPassword"></span>
-                        </div>
-                        <input class="inputs" type="password" id="confirmPasswordInput" placeholder="Confirm Password"  autocomplete="new-password">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label for="emailInput" class="name">
-                        <span class="insideLabel">
-                            <span class="iconGeneral email"></span>
-                        </span>
-                        <input class="inputs" type="email" id="emailInput" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label for="locationInput" class="name">
-                        <div class="insideLabel">
-                            <span class="iconGeneral location"></span>
-                        </div>
-                        <input class="inputs" type="text" id="locationInput" placeholder="Your Location">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label class="form-control">
-                        <input class='inputer' type="checkbox" name="checkbox" />
-                        <span class="labelCheck">
-                            I have read and accept the terms of use.
-                        </span>
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <button type="submit" class="btnRegister">
-                        Sing up
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-<!-- Send Email Form -->
-    <div class="container">
-        <div class="formName">
-            Send Email Form
-        </div>
-        <div class="defaultForm">
-            <form action="#">
-                <div class="wrapper">
-                    <label for="nameInput" class="name">
-                        <span class="insideLabel">
-                            <span class="iconGeneral username" ></span>
-                        </span>
-                        <input class="inputs" type="text" id="nameInput" placeholder="Your Name" />
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label for="emailInput" class="name">
-                        <span class="insideLabel">
-                            <span class="iconGeneral email"></span>
-                        </span>
-                        <input class="inputs" type="email" id="emailInput" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    </label>
-                </div>
-                <div class="wrapper">
-                    <div class="divtext" contentEditable>   Type your message...</div>
-                </div>
-                
-                <div class="wrapper">
-                    <label class="form-control">
-                        <input class='inputer' type="checkbox" name="checkbox" />
-                        <span class="labelCheck">
-                            Send a copy to my Email.
-                        </span>
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <button type="submit" class="btnSendEmail">
-                        Send Email
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-<!-- Sing In Form  -->
-    <div class="container">
-        <div class="formName">
-            Sing In Form
-        </div>
-        <div class="defaultForm">
-            <form action="#">
-                <div class="wrapper">
-                    <label for="nameInput" class="name">
-                        <span class="insideLabel">
-                            <span class="iconGeneral username" ></span>
-                        </span>
-                        <input class="inputs" type="text" id="nameInput" placeholder="Username" autocomplete="username" />
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label for="passwordInput" class="name">
-                        <div class="insideLabel">
-                            <span class="iconGeneral password" tooltip="Minimum 6 znaków"></span>
-                        </div>
-                        <input class="inputs" type="password" id="passwordInput" placeholder="Password"  pattern=".{6,}"  autocomplete="new-password">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label class="form-control">
-                        <input class='inputer' type="checkbox" name="checkbox" />
-                        <span class="labelCheck">
-                            Remember me
-                        </span>
-                    </label>
-                    <button class="btnSingIn" type="submit">
-                        Sing In
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-<!-- Recover Form -->
-    <div class="container">
-        <div class="formName">
-            Recover Form
-        </div>
-        <div class="defaultForm">
-            <form action="#">
-                <div class="wrapper">
-                    <label for="emailInput" class="name">
-                        <span class="insideLabel">
-                            <span class="iconGeneral email" ></span>
-                        </span>
-                        <input class="inputs" type="email" id="emailInput" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <label for="phoneInput" class="name">
-                        <div class="insideLabel">
-                            <span class="iconGeneral phone"></span>
-                        </div>
-                        <input class="inputs" type="tel" id="phoneInput" placeholder="Enter your Phone number"  pattern="[0-9]{9}">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <button class="btnSend" type="submit">
-                        Send
-                    </button>
-                    <button class="btnDone" type="submit">
-                        Done
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-    
-<!-- Subscirbe Form -->
-    <div class="container">
-        <div class="formName">
-            Subscirbe Form
-        </div>
-        <div class="defaultForm">
-            <form action="#">
-                <div class="wrapper">
-                    <label for="emailInput" class="name">
-                        <span class="insideLabel">
-                            <span class="iconGeneral email" ></span>
-                        </span>
-                        <input class="inputs" type="email" id="emailInput" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    </label>
-                </div>
-
-                <div class="wrapper">
-                    <button class="btnSubsribe"  type="submit">
-                        Subscribe
-                    </button>
-                    <button class="btnNo" type="submit">
-                        No, Thanks
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-   
-<!-- Logo -->
-    <div class="logo">
-        <picture>
-            <source srcset="<%= require('./task1/img/gekonLogo.avif').default %>" type="image/avif">
-            <source srcset="<%= require('./task1/img/gekonLogo.webp').default %>" type="image/webp">
-            <img src="<%= require('./task1/img/gekonLogo.png').default %>" alt="logo" class="logo">
-        </picture>
-    </div>
-    
-    <div class="container">
-        <div class="formName">
-            bootstrap Form
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
+        <!-- Logo -->
+        <div class="div--container col-lg-12">
+            <div class="logo">
+                <picture>
+                    <source srcset="<%= require('./task1/img/gekonLogo.avif').default %>" type="image/avif">
+                    <source srcset="<%= require('./task1/img/gekonLogo.webp').default %>" type="image/webp">
+                    <img src="<%= require('./task1/img/gekonLogo.png').default %>" alt="logo" class="logo">
+                </picture>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
         </div>
+
+        <div class="col-lg-6 order-1">
+            <!-- Register Form -->
+            <div class="div--container">
+                <div class="formName">
+                    Register Form
+                </div>
+                <div class="defaultForm">
+                    <form action="#">
+                        <div class="wrapper">
+                            <label for="nameInput" class="name">
+                                <span class="insideLabel">
+                                    <span class="iconGeneral username" ></span>
+                                </span>
+                                <input class="inputs" type="text" id="nameInput" placeholder="Username" />
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label for="passwordInput" class="name">
+                                <div class="insideLabel">
+                                    <span class="iconGeneral password" tooltip="Minimum 6 znaków"></span>
+                                </div>
+                                <input class="inputs" type="password" id="passwordInput" placeholder="Password"  pattern=".{6,}"  autocomplete="new-password">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label for="confirmPasswordInput" class="name">
+                                <div class="insideLabel">
+                                    <span class="iconGeneral confirmPassword"></span>
+                                </div>
+                                <input class="inputs" type="password" id="confirmPasswordInput" placeholder="Confirm Password"  autocomplete="new-password">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label for="emailInput" class="name">
+                                <span class="insideLabel">
+                                    <span class="iconGeneral email"></span>
+                                </span>
+                                <input class="inputs" type="email" id="emailInput" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label for="locationInput" class="name">
+                                <div class="insideLabel">
+                                    <span class="iconGeneral location"></span>
+                                </div>
+                                <input class="inputs" type="text" id="locationInput" placeholder="Your Location">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label class="form--control">
+                                <input class='inputer' type="checkbox" name="checkbox" />
+                                <span class="labelCheck">
+                                    I have read and accept the terms of use.
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <button type="submit" class="btnRegister">
+                                Sing up
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 order-3">
+            <!-- Send Email Form -->
+            <div class="div--container">
+                <div class="formName">
+                    Send Email Form
+                </div>
+                <div class="defaultForm">
+                    <form action="#">
+                        <div class="wrapper">
+                            <label for="nameInput" class="name">
+                                <span class="insideLabel">
+                                    <span class="iconGeneral username" ></span>
+                                </span>
+                                <input class="inputs" type="text" id="nameInput" placeholder="Your Name" />
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label for="emailInput" class="name">
+                                <span class="insideLabel">
+                                    <span class="iconGeneral email"></span>
+                                </span>
+                                <input class="inputs" type="email" id="emailInput" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            </label>
+                        </div>
+                        <div class="wrapper">
+                            <div class="divtext" contentEditable>   Type your message...</div>
+                        </div>
+                        
+                        <div class="wrapper">
+                            <label class="form--control">
+                                <input class='inputer' type="checkbox" name="checkbox" />
+                                <span class="labelCheck">
+                                    Send a copy to my Email.
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <button type="submit" class="btnSendEmail">
+                                Send Email
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 order-2">
+            <!-- Sing In Form  -->
+            <div class="div--container">
+                <div class="formName">
+                    Sing In Form
+                </div>
+                <div class="defaultForm">
+                    <form action="#">
+                        <div class="wrapper">
+                            <label for="nameInput" class="name">
+                                <span class="insideLabel">
+                                    <span class="iconGeneral username" ></span>
+                                </span>
+                                <input class="inputs" type="text" id="nameInput" placeholder="Username" autocomplete="username" />
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label for="passwordInput" class="name">
+                                <div class="insideLabel">
+                                    <span class="iconGeneral password" tooltip="Minimum 6 znaków"></span>
+                                </div>
+                                <input class="inputs" type="password" id="passwordInput" placeholder="Password"  pattern=".{6,}"  autocomplete="new-password">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label class="form--control">
+                                <input class='inputer' type="checkbox" name="checkbox" />
+                                <span class="labelCheck">
+                                    Remember me
+                                </span>
+                            </label>
+                            <button class="btnSingIn" type="submit">
+                                Sing In
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Recover Form -->
+            <div class="div--container">
+                <div class="formName">
+                    Recover Form
+                </div>
+                <div class="defaultForm">
+                    <form action="#">
+                        <div class="wrapper">
+                            <label for="emailInput" class="name">
+                                <span class="insideLabel">
+                                    <span class="iconGeneral email" ></span>
+                                </span>
+                                <input class="inputs" type="email" id="emailInput" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <label for="phoneInput" class="name">
+                                <div class="insideLabel">
+                                    <span class="iconGeneral phone"></span>
+                                </div>
+                                <input class="inputs" type="tel" id="phoneInput" placeholder="Enter your Phone number"  pattern="[0-9]{9}">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <button class="btnSend" type="submit">
+                                Send
+                            </button>
+                            <button class="btnDone" type="submit">
+                                Done
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-6 order-4">
+            <!-- Subscirbe Form -->
+            <div class="div--container">
+                <div class="formName">
+                    Subscirbe Form
+                </div>
+                <div class="defaultForm">
+                    <form action="#">
+                        <div class="wrapper">
+                            <label for="emailInput" class="name">
+                                <span class="insideLabel">
+                                    <span class="iconGeneral email" ></span>
+                                </span>
+                                <input class="inputs" type="email" id="emailInput" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            </label>
+                        </div>
+
+                        <div class="wrapper">
+                            <button class="btnSubsribe"  type="submit">
+                                Subscribe
+                            </button>
+                            <button class="btnNo" type="submit">
+                                No, Thanks
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="logo logo2">
+                <picture>
+                    <source srcset="<%= require('./task1/img/gekonLogo.avif').default %>" type="image/avif">
+                    <source srcset="<%= require('./task1/img/gekonLogo.webp').default %>" type="image/webp">
+                    <img src="<%= require('./task1/img/gekonLogo.png').default %>" alt="logo" class="logo">
+                </picture>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

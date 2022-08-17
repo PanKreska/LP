@@ -1,6 +1,5 @@
-.container{
-    margin-top: 100px;
-    margin-bottom: 50px;
+.div--container{
+    margin-bottom: 30px;
 }
 
 .formName{  /* div name form*/   
@@ -41,7 +40,7 @@
                 width: 100%;
                 min-height: 180px;
                 white-space: pre-wrap;
-                max-width: 94%;
+                max-width: 100%;
                 padding: 10px;
                 
                 &.divtext:focus{
@@ -117,12 +116,11 @@
         }
     }  
     
-    .form-control {
+    .form--control {
         line-height: 1.5;
         display: grid;
         grid-template-columns: 25px auto;
         gap: 25px;
-        word-spacing: 1px;
     
         .inputer {
             appearance: none;
@@ -154,8 +152,7 @@
             color: var(--textAndBorder-color);
             font-family: var(--font);
             font-weight: var(--font-weight-medium);
-            // text-align: left;
-            font-size: 20px;
+            font-size: 18px;
         }
     }  
 }

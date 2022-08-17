@@ -31,10 +31,6 @@
     --background: url("./tasks/task1/img/background.png");
 }
 html { 
-    background-image: var(--background);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     box-sizing:border-box;
     padding: 0;
     margin: 0;
@@ -45,23 +41,30 @@ body{
     margin: 0;
     font-family: var(--font);
     font-weight: 600;
+
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .tasks{
     background-color:rgba(255, 153, 10, 0.89);
     text-align: center;
 }
 .tasks p {
-    display: inline-block; 
-    margin-right: 20px; 
-    margin-left: 20px;
+    display: inline-block;
+    margin: 20px;
 }
 .logo{
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    width: 400px;
-    height: 100%;
-    opacity: 0.4;
+    margin-top: 20px;
+    margin-right: auto;   
+    opacity: 0.6;
+}
+.logo2{
+    margin-top: 120px;
+}
+.progress{
     margin-top: 20px;
 }
