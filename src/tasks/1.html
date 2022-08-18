@@ -20,33 +20,35 @@
 <div class="container-fluid p-0">
     <div class="row">
         <!-- Task bar -->
-        <div class="tasks col-md-12">
-                <p><a href="../index.html">Powrót</a></p>
-        </div>
-
-        <!-- Logo -->
-        <div class="div--container col-lg-12">
-            <div class="logo">
-                <picture>
-                    <source srcset="<%= require('./task1/img/gekonLogo.avif').default %>" type="image/avif">
-                    <source srcset="<%= require('./task1/img/gekonLogo.webp').default %>" type="image/webp">
-                    <img src="<%= require('./task1/img/gekonLogo.png').default %>" alt="logo" class="logo">
-                </picture>
+        <div class="col-md-12">
+            <div class="tasks">
+                    <p><a href="../index.html">Powrót</a></p>
             </div>
         </div>
-
+        <!-- Logo -->
+        <div class="col-lg-12">
+            <div class="div--container">
+                <div class="logo">
+                    <picture>
+                        <source srcset="<%= require('./task1/img/gekonLogo.avif').default %>" type="image/avif">
+                        <source srcset="<%= require('./task1/img/gekonLogo.webp').default %>" type="image/webp">
+                        <img src="<%= require('./task1/img/gekonLogo.png').default %>" alt="logo" class="logo">
+                    </picture>
+                </div>
+            </div>
+        </div>
         <div class="col-lg-6 order-1">
             <!-- Register Form -->
             <div class="div--container">
-                <div class="formName">
+                <div class="form--name">
                     Register Form
                 </div>
-                <div class="defaultForm">
+                <div class="default--form">
                     <form action="#">
                         <div class="wrapper">
                             <label for="nameInput" class="name">
-                                <span class="insideLabel">
-                                    <span class="iconGeneral username" ></span>
+                                <span class="inside--label">
+                                    <span class="icon--general -username" ></span>
                                 </span>
                                 <input class="inputs" type="text" id="nameInput" placeholder="Username" />
                             </label>
@@ -54,8 +56,8 @@
 
                         <div class="wrapper">
                             <label for="passwordInput" class="name">
-                                <div class="insideLabel">
-                                    <span class="iconGeneral password" tooltip="Minimum 6 znaków"></span>
+                                <div class="inside--label">
+                                    <span class="icon--general -password" tooltip="Minimum 6 znaków"></span>
                                 </div>
                                 <input class="inputs" type="password" id="passwordInput" placeholder="Password"  pattern=".{6,}"  autocomplete="new-password">
                             </label>
@@ -63,8 +65,8 @@
 
                         <div class="wrapper">
                             <label for="confirmPasswordInput" class="name">
-                                <div class="insideLabel">
-                                    <span class="iconGeneral confirmPassword"></span>
+                                <div class="inside--label">
+                                    <span class="icon--general -confirm--password"></span>
                                 </div>
                                 <input class="inputs" type="password" id="confirmPasswordInput" placeholder="Confirm Password"  autocomplete="new-password">
                             </label>
@@ -72,8 +74,8 @@
 
                         <div class="wrapper">
                             <label for="emailInput" class="name">
-                                <span class="insideLabel">
-                                    <span class="iconGeneral email"></span>
+                                <span class="inside--label">
+                                    <span class="icon--general -email"></span>
                                 </span>
                                 <input class="inputs" type="email" id="emailInput" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </label>
@@ -81,8 +83,8 @@
 
                         <div class="wrapper">
                             <label for="locationInput" class="name">
-                                <div class="insideLabel">
-                                    <span class="iconGeneral location"></span>
+                                <div class="inside--label">
+                                    <span class="icon--general -location"></span>
                                 </div>
                                 <input class="inputs" type="text" id="locationInput" placeholder="Your Location">
                             </label>
@@ -91,14 +93,14 @@
                         <div class="wrapper">
                             <label class="form--control">
                                 <input class='inputer' type="checkbox" name="checkbox" />
-                                <span class="labelCheck">
+                                <span class="label--check">
                                     I have read and accept the terms of use.
                                 </span>
                             </label>
                         </div>
 
                         <div class="wrapper">
-                            <button type="submit" class="btnRegister">
+                            <button type="submit" class="btn--register">
                                 Sing up
                             </button>
                         </div>
@@ -109,15 +111,15 @@
         <div class="col-lg-6 order-3">
             <!-- Send Email Form -->
             <div class="div--container">
-                <div class="formName">
+                <div class="form--name">
                     Send Email Form
                 </div>
-                <div class="defaultForm">
+                <div class="default--form">
                     <form action="#">
                         <div class="wrapper">
                             <label for="nameInput" class="name">
-                                <span class="insideLabel">
-                                    <span class="iconGeneral username" ></span>
+                                <span class="inside--label">
+                                    <span class="icon--general -username" ></span>
                                 </span>
                                 <input class="inputs" type="text" id="nameInput" placeholder="Your Name" />
                             </label>
@@ -125,27 +127,27 @@
 
                         <div class="wrapper">
                             <label for="emailInput" class="name">
-                                <span class="insideLabel">
-                                    <span class="iconGeneral email"></span>
+                                <span class="inside--label">
+                                    <span class="icon--general -email"></span>
                                 </span>
                                 <input class="inputs" type="email" id="emailInput" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </label>
                         </div>
                         <div class="wrapper">
-                            <div class="divtext" contentEditable>   Type your message...</div>
+                            <div class="div--text" contentEditable>   Type your message...</div>
                         </div>
                         
                         <div class="wrapper">
                             <label class="form--control">
                                 <input class='inputer' type="checkbox" name="checkbox" />
-                                <span class="labelCheck">
+                                <span class="label--check">
                                     Send a copy to my Email.
                                 </span>
                             </label>
                         </div>
 
                         <div class="wrapper">
-                            <button type="submit" class="btnSendEmail">
+                            <button type="submit" class="btn--send--email">
                                 Send Email
                             </button>
                         </div>
@@ -156,15 +158,15 @@
         <div class="col-lg-6 order-2">
             <!-- Sing In Form  -->
             <div class="div--container">
-                <div class="formName">
+                <div class="form--name">
                     Sing In Form
                 </div>
-                <div class="defaultForm">
+                <div class="default--form">
                     <form action="#">
                         <div class="wrapper">
                             <label for="nameInput" class="name">
-                                <span class="insideLabel">
-                                    <span class="iconGeneral username" ></span>
+                                <span class="inside--label">
+                                    <span class="icon--general -username" ></span>
                                 </span>
                                 <input class="inputs" type="text" id="nameInput" placeholder="Username" autocomplete="username" />
                             </label>
@@ -172,8 +174,8 @@
 
                         <div class="wrapper">
                             <label for="passwordInput" class="name">
-                                <div class="insideLabel">
-                                    <span class="iconGeneral password" tooltip="Minimum 6 znaków"></span>
+                                <div class="inside--label">
+                                    <span class="icon--general -password" tooltip="Minimum 6 znaków"></span>
                                 </div>
                                 <input class="inputs" type="password" id="passwordInput" placeholder="Password"  pattern=".{6,}"  autocomplete="new-password">
                             </label>
@@ -182,11 +184,11 @@
                         <div class="wrapper">
                             <label class="form--control">
                                 <input class='inputer' type="checkbox" name="checkbox" />
-                                <span class="labelCheck">
+                                <span class="label--check">
                                     Remember me
                                 </span>
                             </label>
-                            <button class="btnSingIn" type="submit">
+                            <button class="btn--sing--in" type="submit">
                                 Sing In
                             </button>
                         </div>
@@ -196,15 +198,15 @@
             
             <!-- Recover Form -->
             <div class="div--container">
-                <div class="formName">
+                <div class="form--name">
                     Recover Form
                 </div>
-                <div class="defaultForm">
+                <div class="default--form">
                     <form action="#">
                         <div class="wrapper">
                             <label for="emailInput" class="name">
-                                <span class="insideLabel">
-                                    <span class="iconGeneral email" ></span>
+                                <span class="inside--label">
+                                    <span class="icon--general -email" ></span>
                                 </span>
                                 <input class="inputs" type="email" id="emailInput" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </label>
@@ -212,18 +214,18 @@
 
                         <div class="wrapper">
                             <label for="phoneInput" class="name">
-                                <div class="insideLabel">
-                                    <span class="iconGeneral phone"></span>
+                                <div class="inside--label">
+                                    <span class="icon--general -phone"></span>
                                 </div>
                                 <input class="inputs" type="tel" id="phoneInput" placeholder="Enter your Phone number"  pattern="[0-9]{9}">
                             </label>
                         </div>
 
                         <div class="wrapper">
-                            <button class="btnSend" type="submit">
+                            <button class="btn--send" type="submit">
                                 Send
                             </button>
-                            <button class="btnDone" type="submit">
+                            <button class="btn--done" type="submit">
                                 Done
                             </button>
                         </div>
@@ -235,31 +237,32 @@
         <div class="col-lg-6 order-4">
             <!-- Subscirbe Form -->
             <div class="div--container">
-                <div class="formName">
+                <div class="form--name">
                     Subscirbe Form
                 </div>
-                <div class="defaultForm">
+                <div class="default--form">
                     <form action="#">
                         <div class="wrapper">
                             <label for="emailInput" class="name">
-                                <span class="insideLabel">
-                                    <span class="iconGeneral email" ></span>
+                                <span class="inside--label">
+                                    <span class="icon--general -email" ></span>
                                 </span>
                                 <input class="inputs" type="email" id="emailInput" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </label>
                         </div>
 
                         <div class="wrapper">
-                            <button class="btnSubsribe"  type="submit">
+                            <button class="btn--subsribe"  type="submit">
                                 Subscribe
                             </button>
-                            <button class="btnNo" type="submit">
+                            <button class="btn--no" type="submit">
                                 No, Thanks
                             </button>
                         </div>
                     </form>
                 </div>
             </div>
+
             <!-- Logo -->
             <div class="logo logo2">
                 <picture>

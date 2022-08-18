@@ -2,7 +2,7 @@
     margin-bottom: 30px;
 }
 
-.formName{  /* div name form*/   
+.form--name{  /* div name form*/   
     font-size: 42px;
     text-shadow: 0.7px 0.7px var(--text-shadow);
     color: var(--white);
@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.defaultForm {
+.default--form {
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -29,7 +29,7 @@
             justify-content: space-between;
             align-items: baseline;
 
-            .divtext {
+            .div--text {
                 color: var(--textAndBorder-color);
                 background-color: var(--background-color-forms);
                 font-size: 20px;
@@ -43,7 +43,7 @@
                 max-width: 100%;
                 padding: 10px;
                 
-                &.divtext:focus{
+                &.div--text:focus{
                     outline: none;
                 }
             }
@@ -56,13 +56,13 @@
                 border-radius: var(--border-radius);
                 width: 100%;
 
-                .insideLabel{
+                .inside--label{
                     border-right: 1px solid var(--textAndBorder-color);
                     margin-right: 10px;
                     width: 40px;
                     display: flex;
 
-                    .iconGeneral {
+                    .icon--general {
                         width: 75%;
                         display: block;
                         background-repeat: no-repeat;
@@ -70,22 +70,22 @@
                         background-position: center;
                         background-size: contain;
 
-                        &.username{ /* span with icon user*/
+                        &.-username{ /* span with icon user*/
                             background-image: var(--userName);
                         }
-                        &.password{ /* span with icon password*/
+                        &.-password{ /* span with icon password*/
                             background-image: var(--password);
                         }
-                        &.confirmPassword{ /* span with icon confirmPassword*/
+                        &.-confirm--password{ /* span with icon confirmPassword*/
                             background-image: var(--password);
                         }   
-                        &.email{ /* span with icon email*/
+                        &.-email{ /* span with icon email*/
                             background-image: var(--email);
                         }
-                        &.location{ /* span with icon location*/
+                        &.-location{ /* span with icon location*/
                             background-image: var(--location);
                         }
-                        &.phone{ /* span with icon phone*/
+                        &.-phone{ /* span with icon phone*/
                             background-image: var(--phone);
                         }
                     } 
@@ -147,7 +147,7 @@
             transform: scale(1);
         }
     
-        .labelCheck{
+        .label--check{
             margin-left: 1px;
             color: var(--textAndBorder-color);
             font-family: var(--font);
