@@ -1,7 +1,12 @@
 @import  "./tasks/task1/forms/tooltip.scss";
 @import  "./tasks/task1/forms/buttons.scss";
 @import './tasks/task1/forms/defaultForm.scss';
+@import './tasks/task2/defaultStyles.scss';
 
+@font-face {
+    font-family:"Raleway Heavy";
+    src: url("/fonts/Raleway-Heavy.ttf");
+}
 
 :root {
     // colors
@@ -15,11 +20,19 @@
     --buttonDoneColor: rgb(185, 216, 154);
     --btnNoColor: rgb(245, 94, 112);
     --btnNoHoverColor: rgb(223, 84, 100);
+    --btnHeader: rgb(255, 95, 51);
     --white :rgb(255, 255, 255);
+    --background-color-sec1: rgb(0, 195, 195);
+    --background-color-sec2: rgb(112, 190, 255);
+    --background-color-sec3: rgb(255, 233, 47);
+    --background-color-sec6: rgb(176, 123, 247);
     // font
     --font: 'Titillium Web', sans-serif;
+    --fontTask2: 'Raleway', sans-serif;
+    --fontTask2Title : "Raleway Heavy", sans-serif;
     --font-weight-light: 300;
-    --font-weight-medium: 600; 
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
     // border-radius
     --border-radius:  3px;
     // pictures
@@ -29,6 +42,10 @@
     --location: url("./tasks/task1/img/glyphicons_242_google_maps.png");
     --phone: url("./tasks/task1/img/glyphicons_139_phone.png");
     --background: url("./tasks/task1/img/background.png");
+    --cart: url("./tasks/task2/img/cart.png");
+    --plant: url("./tasks/task2/img/plant.png");
+    --planet: url("./tasks/task2/img/planet.png");
+    --carrot: url("./tasks/task2/img/carrot.png");
 }
 html { 
     box-sizing:border-box;
@@ -36,35 +53,45 @@ html {
     margin: 0;
   }
 
-body{
+//   task 1
+// body{
+//     padding: 0;
+//     margin: 0;
+//     font-family: var(--font);
+//     font-weight: 600;
+
+//     background-image: var(--background);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+// .tasks{
+//     background-color:rgba(255, 153, 10, 0.89);
+//     text-align: center;
+// }
+// .tasks p {
+//     display: inline-block;
+//     margin: 20px;
+// }
+// .logo{
+//     display: block;
+//     margin-left: auto;
+//     margin-top: 20px;
+//     margin-right: auto;   
+//     opacity: 0.6;
+// }
+// .logo2{
+//     margin-top: 120px;
+// }
+// .progress{
+//     margin-top: 20px;
+// }
+
+// task 2
+body {
     padding: 0;
     margin: 0;
-    font-family: var(--font);
-    font-weight: 600;
-
-    background-image: var(--background);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.tasks{
-    background-color:rgba(255, 153, 10, 0.89);
-    text-align: center;
-}
-.tasks p {
-    display: inline-block;
-    margin: 20px;
-}
-.logo{
-    display: block;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-right: auto;   
-    opacity: 0.6;
-}
-.logo2{
-    margin-top: 120px;
-}
-.progress{
-    margin-top: 20px;
+    font-family: var(--fontTask2);
+    font-weight: var(--font-weight-light);
 }
