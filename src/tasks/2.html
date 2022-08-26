@@ -14,114 +14,206 @@
     <title>Task 2</title>
 </head>
 <body>
-    
-<div class="container-fluid p-0">
-    <div class="col-12 p-0">
-        <div class="header">
-            <div class="header--menu">
-                <div class="logo">
-                    <img src="<%= require('./task2/img/logo.png').default %>" alt="logo">
-                </div>
-                <div class="menu">
-                    <div class="tasks">
-                        <a href="../index.html">Powrót</a>
+
+<header class="header">
+    <div class="header--menu">
+        <div class="logo">
+            <img src="<%= require('./task2/img/logo.png').default %>" alt="logo">
+        </div>
+        <div class="menu">
+            <div class="tasks">
+                <a href="../index.html">Powrót</a>
+            </div>
+            <div class="menu--home menu--item">HOME</div>
+            <div class="menu--about menu--item">ABOUT</div>
+            <div class="menu--services menu--item">SERVICES</div>
+            <div class="menu--gallery menu--item">GALLERY</div>
+            <div class="menu--blog menu--item">BLOG</div>
+            <div class="menu--contact menu--item">CONTACT</div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="section1"> <!-- section 1 -->
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-12 d-flex align-items-center">
+                    <div class="sec1--text">
+                        <div class="slogan">
+                            <div class="title">Fresh Life</div>
+                            <p class="motto">Sed do eiusmod tempor incididunt ut labore et</br> dolore magna aliqua. Ut enim ad minim veniam,</br> quis nostrud exercitation ullamco.</p>
+                            <button class="btn--header" type="submit">GET FREE NOW</button>
+                        </div>
                     </div>
-                    <div class="menu--home menu--item">HOME</div>
-                    <div class="menu--about menu--item">ABOUT</div>
-                    <div class="menu--services menu--item">SERVICES</div>
-                    <div class="menu--gallery menu--item">GALLERY</div>
-                    <div class="menu--blog menu--item">BLOG</div>
-                    <div class="menu--contact menu--item">CONTACT</div>
+                    <div class="scroll">
+                        <img src="<%= require('./task2/img/scrol.png').default %>" alt="scroll">
+                    </div>
                 </div>
-            </div>
-            <div class="header--text">
-                <div class="slogan">
-                <div class="title">Fresh Life</div>
-                <p class="motto">Sed do eiusmod tempor incididunt ut labore et</br> dolore magna aliqua. Ut enim ad minim veniam,</br> quis nostrud exercitation ullamco.</p>
-                <button class="btn--header" type="submit">GET FREE NOW</button>
-                </div>
-            </div>
-            <div class="scroll">
-                <img src="<%= require('./task2/img/scrol.png').default %>" alt="scroll">
             </div>
         </div>
     </div>
-    <div class="col-md-12 p-0">
-        <div class="section1"> <!-- section 1 -->
-            <div class="row">
+    <div class="section2"> <!-- section 2 -->
+        <div class="container">
+            <div class="row mr-n5">
                 <div class="col-6">
                     <div class="cup--image">
                         <img src="<%= require('./task2/img/cup.png').default %>" alt="cup of rasberry">
-                    </div>
+                        </div>
                 </div>
                 <div class="col-6 ">
                     <div class="text-area">
                         <div class="about--title"> About Us</div>
-                        <div class="about--text"><p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p> <p class="about--text2">
-                        Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                        <div class="about--text">
+                            <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            </p>
+                            <p class="about--text2">
+                            Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-12 p-0">
-        <div class="section2">
-            <div class="row">
-                <div class="col-6 ">
+    <div class="section3"> <!-- section 3 -->
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6 d-flex justify-content-end">
                     <div class="icons--list">
                         <div class="icon--holder">
-                            <div class="title--icon -first">
-                                Online Shopping
+                            <div class="title--icon">
+                                    Online Shopping
                             </div>
                             <div class="icon--general -cart"></div>
                         </div>
                         <div class="icon--holder">
-                            <div class="title--icon -second">Quality Product</div>
+                            <div class="title--icon">Quality Product</div>
                             <div class="icon--general -plant"></div>
                         </div>
                         <div class="icon--holder">
-                            <div class="title--icon -third">Domestic & International</br> Delivery</div>
+                            <div class="title--icon">Domestic & International Delivery</div>
                             <div class="icon--general -planet"></div>
-                        </div>
-                        <div class="icon--holder">
-                            <div class="title--icon -fourth">Well Organized</div>
-                            <div class="icon--general -carrot"></div>
+                            </div>
+                            <div class="icon--holder">
+                                <div class="title--icon">Well Organized</div>
+                                <div class="icon--general -carrot"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="tomato--image">
-                        <img src="<%= require('./task2/img/tomato.png').default %>" alt="cup of rasberry">
+                    <div class="col-6">
+                        <div class="tomato--image">
+                            <img src="<%= require('./task2/img/tomato.png').default %>" alt="cup of rasberry">
+                        </div>
+                        <div class="title--services">Our Services</div>
                     </div>
-                    <div class="title--services">Our Services</div>
+            </div>
+        </div>
+    </div>
+    <div class="section4"> <!-- section 4 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="gallery--text--container">
+                                <div class="title--gallery">
+                                    Gallery
+                                </div>
+                                <p class="text--gallery">
+                                    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="gal1" alt="friut on plate" src="<%= require('./task2/img/gal1.jpg').default %>" />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="gal2" alt="berries" src="<%= require('./task2/img/gal2.jpg').default %>" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="gal3" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="gal4" alt="blueberries and a glass" src="<%= require('./task2/img/gal4.jpg').default %>" />
+                        </div>
+                        <div class="col-md-6">
+                            <img class="gal5" alt="kaki" src="<%= require('./task2/img/gal5.jpg').default %>" />
+                        </div>
+                    </div>
+                    <div class="row">
+                            <button type="button" class="btn--gallery">
+                                VIEW MORE
+                            </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-12 p-0">
-        <div class="section3">
-            <div class="text--gallery">
-                <div class="title--gallery">Gallery</div>
-                <div class="text--gallery">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    
+    </div>
+    <div class="section5"> <!-- section 5 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper--subs">
+                        <div class="title--subs">Subscribe To Us</div>
+                        <div class="text--subs">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                        <div class="subs--form">
+                            <input class="subs--input" type="text" placeholder="Your email address">
+                            <button class="btn--subs">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-md-12 p-0">
-        <div class="section4">4</div>
+    <div class="section6"><!-- section 6 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="blog--text--title text-center">
+                        Blog
+                    </h3>
+                    <p class="blog--text text-center">
+                        Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">1
+                        </div>
+                        <div class="col-md-4">2
+                        </div>
+                        <div class="col-md-4">3
+                        </div>
+                    </div> 
+                    <button type="button" class="btn btn-success">
+                        Button
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-12 p-0">
-        <div class="section5">5</div>
+    <div class="section7"><!-- section 7 -->
+        <div class="col-md-12">7</div>
     </div>
-    <div class="col-md-12 p-0">
-        <div class="section6">6</div>
+</main>
+<footer> <!-- footer -->
+    <div class="footer">
+        <div class="col-md-12">
+                <div class="copyrights">&copy 2015 Company. All right reserved</div>
+                <div class="mini--logo"><img src="miniLogo" alt="mini logo"></div>
+                <div class="creator--sing">Made with <span class="color--word--in--footer">love</span> by Auskteez</div>
+        </div>
     </div>
-    <div class="col-md-12 p-0">
-        <div class="footer">
-            <div class="copyrights">&copy 2015 Company. All right reserved</div>
-            <div class="mini--logo"><img src="miniLogo" alt="mini logo"></div>
-            <div class="creator--sing">Made with <span class="color--word--in--footer">love</span> by Auskteez</div>
-    </div></div>
 </div>
+</footer>
 </body>
 </html>
