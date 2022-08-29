@@ -304,6 +304,9 @@
     width: 100%;
     background-repeat: no-repeat;
     padding: 20px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
     &.-one {
         background-image: url('./tasks/task2/img/kiwi.jpg');
     }
@@ -314,14 +317,45 @@
         background-image: url('./tasks/task2/img/rasp.jpg');
     }
 }
-.date--post {
-
+.post--date {
+    border-radius: 5px;
+    background-color: #262626;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    
+    >.day {
+        font-family: var(--fontTask2);
+        font-weight: var(--font-weight-bold);
+        font-size: 32px;
+        margin-top: -11px;
+    }
+    >.month {
+        font-family: var(--fontTask2Title);
+        font-size: 21px;
+        margin-top: -11px;
+    }
 }
 .post--title {
-
+    font-family: var(--fontTask2);
+    font-weight: var(--font-weight-bold);
+    font-size: 20px;
+    line-height: 25px;
+    position: relative;
+    top: 123px;
 }
 .post--autor  {
-
+    font-family: var(--fontTask2);
+    font-weight: var(--font-weight-light);
+    font-size: 13px;
+    position: relative;
+    top: 139px;
 }
 .btn--blog--div{
     text-align: center;
@@ -336,6 +370,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     width: 18%;
+    margin-top: 10px;
 }
 // section 7 CONTACT
 .section7 {
@@ -373,17 +408,19 @@
     font-weight: var(--font-weight-bold);
 }
 .feedback-input {
-    padding: 13px 12px 11px 18px;
-    margin-bottom: 13px;
+    padding: 14px 17px 12px 20px;
+    margin-bottom: 16px;
     width: 500px;
     color: var(--white);
     background-color: var(--contactFormTask2);
+    border: none;
 }
 ::placeholder {
     color: var(--white);
 }
 textarea {
     min-height: 250px;
+    opacity: 0.5;
 }
 .adres{
     font-size: 17px;
