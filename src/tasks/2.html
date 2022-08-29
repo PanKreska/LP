@@ -34,7 +34,7 @@
     </div>
 </header>
 <main>
-    <div class="section1"> <!-- section 1 -->
+    <div class="section1"> <!-- section 1 start -->
         <div class="container">
             <div class="row h-100">
                 <div class="col-12 d-flex align-items-center">
@@ -52,9 +52,9 @@
             </div>
         </div>
     </div>
-    <div class="section2"> <!-- section 2 -->
+    <div class="section2"> <!-- section 2 about us -->
         <div class="container">
-            <div class="row mr-n5">
+            <div class="row">
                 <div class="col-6">
                     <div class="cup--image">
                         <img src="<%= require('./task2/img/cup.png').default %>" alt="cup of rasberry">
@@ -75,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="section3"> <!-- section 3 -->
+    <div class="section3"> <!-- section 3 our services -->
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-6 d-flex justify-content-end">
@@ -109,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div class="section4"> <!-- section 4 -->
+    <div class="section4"> <!-- section 4 gallery -->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -126,20 +126,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <img class="gal1" alt="friut on plate" src="<%= require('./task2/img/gal1.jpg').default %>" />
                         </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <img class="gal2" alt="berries" src="<%= require('./task2/img/gal2.jpg').default %>" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <img class="gal3" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
-                                </div>
-                            </div>
+                        <div class="col-md-4">
+                            <img class="gal2" alt="berries" src="<%= require('./task2/img/gal2.jpg').default %>" />
+                            
+                            <img class="gal3" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
                         </div>
                     </div>
                     <div class="row">
@@ -150,17 +143,17 @@
                             <img class="gal5" alt="kaki" src="<%= require('./task2/img/gal5.jpg').default %>" />
                         </div>
                     </div>
-                    <div class="row">
-                            <button type="button" class="btn--gallery">
+                    <div class="gallery--btn--div">
+                        <button type="button" class="btn--gallery">
                                 VIEW MORE
-                            </button>
-                </div>
+                        </button>
+                    </div>
             </div>
         </div>
     </div>
     
     </div>
-    <div class="section5"> <!-- section 5 -->
+    <div class="section5"> <!-- section 5 subscribe -->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -176,8 +169,8 @@
             </div>
         </div>
     </div>
-    <div class="section6"><!-- section 6 -->
-        <div class="container">
+    <div class="section6"><!-- section 6 blog -->
+        <div class="container -blog">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="blog--text--title text-center">
@@ -186,31 +179,92 @@
                     <p class="blog--text text-center">
                         Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
                     </p>
-                    <div class="row">
-                        <div class="col-md-4">1
-                        </div>
-                        <div class="col-md-4">2
-                        </div>
-                        <div class="col-md-4">3
-                        </div>
-                    </div> 
-                    <button type="button" class="btn btn-success">
-                        Button
-                    </button>
+                </div>
+                <div class="col-md-4">
+                                <div class="post -one">
+                                    <div class="date--post"><img src="" alt="">s</div>
+                                    <div class="post--title">aa</div>
+                                    <div class="post--autor">123a</div>
+                                </div>
+                </div>
+                <div class="col-md-4">
+                                <div class="post -two">
+                                    <div class="date--post"><img src="" alt="">s</div>
+                                    <div class="post--title">aa</div>
+                                    <div class="post--autor">123a</div>
+                            </div>
+                </div>
+                <div class="col-md-4">
+                                <div class="post -three">
+                                    <div class="date--post"><img src="" alt="">s</div>
+                                    <div class="post--title">aa</div>
+                                    <div class="post--autor">123a</div>
+                                </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="btn--blog--div">
+                        <button type="button" class="btn--blog">
+                            VIEW MORE
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section7"><!-- section 7 -->
-        <div class="col-md-12">7</div>
+    <div class="section7"><!-- section 7 contact -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact--text--container">
+                        <div class="contact--title">
+                            Contact
+                        </div>
+                        <div class="contact--text">
+                            For new projects, ideas, business or anything
+                            you'd like to discuss, contact with me!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="contact--form">
+                        <form>      
+                            <input name="name" type="text" class="feedback-input" placeholder="Auskteez Tran" /></br>  
+                            <input name="email" type="text" class="feedback-input" placeholder="Your email..." /></br>
+                            <input name="phone" type="tel" class="feedback-input" placeholder="Your phone number..." /></br>
+                            <textarea name="text" class="feedback-input" placeholder="Your message..."></textarea>
+                          </form> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="adres">
+                        <div class="street">
+                            <span class="bolder">ADDRESS</span></br>
+                            123 City name, Street, City, Country
+                        </div>
+                            <div class="mail">
+                                <span class="bolder">EMAIL</span></br>
+                                cahee@domain.com
+                        </div>
+                            <div class="phone">
+                                <span class="bolder">PHONE</span></br>
+                                +012 345 6789
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <footer> <!-- footer -->
     <div class="footer">
-        <div class="col-md-12">
+        <div class="col-md-12 p-0">
+            <div class="foot--container">
                 <div class="copyrights">&copy 2015 Company. All right reserved</div>
-                <div class="mini--logo"><img src="miniLogo" alt="mini logo"></div>
+                <div class="mini--logo"><img src="<%= require('./task2/img/miniLogo.png').default %>"" alt="mini logo"></div>
                 <div class="creator--sing">Made with <span class="color--word--in--footer">love</span> by Auskteez</div>
+            </div>
         </div>
     </div>
 </div>
