@@ -273,9 +273,13 @@
 
 // section 6 BLOG
 .section6 {
-    background-color: var(--background-color-sec6);
     height: 865px;
 } 
+.background--subs {
+    position: absolute;
+    left: 731px;
+    top: 78px;
+}
 .blog--text--title{
     color: var(--white);
     font-size: 90px;
@@ -287,9 +291,10 @@
     color: var(--white);
     font-size: 17px;
     padding-top: 14px;
-    padding-left: 262px;
-    padding-right: 262px;
+    padding-left: 291px;
+    padding-right: 291px;
     padding-bottom: 27px;
+  
 }
 .post--container {
     display: flex;
@@ -301,7 +306,6 @@
 }
 .post {
     height:350px;
-    width: 100%;
     background-repeat: no-repeat;
     padding: 20px;
     color: var(--white);
@@ -407,6 +411,11 @@
 .bolder {
     font-weight: var(--font-weight-bold);
 }
+.font {
+    font-weight: var(--font-weight-light);
+    font-size: 20px;
+    margin-bottom: 1px;
+}
 .feedback-input {
     padding: 14px 17px 12px 20px;
     margin-bottom: 16px;
@@ -425,14 +434,15 @@ textarea {
 .adres{
     font-size: 17px;
     position: relative;
-    top: 108px;
+    top: 107px;
     left: 71px;
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
+    line-height: 24px;
 }
 .street {
-    padding-bottom: 8px;
+    padding-bottom: 11px;
 }
 .mail {
     padding-bottom: 9px;
