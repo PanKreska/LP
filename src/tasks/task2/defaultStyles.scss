@@ -1,7 +1,7 @@
 img { max-width:100%; height:auto; }
-.container {
- max-width: 1200px; 
-}
+// .container {
+//  max-width: 1200px; 
+// }
 a {
     all: unset;
     cursor: pointer;
@@ -183,7 +183,8 @@ a {
     font-weight: var(--font-weight-bold);
     font-size: 90px;
     position: relative;
-    margin-left: 24px;
+    // margin-left: 24px; Gdy container 1200px
+    margin-right: -6px; // Gdy container 1140px
 }
 // section 4 GALLERY
 .section4 {
