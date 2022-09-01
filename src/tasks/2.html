@@ -17,7 +17,11 @@
 <header class="header">
     <div class="header--menu">
         <div class="logo">
-            <img src="<%= require('./task2/img/logo.png').default %>" alt="logo">
+            <picture>
+                <source srcset="<%= require('./task2/img/logo.avif').default %>" type="image/avif">
+                <source srcset="<%= require('./task2/img/logo.webp').default %>" type="image/webp">
+                <img src="<%= require('./task2/img/logo.png').default %>" alt="logo">
+            </picture>
         </div>
         <div class="menu">
             <div class="tasks">
@@ -45,20 +49,34 @@
                         </div>
                     </div>
                     <div class="scroll">
-                        <img src="<%= require('./task2/img/scrol.png').default %>" alt="scroll">
+                        <picture>
+                            <source srcset="<%= require('./task2/img/scrol.avif').default %>" type="image/avif">
+                            <source srcset="<%= require('./task2/img/scrol.webp').default %>" type="image/webp">
+                            <img src="<%= require('./task2/img/scrol.png').default %>" alt="scroll">
+                        </picture>
                     </div>
                 </div>
             </div>
         </div>
+         <picture>
+            <!-- <source srcset="<%= require('./task2/img/sec1.avif').default %>" type="image/avif">
+            <source srcset="<%= require('./task2/img/sec1.webp').default %>" type="image/webp">
             <img src="<%= require('./task2/img/sec1.jpg').default %>" alt="main background"
-            class="main--background">
+            class="main--background" /> -->
+         </picture> <!-- włożenie img do środka powoduje jego zniknięcie -->
+            <img src="<%= require('./task2/img/sec1.jpg').default %>" alt="main background"
+            class="main--background" />
     </div>
     <div class="section2"> <!-- section 2 about us -->
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-6">
                     <div class="cup--image">
-                        <img src="<%= require('./task2/img/cup.png').default %>" alt="cup of rasberry">
+                        <picture>
+                            <source srcset="<%= require('./task2/img/cup.avif').default %>" type="image/avif">
+                            <source srcset="<%= require('./task2/img/cup.webp').default %>" type="image/webp">
+                            <img src="<%= require('./task2/img/cup.png').default %>" alt="cup of rasberry">
+                        </picture>
                         </div>
                 </div>
                 <div class="col-6 ">
@@ -103,7 +121,11 @@
                     </div>
                     <div class="col-6 d-flex">
                         <div class="wrapper--services">
-                            <img src="<%= require('./task2/img/tomato.png').default %>" alt="cup of rasberry" class="tomato--image">
+                            <picture>
+                                <source srcset="<%= require('./task2/img/tomato.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/tomato.webp').default %>" type="image/webp">
+                                <img src="<%= require('./task2/img/tomato.png').default %>" alt="cup of rasberry" class="tomato--image">
+                            </picture>
                             <div class="title--services">Our Services</div>
                         </div>
                     </div>
@@ -128,20 +150,39 @@
                     </div>
                     <div class="row">
                         <div class="col-8">
-                            <img class="gal1" alt="friut on plate" src="<%= require('./task2/img/gal1.jpg').default %>" />
+                            <picture>
+                                <source srcset="<%= require('./task2/img/gal1.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/gal1.webp').default %>" type="image/webp">
+                                <img class="gal1" alt="friut on plate" src="<%= require('./task2/img/gal1.jpg').default %>" />
+                            </picture> 
                         </div>
                         <div class="col-4">
-                            <img class="gal2" alt="berries" src="<%= require('./task2/img/gal2.jpg').default %>" />
-                            
-                            <img class="gal3" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
+                            <picture>
+                                <source srcset="<%= require('./task2/img/gal2.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/gal2.webp').default %>" type="image/webp">
+                                <img class="gal2" alt="berries" src="<%= require('./task2/img/gal2.jpg').default %>" />
+                            </picture>
+                            <picture>
+                                <source srcset="<%= require('./task2/img/gal3.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/gal3.webp').default %>" type="image/webp">
+                                <img class="gal3" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
+                            </picture>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <img class="gal4" alt="blueberries and a glass" src="<%= require('./task2/img/gal4.jpg').default %>" />
+                            <picture>
+                                <source srcset="<%= require('./task2/img/gal4.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/gal4.webp').default %>" type="image/webp">
+                                <img class="gal4" alt="blueberries and a glass" src="<%= require('./task2/img/gal4.jpg').default %>" />
+                            </picture>
                         </div>
                         <div class="col-6">
-                            <img class="gal5" alt="kaki" src="<%= require('./task2/img/gal5.jpg').default %>" />
+                            <picture>
+                                <source srcset="<%= require('./task2/img/gal5.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/gal5.webp').default %>" type="image/webp">
+                                <img class="gal5" alt="kaki" src="<%= require('./task2/img/gal5.jpg').default %>" />
+                            </picture>
                         </div>
                     </div>
                     <div class="gallery--btn--div">
@@ -174,7 +215,11 @@
                     </div>
                 </div>
                 <div class="col-4 d-flex align-items-center">
-                    <img src="<%= require('./task2/img/backberry.png').default %>" alt="jagódki" class="background--subs">
+                    <picture>
+                        <source srcset="<%= require('./task2/img/backberry.avif').default %>" type="image/avif">
+                        <source srcset="<%= require('./task2/img/backberry.webp').default %>" type="image/webp">
+                        <img src="<%= require('./task2/img/backberry.png').default %>" alt="jagódki" class="background--subs" />
+                    </picture>
                  </div>
                 
             </div>
@@ -194,7 +239,11 @@
                 <div class="col-4">
                                 <div class="post -one">
                                     <a href="#" class="post--link">
-                                        <img src="<%= require('./task2/img/kiwi.png').default %>" alt="kiwi" class="post--image">
+                                        <picture>
+                                            <source srcset="<%= require('./task2/img/kiwi.avif').default %>" type="image/avif">
+                                            <source srcset="<%= require('./task2/img/kiwi.webp').default %>" type="image/webp">
+                                            <img src="<%= require('./task2/img/kiwi.png').default %>" alt="kiwi" class="post--image" />
+                                        </picture>
                                         <div class="post--date">
                                             <div class="day">20</div>
                                             <div class="month">NOV</div>
@@ -209,7 +258,11 @@
                 <div class="col-4">
                                 <div class="post -two">
                                     <a href="#" class="post--link">
-                                        <img src="<%= require('./task2/img/bean.png').default %>" alt="bean" class="post--image">
+                                        <picture>
+                                            <source srcset="<%= require('./task2/img/bean.avif').default %>" type="image/avif">
+                                            <source srcset="<%= require('./task2/img/bean.webp').default %>" type="image/webp">
+                                            <img src="<%= require('./task2/img/bean.png').default %>" alt="bean" class="post--image" />
+                                        </picture>
                                         <div class="post--date">
                                             <div class="day">14</div>
                                             <div class="month">NOV</div>
@@ -222,7 +275,11 @@
                 <div class="col-4">
                                 <div class="post -three">
                                     <a href="#" class="post--link">
-                                        <img src="<%= require('./task2/img/rasp.png').default %>" alt="raspberry" class="post--image">
+                                        <picture>
+                                            <source srcset="<%= require('./task2/img/rasp.avif').default %>" type="image/avif">
+                                            <source srcset="<%= require('./task2/img/rasp.webp').default %>" type="image/webp">
+                                            <img src="<%= require('./task2/img/rasp.png').default %>" alt="raspberry" class="post--image" />
+                                        </picture>
                                         <div class="post--date">
                                             <div class="day">10</div>
                                             <div class="month">NOV</div>
@@ -294,7 +351,12 @@
             <div class="col-12">
                 <div class="foot--container">
                     <div class="copyrights">&copy 2015 Company. All right reserved</div>
-                    <div class="mini--logo"><img src="<%= require('./task2/img/miniLogo.png').default %>"" alt="mini logo"></div>
+                    <div class="mini--logo">
+                        <picture>
+                            <source srcset="<%= require('./task2/img/miniLogo.avif').default %>" type="image/avif">
+                            <source srcset="<%= require('./task2/img/miniLogo.webp').default %>" type="image/webp">
+                            <img src="<%= require('./task2/img/miniLogo.png').default %>"" alt="mini logo"></div>
+                        </picture>
                     <div class="creator--sing">Made with <span class="color--word--in--footer">love</span> byAuskteez</div>
                 </div>
             </div>

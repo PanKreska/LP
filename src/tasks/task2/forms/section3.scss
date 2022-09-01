@@ -61,10 +61,12 @@
                     display: flex;
                     align-items: center;
                     margin-top: -51px;
+                    margin-left: 23px;
 
                     .tomato--image {
                         position: absolute;
-                        left: 109px;
+                        left: 87px;
+                        top: 14px;
                     }
                     .title--services  {
                         color: var(--white);
@@ -72,8 +74,7 @@
                         font-weight: var(--font-weight-bold);
                         font-size: 90px;
                         position: relative;
-                        // margin-left: 24px; Gdy container 1200px
-                        margin-right: -6px; // Gdy container 1140px
+                        margin-right: -30px; // when container >1200px
                     }
                 }
             }
