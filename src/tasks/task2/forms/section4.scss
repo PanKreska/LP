@@ -1,0 +1,62 @@
+.section4 {
+    background-color: var(--background-color-sec3);
+    padding: 65px 0 120px;
+
+    .container {
+        .row {
+            .col-12 {
+                .row {
+                    .col-12  {
+                        .gallery--text--container {
+                            display: flex;
+                            flex-direction: column;
+
+                            .title--gallery {
+                                text-align: center;
+                                font-size: 90px;
+                                font-family: var(--fontTask2);
+                                font-weight: var(--font-weight-bold);
+                            }
+                            .text--gallery {
+                                font-size: 17px;
+                                text-align: center;
+                                padding-top: 8px;
+                                padding-bottom: 42px;
+                                line-height: 1.6;
+                                width: 50%;
+                                margin: auto;
+                            }
+                        }
+                    }
+                    .col-8, .col-4, .col-6 {
+                        .gal1, .gal2, .gal3, .gal4, .gal5 {
+                                margin-bottom: 30px;
+                                box-shadow: 0px 5px 15px -7px rgba(66, 68, 90, 1);
+                        }
+                    }
+                }
+                .gallery--btn--div{
+                    text-align: center;
+
+                    .btn--gallery {
+                        font-family: var(--fontTask2);
+                        font-weight: var(--font-weight-light);
+                        font-size: 20px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        margin-top: 19px;
+                        width: 17%;
+                        background-color: var(--btnGalleryTask2);
+                        box-shadow:0px 2px 2.5px rgba(0,0,0,0.5);
+
+                        &:hover {
+                            filter: brightness(0.6)
+                        }
+                    }
+                    }
+            }
+        }   
+    }
+}

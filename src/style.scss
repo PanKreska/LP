@@ -1,7 +1,18 @@
-@import  "./tasks/task1/forms/tooltip.scss";
-@import  "./tasks/task1/forms/buttons.scss";
+@import  './tasks/task1/forms/tooltip.scss';
+@import  './tasks/task1/forms/buttons.scss';
 @import './tasks/task1/forms/defaultForm.scss';
 @import './tasks/task2/defaultStyles.scss';
+
+@import './tasks/task2/forms/header.scss';
+@import './tasks/task2/forms/section1.scss';
+@import './tasks/task2/forms/section2.scss';
+@import './tasks/task2/forms/section3.scss';
+@import './tasks/task2/forms/section4.scss';
+@import './tasks/task2/forms/section5.scss';
+@import './tasks/task2/forms/section6.scss';
+@import './tasks/task2/forms/section7.scss';
+@import './tasks/task2/forms/footer.scss';
+
 
 @font-face {
     font-family:"Raleway Heavy";
@@ -31,6 +42,7 @@
     --inputTask2Subs : rgb(38, 38, 38);
     --footTask2 : rgb(38, 38, 38);
     --contactFormTask2: rgb(0, 196, 196);
+    --contactFormActive: rgb(53, 91, 129);
     // font
     --font: 'Titillium Web', sans-serif;
     --fontTask2: 'Raleway', sans-serif;
@@ -56,12 +68,24 @@ html {
     box-sizing:border-box;
     padding: 0;
     margin: 0;
-  }
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+img { 
+    max-width:100%; height:auto; 
+}
+a {
+    all: unset;
+    cursor: pointer;
+}
+// .container {
+//  max-width: 1200px; 
+// }
 
 //   task 1
 // body{
-//     padding: 0;
-//     margin: 0;
 //     font-family: var(--font);
 //     font-weight: 600;
 
@@ -95,8 +119,6 @@ html {
 
 // task 2
 body {
-    padding: 0;
-    margin: 0;
     font-family: var(--fontTask2);
     font-weight: var(--font-weight-light);
 }
