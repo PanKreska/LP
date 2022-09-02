@@ -28,13 +28,8 @@
             }
             .col-6 {
                 .contact--form {
-                    display: -webkit-box;
-                    display: -ms-flexbox;
                     display: flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
+                    flex-direction: column;
 
                     .feedback-input {
                         padding: 14px 17px 12px 20px;
@@ -48,8 +43,7 @@
                             margin-bottom: 0px;
                         }
                         &:active, &:focus {
-                            -webkit-box-shadow: inset 5px 0px 0 0 var(--contactFormActive);
-                                    box-shadow: inset 5px 0px 0 0 var(--contactFormActive);
+                            box-shadow: inset 5px 0px 0 0 var(--contactFormActive);
                              outline: none;
                         }
                         &:placeholder {
@@ -64,13 +58,8 @@
                 .adres{
                     font-size: 17px;
                     position: relative;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
                     display: flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
+                    flex-direction: column;
                     line-height: 1;
                     padding-left: 70px;
 

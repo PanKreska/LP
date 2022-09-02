@@ -4,15 +4,9 @@
     width: 100%;
 
     .header--menu {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align:center;
-            -ms-flex-align:center;
-                align-items:center;
+        justify-content: space-between;
+        align-items:center;
         font-size: 16px;
         font-family: var(--footTask2);
         font-weight: var(--font-weight-bold);
@@ -22,8 +16,6 @@
             padding-top: 49px;
         }
         .menu {
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
             padding-right: 165px;
 

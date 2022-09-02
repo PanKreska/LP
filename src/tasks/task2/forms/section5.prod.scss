@@ -5,13 +5,8 @@
         .row {
             .col-8 {
                 .wrapper--subs {
-                    display: -webkit-box;
-                    display: -ms-flexbox;
                     display: flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
+                    flex-direction: column;
                     position: relative;
                     z-index: 1;
 
@@ -27,40 +22,14 @@
                         width: 72%;
                     }
                     .subs--form {
-                        display: -webkit-box;
-                        display: -ms-flexbox;
                         display: flex;
-                        -webkit-box-align: baseline;
-                            -ms-flex-align: baseline;
-                                align-items: baseline;
+                        align-items: baseline;
 
                         .subs--input {
                             margin-top: 19px;
                             padding: 13px;
-                            -webkit-box-flex: 1;
-                                -ms-flex: 1 1 auto;
-                                    flex: 1 1 auto;
+                            flex: 1 1 auto;
                             margin-right: 30px;
-
-                            &::-webkit-input-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-
-                            &::-moz-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-
-                            &:-ms-input-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-
-                            &::-ms-input-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
 
                             &::placeholder {
                                 font-size: 15px;

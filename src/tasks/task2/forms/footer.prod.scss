@@ -5,12 +5,8 @@
     .container {
         .col-12 {
             .foot--container {
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
+                justify-content: space-between;
                 color: var(--white);
                 position: relative;
 

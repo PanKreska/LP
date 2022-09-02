@@ -64,10 +64,8 @@
     --planet: url("./tasks/task2/img/planet.png");
     --carrot: url("./tasks/task2/img/carrot.png");
 }
-
 html { 
-    -webkit-box-sizing:border-box; 
-            box-sizing:border-box;
+    box-sizing:border-box;
     padding: 0;
     margin: 0;
 }

@@ -2,7 +2,8 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "build": "postcss src/style.scss -o src/style.out.scss"
   },
   "devDependencies": {
     "css-loader": "^5.0.2",
@@ -20,6 +21,9 @@
   ],
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.0"
+    "autoprefixer": "^10.4.8",
+    "bootstrap": "^5.2.0",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0"
   }
 }
