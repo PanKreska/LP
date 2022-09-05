@@ -7,7 +7,7 @@
 
     .container {
         .row { 
-            .col-6 {
+            .col-lg-6 {
                 .cup--image {
                     width: 600px;
                     margin-left: -14px;
@@ -40,5 +40,31 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .section2 .container .row .col-lg-6 .text-area  {
+    padding-bottom: 0;
+    margin-left: 0;
+        }
+    .section2 .container .row .col-lg-6 .text-area .about--title {
+    font-size: 50px;
+        }
+    .section2 .container .row .col-lg-6 .text-area .about--text {
+    font-size: 14px;
+        }
+    .section2 .container .row .col-lg-6 .cup--image {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .section2 {
+        padding: 35px 0px 45px;
+    }
+    .section2 .container .row .col-lg-6 .text-area .about--title {
+        font-size: 50px;
     }
 }

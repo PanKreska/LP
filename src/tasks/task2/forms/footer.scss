@@ -30,3 +30,12 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .footer .container .col-12 .foot--container .copyrights {
+        font-size: 14px;
+    }
+    .footer .container .col-12 .foot--container .creator--sing {
+        font-size: 14px;
+    }
+}

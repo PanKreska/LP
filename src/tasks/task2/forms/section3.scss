@@ -4,7 +4,7 @@
 
     .container {
         .row {
-            .col-6 {
+            .col-lg-6 {
                 .icons--list {
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -101,4 +101,69 @@
             }
         }
     }
+}
+
+@media (max-width: 768px) {
+    .section3 {
+        padding: 50px 0 42px;
+      }
+    .section3 .container .row .col-lg-6 .icons--list {
+        padding-right: 0px;
+        padding-top: 0px;
+      }
+      .section3 .container .row .col-lg-6 .icons--list .icon--holder .title--icon {
+        font-size: 14px;
+        flex: 1 1 100%;
+        padding: 5px;
+      }
+      .section3 .container .row .col-lg-6 .icons--list .icon--holder .icon--general {
+        height: 65px;
+      }
+      .section3 .container .row .col-lg-6 .icons--list .icon--holder {
+        width: 100%;
+      }
+      .section3 .container .row .col-lg-6 .wrapper--services .tomato--image {
+        left: 20px;
+        top: 70px;
+      }
+      .section3 .container .row .col-lg-6 .wrapper--services .title--services {
+        font-size: 50px;
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+        text-shadow: 0px 0px 2px var(--footTask2);
+      }
+      .section3 .container .row .col-lg-6 .wrapper--services {
+        margin-left: 0;
+      }
+}
+
+@media (max-width: 576px) {
+    .section3 .container .row .col-lg-6 .icons--list .icon--holder {
+        margin: 8px 0px;
+        width: 90%;
+    }
+    .section3 .container .row .col-lg-6 .icons--list .icon--holder .icon--general {
+        height: 65px;
+    }
+    .section3 .container .row .col-lg-6 .icons--list .icon--holder .icon--general {
+        width: 45px;
+        height: 50px;
+        background-size: contain;
+        margin: 0 7px;
+        border: none;
+    }
+    .section3 .container .row .col-lg-6 .icons--list .icon--holder .title--icon {
+        border-right: 1px solid var(--footTask2);
+        font-size: 12px;
+    }
+    .section3 .container .row .col-lg-6 .wrapper--services .title--services {
+        font-size: 50px;
+        margin-right: 0px;
+    }
+    .section3 .container .row .col-lg-6 .wrapper--services .tomato--image {
+        top: 50px;
+        width: 95%;
+    }
+    
 }

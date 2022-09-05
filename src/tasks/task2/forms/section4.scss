@@ -33,7 +33,7 @@
                             }
                         }
                     }
-                    .col-8, .col-4, .col-6 {
+                    .col-lg-8, .col-lg-4, .col-lg-6 {
                         .gal1, .gal2, .gal3, .gal4, .gal5 {
                                 margin-bottom: 30px;
                                 -webkit-box-shadow: 0px 5px 15px -7px rgba(66, 68, 90, 1);
@@ -68,3 +68,37 @@
         }   
     }
 }
+
+@media (max-width: 768px) {
+    .section4 {
+        padding: 20px 0 50px;
+      }
+    .section4 .container .row .col-12 .row .col-12 .gallery--text--container .title--gallery {
+        font-size: 65px;
+    }
+    .section4 .container .row .col-12 .row .col-12 .gallery--text--container .text--gallery {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 30px;
+        width: 100%;
+        margin: auto;
+    }
+    .section4 .container .row .col-12 .row .col-lg-8 .gal1, .section4 .container .row .col-12 .row col-lg-8 .gal2, .section4 .container .row .col-12 .row col-lg-8 .gal3, .section4 .container .row .col-12 .row col-lg-8 .gal4, .section4 .container .row .col-12 .row col-lg-8 .gal5, .section4 .container .row .col-12 .row .col-lg-4 .gal1, .section4 .container .row .col-12 .row .col-lg-4 .gal2, .section4 .container .row .col-12 .row .col-lg-4 .gal3, .section4 .container .row .col-12 .row .col-lg-4 .gal4, .section4 .container .row .col-12 .row .col-lg-4 .gal5, .section4 .container .row .col-12 .row col-lg-6 .gal1, .section4 .container .row .col-12 .row col-lg-6 .gal2, .section4 .container .row .col-12 .row col-lg-6 .gal3, .section4 .container .row .col-12 .row col-lg-6 .gal4, .section4 .container .row .col-12 .row col-lg-6 .gal5 {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .section4 .container .row .col-12 .gallery--btn--div .btn--gallery {
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 7px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-top: 19px;
+        width: 25%;
+    }
+}
+@media (max-width: 576px) {
+    .section4 .container .row .col-12 .row .col-12 .gallery--text--container .title--gallery {
+        font-size: 50px;
+    }
+ }

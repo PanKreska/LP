@@ -34,13 +34,27 @@
             <div class="menu--blog menu--item">BLOG</div>
             <div class="menu--contact menu--item">CONTACT</div>
         </div>
+
+        <div class="mobile--menu">
+            <input type="checkbox" class="mobile--input">
+            <span></span>
+            <span></span>
+            <div class="mobile--menu--list">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </div>
+        </div>
     </div>
 </header>
 <main>  
     <div class="section1"> <!-- section 1 start --> 
         <div class="container">
             <div class="row h-100">
-                <div class="col-12 d-flex align-items-center">
+                <div class="col-lg-12 d-flex align-items-center">
                     <div class="sec1--text">
                         <div class="slogan">
                             <div class="title">Fresh Life</div>
@@ -68,7 +82,7 @@
     <div class="section2"> <!-- section 2 about us -->
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="cup--image">
                         <picture>
                             <source srcset="<%= require('./task2/img/cup.avif').default %>" type="image/avif">
@@ -77,7 +91,7 @@
                         </picture>
                         </div>
                 </div>
-                <div class="col-6 ">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="text-area">
                         <div class="about--title"> About Us</div>
                         <div class="about--text">
@@ -95,7 +109,7 @@
     <div class="section3"> <!-- section 3 our services -->
         <div class="container">
             <div class="row">
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-end">
                     <div class="icons--list">
                         <div class="icon--holder">
                             <div class="title--icon">
@@ -117,7 +131,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-6 d-flex">
+                    <div class="col-lg-6 col-md-6 col-sm-6 d-flex">
                         <div class="wrapper--services">
                             <picture>
                                 <source srcset="<%= require('./task2/img/tomato.avif').default %>" type="image/avif">
@@ -147,14 +161,14 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-md-6 col-sm-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal1.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal1.webp').default %>" type="image/webp">
                                 <img class="gal1" alt="friut on plate" src="<%= require('./task2/img/gal1.jpg').default %>" />
                             </picture> 
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal2.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal2.webp').default %>" type="image/webp">
@@ -168,14 +182,14 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal4.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal4.webp').default %>" type="image/webp">
                                 <img class="gal4" alt="blueberries and a glass" src="<%= require('./task2/img/gal4.jpg').default %>" />
                             </picture>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal5.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal5.webp').default %>" type="image/webp">
@@ -196,7 +210,7 @@
     <div class="section5"> <!-- section 5 subscribe -->
         <div class="container">
             <div class="row">
-                <div class="col-8  d-flex align-items-center">
+                <div class="col-lg-8 col-md-8 col-sm-8 d-flex align-items-center">
                     <div class="wrapper--subs">
                         <div class="title--subs">
                             Subscribe To Us
@@ -212,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center">
                     <picture>
                         <source srcset="<%= require('./task2/img/backberry.avif').default %>" type="image/avif">
                         <source srcset="<%= require('./task2/img/backberry.webp').default %>" type="image/webp">
@@ -234,7 +248,7 @@
                         Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
                     </p>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                                 <div class="post -one">
                                     <a href="#" class="post--link">
                                         <picture>
@@ -253,7 +267,7 @@
                                     </a>
                                 </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                                 <div class="post -two">
                                     <a href="#" class="post--link">
                                         <picture>
@@ -270,7 +284,7 @@
                                     </a>
                             </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                                 <div class="post -three">
                                     <a href="#" class="post--link">
                                         <picture>
@@ -313,7 +327,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div>
                         <form class="contact--form">      
                             <input name="name" type="text" class="feedback-input" placeholder="Auskteez Tran" />  
@@ -323,7 +337,7 @@
                           </form> 
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="adres">
                         <div class="street">
                             <div class="bolder">ADDRESS</div>
