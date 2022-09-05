@@ -39,3 +39,12 @@
         font-size: 14px;
     }
 }
+@media (max-width: 575.98px) {
+    .footer .container .col-12 .foot--container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .container .col-12 .foot--container .mini--logo {
+        margin: 5px 0px;
+    }
+}

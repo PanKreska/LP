@@ -75,26 +75,41 @@
         margin-top: 50px;
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     .section1 {
         min-height: 54vh;
     }
     .section1 .main--background {
-        width: 152%;
+        width: 275%;
         left: -65px;
     }
     .slogan { 
         margin-top: 50px;
     }
+    .section1 .container .row .col-lg-12 .sec1--text {
+        display: block;
+        margin: auto;
+    }
     .section1 .container .row .col-lg-12 .sec1--text .slogan .title {
-        font-size: 50px;
-        margin-left: -2px;
+        font-size: 40px;
+        margin-left: 0px;
+        text-align: center;
     }
     .section1 .container .row .col-lg-12 .sec1--text .slogan .motto {
-        font-size: 14px;
+        font-size: 13px;
+        text-align: center;
+        width: 60%;
+        margin: auto;
     }
     .section1 .container .row .col-lg-12 .sec1--text .slogan .btn--header {
         font-size: 14px;
         padding: 8px 15px;
+        display: block;
+        margin: auto;
+    }
+    .section1 .container .row .col-lg-12 .scroll {
+        position: absolute;
+        bottom: 7%;
+        left: 50%;
     }
 }

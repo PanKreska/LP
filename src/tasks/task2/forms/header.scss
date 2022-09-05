@@ -64,7 +64,7 @@
         transition: 0.5s;
         border-radius: 50px;
         overflow: hidden;
-        box-shadow: 0 8px 15px rgba(0,0,0,.2);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     }
 
     .mobile--menu--list {
@@ -134,11 +134,42 @@
         transform: translateY(0) rotate(45deg);
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
+    .header .header--menu .logo {
+        padding-top: 33px;
+        margin: auto;
+        width: 20%;
+    }
+    .mobile--menu {
+        border-radius: 50px;
+        left: 11px;
+        top: 34px;
+        padding: 3px 10px 5px;
+    }
+    .mobile--menu span:nth-child(2) {
+        transform: translateY(-5px);
+    }
+    .mobile--menu span:nth-child(3) {
+        transform: translateY(5px);
+    }
+    .mobile--menu input {
+        width: 15px;
+        height: 10px;
+        margin: 2px;
+    }
+    .mobile--menu span {
+        left: 11px;
+        width: 17px;
+        height: 4px;
+        border-radius: 50px;
+    }
     .mobile--menu input:checked ~ .mobile--menu--list {
-        width: 450px;
+        width: 260px;
+    }
+    .mobile--menu--list li {
+        margin: 0 2px;
     }
     .mobile--menu--list li a {
-        font-size: 14px;
+        font-size: 10px;
     }
 }

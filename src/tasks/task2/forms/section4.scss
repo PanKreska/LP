@@ -97,8 +97,16 @@
         width: 25%;
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     .section4 .container .row .col-12 .row .col-12 .gallery--text--container .title--gallery {
-        font-size: 50px;
+        font-size: 40px;
+    }
+    .section4 .container .row .col-12 .row .col-12 .gallery--text--container .text--gallery {
+        font-size: 12px;
+    }
+    .section4 .container .row .col-12 .gallery--btn--div .btn--gallery {
+        font-size: 14px;
+        width: 100%;
+        margin-top: 0px;
     }
  }
