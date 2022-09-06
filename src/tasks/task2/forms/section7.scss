@@ -5,6 +5,9 @@
     background-size: cover;
     padding: 68px 0 120px;
 
+    @media (max-width: 767.98px) {
+        padding: 40px 0 75px;
+    }
     .container {
         .row {
             .col-12 {
@@ -16,13 +19,22 @@
                         font-family: var(--fontTask2);
                         font-weight: var(--font-weight-bold);
                         font-size: 90px;
+
+                        @media (max-width: 767.98px) {
+                            font-size: 50px;
+                        }
                     }
                     .contact--text {
                         font-size: 17px;
                         position: relative;
                         width: 30%;
                         margin: 6px auto 42px;
-                    
+                        
+                        @media (max-width: 767.98px) {
+                            width: 80%;
+                            margin: 6px auto 30px;
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -36,6 +48,12 @@
                         -ms-flex-direction: column;
                             flex-direction: column;
 
+                    @media (max-width: 767.98px) {
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                    }
+
                     .feedback-input {
                         padding: 14px 17px 12px 20px;
                         margin-bottom: 16px;
@@ -43,6 +61,16 @@
                         color: var(--white);
                         background-color: var(--contactFormTask2);
                         border: none;
+
+                        @media (max-width: 1499.98px) {
+                            width: 100%;
+                        }   
+                        @media (max-width: 767.98px) {
+                             width: 352px;
+                        }
+                        @media (max-width: 575.98px) {
+                            width: 250px;
+                        }
 
                         &:last-child {
                             margin-bottom: 0px;
@@ -74,6 +102,12 @@
                     line-height: 1;
                     padding-left: 70px;
 
+                    @media (max-width: 767.98px) {
+                        font-size: 16px;
+                        margin-top: 20px;
+                        text-align: center;
+                        padding: 0;
+                    }
                     .street, .mail{
                         padding-bottom: 19px;
                     }
@@ -85,47 +119,13 @@
                     .font {
                         font-weight: var(--font-weight-light);
                         font-size: 20px;
+
+                        @media (max-width: 767.98px) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
         }
-    }
-}
-
-@media (max-width: 767.98px) {
-   .section7 {
-        padding: 40px 0 75px;
-   } 
-   .section7 .container .row .col-12 .contact--text--container .contact--title {
-        font-size: 50px;
-   }
-   .section7 .container .row .col-12 .contact--text--container .contact--text {
-        width: 80%;
-        margin: 6px auto 30px;
-        font-size: 14px;
-   }
-   .section7 .container .row .col-lg-6 .adres .font {
-    font-size: 14px;
-   }
-   .section7 .container .row .col-lg-6 .adres {
-    font-size: 16px;
-    margin-top: 20px;
-    text-align: center;
-    padding: 0;
-   }
-   .section7 .container .row .col-lg-6 .contact--form .feedback-input {
-    width: 352px;
-   }
-   .section7 .container .row .col-lg-6 .contact--form {
-    align-items: center;
-}
-}
-
-@media (max-width: 575.98px) {
-    .section7 .container .row .col-lg-6 .contact--form .feedback-input {
-    width: 290px;
-    }
-    .section7 .container .row .col-lg-6 .contact--form {
-        align-items: center;
     }
 }

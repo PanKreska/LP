@@ -2,6 +2,10 @@
     background-color: var(--background-color-sec6);
     padding: 82px 0px 99px 0px;
 
+    @media (max-width: 767.98px) {
+        padding: 40px 0px 50px;
+    }
+
     .container {
         .row {
             .col-12 {
@@ -10,6 +14,16 @@
                     font-size: 90px;
                     font-family: var(--fontTask2);
                     font-weight: var(--font-weight-bold);
+
+                    @media (max-width: 1499.98px) {
+                        font-size: 50px;
+                    }
+                    @media (max-width: 767.98px) {
+                        font-size: 50px;
+                    }
+                    @media (max-width: 575.98px) {
+                        font-size: 40px;
+                    }
                 }
                 .blog--text {
                     color: var(--white);
@@ -18,6 +32,14 @@
                     padding-bottom: 45px;
                     width: 49%;
                     margin: 0 auto;
+
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                        font-size: 14px;
+                    }
+                    @media (max-width: 575.98px) {
+                        font-size: 12px;
+                    }
                 }
                 .btn--blog--div{
                     text-align: center;
@@ -27,13 +49,25 @@
                         font-weight: var(--font-weight-light);
                         background-color: var(--btnBlogTask2);
                         font-size: 20px;
-                        padding-left: 30px;
-                        padding-right: 30px;
-                        padding-top: 12px;
-                        padding-bottom: 12px;
+                        padding: 12px 30px;
                         width: 17%;
                         margin-top: 49px;
                         border: none;
+
+                        @media (max-width: 1499.98px) {
+                            width: 30%;
+                        }
+                        @media (max-width: 767.98px) {
+                            font-size: 14px;
+                            width: 30%;
+                            margin-top: 10px;
+                        }
+                        @media (max-width: 575.98px) {
+                            font-size: 14px;
+                            width: 50%;
+                            display: block;
+                            margin: auto;
+                        }
 
                         &:hover {
                             background-color: rgb(232, 39, 55);
@@ -51,6 +85,17 @@
                     -webkit-box-direction: normal;
                         -ms-flex-direction: column;
                             flex-direction: column;
+
+                    @media (max-width: 1499.98px) {
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        padding-bottom: 15px;
+                    }
+                    @media (max-width: 767.98px) {
+                        padding: 10px;
+                        text-align: center;
+                    }
 
                     .post--link {
                         .post--date {
@@ -74,7 +119,15 @@
                             position: absolute;
                             top: 30px;
                             left: 45px;
-                            
+
+                            @media (max-width: 1499.98px) {
+                                top: 10%;
+                                left: 29%;
+                            }
+                            @media (max-width: 767.98px) {
+                                left: 20%;
+                            }
+
                             >.day {
                                 font-family: var(--fontTask2);
                                 font-weight: var(--font-weight-bold);
@@ -97,6 +150,16 @@
                             left: 35px;
                             width: 88%;
                             padding-right: 10px;
+
+                            @media (max-width: 1499.98px) {
+                                left: 29%;
+                                width: 45%;
+                            }
+                            @media (max-width: 767.98px) {
+                                left: 20%;
+                                width: 60%;
+                                padding-right: 0;
+                            }
                         }
                         .post--autor  {
                             font-family: var(--fontTask2);
@@ -105,68 +168,21 @@
                             position: absolute;
                             bottom: 22px;
                             left: 35px;
+
+                            @media (max-width: 1499.98px) {
+                                bottom: 10%;
+                                left: 29%;
+                            }
+                            @media (max-width: 767.98px) {
+                                left: 20%;
+                            }
+                            @media (max-width: 575.98px) {
+                                left: 25%;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-} 
-
-@media (max-width: 767.98px) {
-    .section6 {
-        padding: 40px 0px 50px;
-    }
-    .section6 .container .row .col-12 .blog--text--title {
-        font-size: 50px;
-    }
-    .section6 .container .row .col-12 .blog--text {
-        width: 100%;
-        font-size: 14px;
-    }
-    .section6 .container .row .col-lg-4 .post {
-        padding: 10px;
-        text-align: center;
-    }
-    .section6 .container .row .col-lg-4 .post .post--link .post--date {
-        left: 20%;
-    }
-    .section6 .container .row .col-lg-4 .post .post--link .post--title {
-        left: 20%;
-        width: 60%;
-        padding-right: 0;
-    }
-    .section6 .container .row .col-lg-4 .post .post--link .post--autor {
-        left: 20%;
-    }
-    .section6 .container .row .col-12 .btn--blog--div .btn--blog {
-        font-size: 14px;
-        width: 30%;
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .section6 .container .row .col-12 .blog--text--title {
-        font-size: 40px;
-    }
-    .section6 .container .row .col-12 .blog--text {
-        font-size: 12px;
-    }
-    .section6 .container .row .col-lg-4 .post .post--link .post--date {
-        left: 125px;
-    }
-    .section6 .container .row .col-lg-4 .post .post--link .post--title {
-        left: 20%;
-        width: 60%;
-    }
-    .section6 .container .row .col-lg-4 .post .post--link .post--autor {
-        left: 25%;
-    }
-    .section6 .container .row .col-12 .btn--blog--div .btn--blog {
-        font-size: 14px;
-        width: 50%;
-        display: block;
-        margin: auto;
     }
 }
