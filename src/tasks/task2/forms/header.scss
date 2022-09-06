@@ -39,7 +39,7 @@
     display: none;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767.98px) { 
 
     .header .header--menu .menu {
         display: none;
@@ -47,6 +47,9 @@
     .header .header--menu .logo {
         padding-top: 30px;
         margin: auto;
+    }
+    .header .header--menu {
+        font-size: 14px;
     }
 
     //  mobile menu   
@@ -76,7 +79,7 @@
     }
 
     .mobile--menu input:checked ~ .mobile--menu--list {
-        width: 550px;
+        width: 450px;
     }
 
     .mobile--menu--list li {

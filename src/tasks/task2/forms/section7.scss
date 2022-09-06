@@ -92,7 +92,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
    .section7 {
         padding: 40px 0 75px;
    } 
@@ -116,6 +116,9 @@
    .section7 .container .row .col-lg-6 .contact--form .feedback-input {
     width: 352px;
    }
+   .section7 .container .row .col-lg-6 .contact--form {
+    align-items: center;
+}
 }
 
 @media (max-width: 575.98px) {

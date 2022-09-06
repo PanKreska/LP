@@ -103,7 +103,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .section3 {
         padding: 50px 0 42px;
       }
@@ -123,8 +123,9 @@
         width: 100%;
       }
       .section3 .container .row .col-lg-6 .wrapper--services .tomato--image {
-        top: 50px;
+        top: 15%;
         width: 95%;
+        left: 5%;
       }
       .section3 .container .row .col-lg-6 .wrapper--services .title--services {
         font-size: 50px;
@@ -132,6 +133,10 @@
         margin-left: 0;
         text-align: center;
         text-shadow: 0px 0px 2px var(--footTask2);
+        margin-right: 0px;
+      }
+      .section3 .container .row .col-lg-6 .wrapper--services {
+        margin-left: 0px;
       }
 }
 
