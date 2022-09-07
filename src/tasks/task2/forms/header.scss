@@ -30,6 +30,7 @@
             }
             margin-left: 166px;
             padding-top: 49px;
+            min-width: 127px;
         }
         .menu {
             @media (max-width: 767.98px) { 
@@ -39,6 +40,9 @@
             padding-right: 165px;
 
             .menu--item, .tasks {
+                @media (max-width: 859.98px) { 
+                    padding-left: 25px;
+                }
                 padding-left: 38px;
                 margin-top: 49px;
             }

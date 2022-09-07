@@ -37,13 +37,18 @@
             margin: auto;
         }
     }
-    .gal1, .gal2, .gal3, .gal4, .gal5 {
+    .gal1, .gal2, .gal3, .gal4, .gal5, .gal3--extra--row, .gal4--extra--row {
         @media (max-width: 767.98px) {
             margin-bottom: 25px;
             width: 100%;
         }
         margin-bottom: 30px;
         box-shadow: 0px 5px 15px -7px rgba(66, 68, 90, 1);
+    }
+    .gal3, .gal4 {
+        @media (max-width: 991.98px) {
+            display: none;
+        }
     }
     .gallery--btn--div{
         text-align: center;

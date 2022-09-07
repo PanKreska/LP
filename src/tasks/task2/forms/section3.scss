@@ -14,6 +14,7 @@
         }
         @media (max-width: 575.98px) {
             margin: auto;
+            align-items: center;
         }
         display: flex;
         flex-direction: column;
@@ -95,8 +96,8 @@
             margin-left: 0px;
         }
         @media (max-width: 575.98px) {
-            margin-left: 141px;
-            margin-top: -625px;
+            display: block;
+            margin: -340px auto;
         }
         position: relative;
         display: flex;

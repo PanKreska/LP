@@ -73,18 +73,20 @@
     }
     .main--background {
         @media (max-width: 1499.98px) {
-        width: 200%;
+            width: 200%;
+            left: -200px;
         }
         @media (max-width: 767.98px) {  
             width: 180%;
-            left: -50px;
+            left: -90px;
         }
         @media (max-width: 575.98px) {
             width: 275%;
-            left: -65px;
+            left: -120px;
         }
         position: absolute;
         z-index: -1;
         width: 100%;
+        background-position-x: 79px;
     }     
 }
