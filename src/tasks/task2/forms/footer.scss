@@ -2,58 +2,38 @@
     background-color: var(--footTask2);
     padding: 30px 0px 39px;
 
-    .container {
-        .col-12 {
-            .foot--container {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;
-                color: var(--white);
-                position: relative;
+    .foot--container {
+        @media (max-width: 575.98px) {
+                flex-direction: column;
+                text-align: center;
+        }
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        color: var(--white);
 
-                @media (max-width: 575.98px) {
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
-                    text-align: center;
-                }
-
-                .copyrights{ 
-                    font-size: 16px;
-                    line-height: 25px;
-
-                    @media (max-width: 767.98px) {
-                        font-size: 14px;
-                    }
-                }
-                .mini--logo {
-                    @media (max-width: 575.98px) {
-                         margin: 5px 0px;
-                    }
-                }
-                .creator--sing{
-                    font-size: 15px;
-                    line-height: 25px;
-
-                    @media (max-width: 767.98px) {
-                        font-size: 14px;
-                    }
-
-                    .color--word--in--footer{
-                        color: var(--btnNoHoverColor);
-                    }
-                }
+        .copyrights{ 
+            @media (max-width: 767.98px) {
+                font-size: 14px;
+            }
+            font-size: 16px;
+            line-height: 25px;
+        }
+        .mini--logo {
+            @media (max-width: 575.98px) {
+                margin: 5px 0px;
             }
         }
-    }
-}
+        .creator--sing{
+            @media (max-width: 767.98px) {
+                font-size: 14px;
+            }
+            font-size: 15px;
+            line-height: 25px;
 
-@media (max-width: 575.98px) {
-    .footer .container .col-12 .foot--container .mini--logo {
-        margin: 5px 0px;
+            .color--word--in--footer{
+                color: var(--btnNoHoverColor);
+            }
+        }
     }
 }

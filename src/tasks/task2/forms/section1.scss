@@ -1,115 +1,90 @@
-.section1 {
-    min-height: 92.5vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
+.section--one {
     @media (max-width: 767.98px) {  
         min-height: 64vh;
     }
     @media (max-width: 575.98px) {
         min-height: 54vh;
     }
-    
-    .container {
-        .row {
-            .col-lg-12 {
-                .sec1--text {
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
-                    margin-bottom: 62px;
-                    z-index: 1;
-
-                    @media (max-width: 575.98px) {
-                        display: block;
-                        margin: auto;
-                    }
-
-                    .slogan {
-                        @media (max-width: 767.98px) {   
-                            margin-top: 50px;
-                        }
-                        .title {
-                            font-family: var(--fontTask2Title);
-                            font-size: 60px;
-                            margin-left: -4px;
-
-                            @media (max-width: 575.98px) {
-                                font-size: 40px;
-                                margin-left: 0px;
-                                text-align: center;
-                            }
-                        }
-                        .motto {
-                            font-size: 17px;
-                            padding-top: 3px;
-                            padding-bottom: 10px;
-                            line-height: 27px;
-
-                            @media (max-width: 575.98px) {
-                                font-size: 13px;
-                                text-align: center;
-                                width: 60%;
-                                margin: auto;
-                            }
-                        }
-                        .btn--header {
-                            font: var(--font-weight-light);
-                            font-size: 20px;
-                            width: auto;
-                            padding: 14px 25px;
-                            background-color: var(--btnHeader);
-                            color: var(--white);
-
-                            @media (max-width: 575.98px) {
-                                font-size: 14px;
-                                padding: 8px 15px;
-                                display: block;
-                                margin: auto;
-                            }
-
-                            &:hover {
-                                background-color: rgb(255, 115, 0);
-                            }
-                        }
-                    }
+    min-height: 92.5vh;
+    display: flex;
+    .sec--one--text {
+        @media (max-width: 575.98px) {
+                display: block;
+                margin: auto;
+        }
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 62px;
+        z-index: 1;
+        .sec--one--slogan {
+            @media (max-width: 767.98px) {   
+                margin-top: 50px;
+            }
+            .sec--one--title {
+                @media (max-width: 575.98px) {
+                    font-size: 40px;
+                    margin-left: 0px;
+                    text-align: center;
                 }
-                .scroll {
-                    position: absolute;
-                    bottom: 69px;
-                    left: 50%;
-                    -webkit-transform:translateX(-50%);
-                        -ms-transform:translateX(-50%);
-                            transform:translateX(-50%);
-                    z-index: 1;
-
-                    @media (max-width: 575.98px) {
-                        bottom: 7%;
-                    }
+                font-family: var(--fontTask2Title);
+                font-size: 60px;
+                margin-left: -4px;
+            }
+            .sec--one--motto {
+                @media (max-width: 575.98px) {
+                    font-size: 13px;
+                    text-align: center;
+                    width: 60%;
+                    margin: auto;
+                }
+                font-size: 17px;
+                padding-top: 3px;
+                padding-bottom: 10px;
+                line-height: 27px;
+            }
+            .sec--one--btn {
+                @media (max-width: 575.98px) {
+                    font-size: 14px;
+                    padding: 8px 15px;
+                    display: block;
+                    margin: auto;
+                }
+                font: var(--font-weight-light);
+                font-size: 20px;
+                width: auto;
+                padding: 14px 25px;
+                background-color: var(--btnHeader);
+                color: var(--white);
+                &:hover {
+                    background-color: rgb(255, 115, 0);
                 }
             }
         }
     }
-        .main--background {
-            position: absolute;
-            z-index: -1;
-            width: 100%;
-
-            @media (max-width: 1499.98px) {
-                width: 200%;
-            }
-            @media (max-width: 767.98px) {  
-                width: 180%;
-                left: -50px;
-            }
-            @media (max-width: 575.98px) {
-                width: 275%;
-                left: -65px;
-            }
+    .sec--one--scroll {
+        @media (max-width: 575.98px) {
+            bottom: 7%;
+        }
+        position: absolute;
+        bottom: 69px;
+        left: 50%;
+        transform:translateX(-50%);
+        z-index: 1;
     }
+    .main--background {
+        @media (max-width: 1499.98px) {
+        width: 200%;
+        }
+        @media (max-width: 767.98px) {  
+            width: 180%;
+            left: -50px;
+        }
+        @media (max-width: 575.98px) {
+            width: 275%;
+            left: -65px;
+        }
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }     
 }

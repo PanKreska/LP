@@ -1,23 +1,9 @@
 @import  './tasks/task1/forms/tooltip.scss';
 @import  './tasks/task1/forms/buttons.scss';
+
 @import './tasks/task1/forms/defaultForm.scss';
+
 @import './tasks/task2/defaultStyles.scss';
-
-@import './tasks/task2/forms/header.scss';
-@import './tasks/task2/forms/section1.scss';
-@import './tasks/task2/forms/section2.scss';
-@import './tasks/task2/forms/section3.scss';
-@import './tasks/task2/forms/section4.scss';
-@import './tasks/task2/forms/section5.scss';
-@import './tasks/task2/forms/section6.scss';
-@import './tasks/task2/forms/section7.scss';
-@import './tasks/task2/forms/footer.scss';
-
-
-@font-face {
-    font-family:"Raleway Heavy";
-    src: url("/fonts/Raleway-Heavy.ttf");
-}
 
 :root {
     // colors
@@ -32,21 +18,9 @@
     --btnNoColor: rgb(245, 94, 112);
     --btnNoHoverColor: rgb(223, 84, 100);
     --btnHeader: rgb(255, 95, 51);
-    --btnBlogTask2: rgb(247, 42, 59);
-    --btnGalleryTask2: rgb(85, 133, 162);
     --white :rgb(255, 255, 255);
-    --background-color-sec1: rgb(0, 195, 195);
-    --background-color-sec2: rgb(112, 190, 255);
-    --background-color-sec3: rgb(255, 233, 47);
-    --background-color-sec6: rgb(176, 123, 247);
-    --inputTask2Subs : rgb(38, 38, 38);
-    --footTask2 : rgb(38, 38, 38);
-    --contactFormTask2: rgb(0, 196, 196);
-    --contactFormActive: rgb(53, 91, 129);
     // font
     --font: 'Titillium Web', sans-serif;
-    --fontTask2: 'Raleway', sans-serif;
-    --fontTask2Title : "Raleway Heavy", sans-serif;
     --font-weight-light: 300;
     --font-weight-medium: 600;
     --font-weight-bold: 700;
@@ -59,10 +33,7 @@
     --location: url("./tasks/task1/img/glyphicons_242_google_maps.png");
     --phone: url("./tasks/task1/img/glyphicons_139_phone.png");
     --background: url("./tasks/task1/img/background.png");
-    --cart: url("./tasks/task2/img/cart.png");
-    --plant: url("./tasks/task2/img/plant.png");
-    --planet: url("./tasks/task2/img/planet.png");
-    --carrot: url("./tasks/task2/img/carrot.png");
+    
 }
 
 html { 

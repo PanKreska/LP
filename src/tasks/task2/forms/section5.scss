@@ -1,152 +1,96 @@
-.section5 {
-    padding: 48px 0px 78px;
-
+.section--five {
     @media (max-width: 767.98px) {
         padding: 10px 0px 20px;
     }
-
-    .container {
-        .row {
-            .col-lg-8 {
-                .wrapper--subs {
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                        -ms-flex-direction: column;
-                            flex-direction: column;
-                    position: relative;
-                    z-index: 1;
-
-                    @media (max-width: 575.98px) {
-                        width: 100%;
-                    }
-
-                    .title--subs{
-                        font-family: var(--fontTask2);
-                        font-weight: var(--font-weight-bold);
-                        font-size: 40px;
-
-                        @media (max-width: 1499.98px) {
-                            font-size: 50px;
-                        }
-                        @media (max-width: 575.98px) {
-                            font-size: 35px;
-                            text-align: center;
-                        }
-                    }
-                    .text--subs {
-                        font-size: 17px;
-                        margin-top: 12px;
-                        padding-bottom: 10px;
-                        width: 72%;
-
-                        @media (max-width: 767.98px) {
-                            font-size: 14px;
-                        }
-                        @media (max-width: 575.98px) {
-                            font-size: 12px;
-                            text-align: center;
-                            width: 100%;
-                        }
-                    }
-                    .subs--form {
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-align: baseline;
-                            -ms-flex-align: baseline;
-                                align-items: baseline;
-
-                        @media (max-width: 1499.98px) {
-                            width: 130%;
-                        }
-                        @media (max-width: 767.98px) {
-                            width: 135%;
-                        }
-                        @media (max-width: 575.98px) {
-                            width: 100%;
-                            -webkit-box-orient: vertical;
-                            -webkit-box-direction: normal;
-                                -ms-flex-direction: column;
-                                    flex-direction: column;
-                            -webkit-box-align: center;
-                                -ms-flex-align: center;
-                                    align-items: center;
-                        }
-
-                        .subs--input {
-                            margin-top: 19px;
-                            margin-right: 30px;
-                            padding: 13px;
-                            -webkit-box-flex: 1;
-                                -ms-flex: 1 1 auto;
-                                    flex: 1 1 auto;
-
-                            @media (max-width: 575.98px) {
-                                padding: 5px;
-                                width: 75%;
-                                margin: 5px 0 10px;
-                            }
-
-                            &::-webkit-input-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-
-                            &::-moz-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-
-                            &:-ms-input-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-
-                            &::-ms-input-placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-
-                            &::placeholder {
-                                font-size: 15px;
-                                color:var(--inputTask2Subs);
-                            }
-                        }
-                        .btn--subs{
-                            width: 170px;
-                            font-family: var(--fontTask2);
-                            font-weight: var(--font-weight-light);
-                            font-size: 20px;
-                            padding: 10px 10px 13px 10px; 
-                            
-                            @media (max-width: 767.98px) {
-                                font-size: 16px;
-                                width: 134px;
-                                padding: 16px 10px;
-                            }
-                            @media (max-width: 575.98px) {
-                                padding: 7px 10px;
-                                width: 218px;
-                            }
-                        }
-                    }
+    padding: 48px 0px 78px;
+    .wrapper--subs {
+        @media (max-width: 575.98px) {
+            width: 100%;
+        }
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        .title--subs{
+            @media (max-width: 1499.98px) {
+                font-size: 50px;
+            }
+            @media (max-width: 575.98px) {
+                font-size: 35px;
+                text-align: center;
+            }
+            font-family: var(--fontTask2);
+            font-weight: var(--font-weight-bold);
+            font-size: 40px;
+        }
+        .text--subs {
+            @media (max-width: 767.98px) {
+                font-size: 14px;
+            }
+            @media (max-width: 575.98px) {
+                font-size: 12px;
+                text-align: center;
+                width: 100%;
+            }
+            font-size: 17px;
+            margin-top: 12px;
+            padding-bottom: 10px;
+            width: 72%;   
+        }
+        .subs--form {
+            @media (max-width: 1499.98px) {
+                width: 130%;
+            }
+            @media (max-width: 767.98px) {
+                width: 135%;
+            }
+            @media (max-width: 575.98px) {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            display: flex;
+            align-items: baseline;
+            .subs--input {
+                @media (max-width: 575.98px) {
+                    padding: 5px;
+                    width: 75%;
+                    margin: 5px 0 10px;
+                }
+                margin-top: 19px;
+                margin-right: 30px;
+                padding: 13px;
+                flex: 1 1 auto;
+                &::placeholder {
+                    font-size: 15px;
+                    color:var(--inputTask2Subs);
                 }
             }
-            .col-lg-4 {
-                .background--subs {
-                    width: 555px;
-                    max-width: initial;
-                    margin-top: 30px;
-                    margin-left: -54px;
-
-                    @media (max-width: 575.98px) {
-                        display: none;
-                    }
+            .btn--subs{
+                @media (max-width: 767.98px) {
+                    font-size: 16px;
+                    width: 134px;
+                    padding: 16px 10px;
                 }
+                @media (max-width: 575.98px) {
+                    padding: 7px 10px;
+                    width: 218px;
+                }
+                width: 170px;
+                font-family: var(--fontTask2);
+                font-weight: var(--font-weight-light);
+                font-size: 20px;
+                padding: 10px 10px 13px 10px; 
             }
         }
+    }
+    .background--subs {
+        @media (max-width: 575.98px) {
+            display: none;
+        }
+        width: 555px;
+        max-width: initial;
+        margin-top: 30px;
+        margin-left: -54px;    
     }
 }
