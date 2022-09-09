@@ -20,7 +20,7 @@
             <picture>
                 <source srcset="<%= require('./task2/img/logo.avif').default %>" type="image/avif">
                 <source srcset="<%= require('./task2/img/logo.webp').default %>" type="image/webp">
-                <img src="<%= require('./task2/img/logo.png').default %>" alt="logo">
+                <img src="<%= require('./task2/img/logo.png').default %>" alt="logo" />
             </picture>
         </div>
         <div class="menu">
@@ -56,13 +56,13 @@
             <div class="row h-100">
                 <div class="col-lg-12 d-flex align-items-center">
                     <div class="sec--one--text">
-                        <div class="sec--one--slogan">
-                            <div class="sec--one--title">Fresh Life</div>
-                            <p class="sec--one--motto">Sed do eiusmod tempor incididunt ut labore et</br> dolore magna aliqua. Ut enim ad minim veniam,</br> quis nostrud exercitation ullamco.</p>
-                            <button class="sec--one--btn" type="submit">GET FREE NOW</button>
+                        <div class="sec-one-slogan">
+                            <div class="sec-one-title">Fresh Life</div>
+                            <p class="sec-one-motto">Sed do eiusmod tempor incididunt ut labore et</br> dolore magna aliqua. Ut enim ad minim veniam,</br> quis nostrud exercitation ullamco.</p>
+                            <button class="sec-one-btn" type="submit">GET FREE NOW</button>
                         </div>
                     </div>
-                    <div class="sec--one--scroll">
+                    <div class="sec-one-scroll">
                         <picture>
                             <source srcset="<%= require('./task2/img/scrol.avif').default %>" type="image/avif">
                             <source srcset="<%= require('./task2/img/scrol.webp').default %>" type="image/webp">
@@ -72,32 +72,31 @@
                 </div>
             </div>
         </div>
-        <picture class="main--background">
+        <picture class="sec-one-background">
             <source srcset="<%= require('./task2/img/sec1.avif').default %>" type="image/avif">
             <source srcset="<%= require('./task2/img/sec1.webp').default %>" type="image/webp">
-            <img src="<%= require('./task2/img/sec1.jpg').default %>" alt="main background"
-            class="main--background" />
+            <img src="<%= require('./task2/img/sec1.jpg').default %>" alt="main background" class="main-background-image"/>
         </picture>
     </div>
     <div class="section--two"> <!-- section 2 about us -->
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="cup--image">
+                <div class="col-sm-6 col-12">
+                    <div class="section--image">
                         <picture>
                             <source srcset="<%= require('./task2/img/cup.avif').default %>" type="image/avif">
                             <source srcset="<%= require('./task2/img/cup.webp').default %>" type="image/webp">
-                            <img src="<%= require('./task2/img/cup.png').default %>" alt="cup of rasberry">
+                            <img src="<%= require('./task2/img/cup.png').default %>" alt="cup of rasberry" />
                         </picture>
                         </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="col-sm-6 col-12">
                     <div class="about--text-area">
-                        <div class="about--title"> About Us</div>
-                        <div class="about--text">
-                            <p class="about--text--paragraf">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                        <div class="about-title"> About Us</div>
+                        <div class="about-text">
+                            <p class="about-text-paragraf">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
                             </p>
-                            <p class="about--paragraf--two">
+                            <p class="about-text-paragraf-two">
                             Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
                             </p>
                         </div>
@@ -109,36 +108,36 @@
     <div class="section--three"> <!-- section 3 our services -->
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-end">
+                <div class="col-sm-6 col-12 d-flex justify-content-end">
                     <div class="icons--list">
                         <div class="icon--holder">
-                            <div class="title--icon">
+                            <div class="title-icon">
                                     Online Shopping
                             </div>
-                            <div class="icon--general -cart"></div>
+                            <div class="icon-general -cart"></div>
                         </div>
                         <div class="icon--holder">
-                            <div class="title--icon">Quality Product</div>
-                            <div class="icon--general -plant"></div>
+                            <div class="title-icon">Quality Product</div>
+                            <div class="icon-general -plant"></div>
                         </div>
                         <div class="icon--holder">
-                            <div class="title--icon">Domestic & International Delivery</div>
-                            <div class="icon--general -planet"></div>
+                            <div class="title-icon">Domestic & International Delivery</div>
+                            <div class="icon-general -planet"></div>
                             </div>
                         <div class="icon--holder">
-                            <div class="title--icon">Well Organized</div>
-                            <div class="icon--general -carrot"></div>
+                            <div class="title-icon">Well Organized</div>
+                            <div class="icon-general -carrot"></div>
                         </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 d-flex">
+                    <div class="col-sm-6 col-12 d-flex">
                         <div class="wrapper--services">
                             <picture>
                                 <source srcset="<%= require('./task2/img/tomato.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/tomato.webp').default %>" type="image/webp">
-                                <img src="<%= require('./task2/img/tomato.png').default %>" alt="cup of rasberry" class="tomato--image">
+                                <img src="<%= require('./task2/img/tomato.png').default %>" alt="tomato" class="section-image" />
                             </picture>
-                            <div class="title--services">Our Services</div>
+                            <div class="title-services">Our Services</div>
                         </div>
                     </div>
             </div>
@@ -148,27 +147,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="gallery--text--container">
-                                <div class="title--gallery">
-                                    Gallery
-                                </div>
-                                <p class="text--gallery">
-                                    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                            </div>
+                    <div class="gallery--text--container">
+                        <div class="title-gallery">
+                            Gallery
                         </div>
+                        <p class="text-gallery">
+                            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-8 col-md-6 col-sm-12 col-12">
+                        <div class="col-lg-8 col-md-6 col-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal1.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal1.webp').default %>" type="image/webp">
                                 <img class="gal1" alt="friut on plate" src="<%= require('./task2/img/gal1.jpg').default %>" />
                             </picture> 
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal2.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal2.webp').default %>" type="image/webp">
@@ -180,30 +175,28 @@
                                 <img class="gal3" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
                             </picture>
                         </div>
-                    </div>
-                    <div class="row d-none d-md-flex d-lg-none">
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-none d-md-flex d-lg-none">
                             <picture>
-                            <source srcset="<%= require('./task2/img/gal3.avif').default %>" type="image/avif">
-                            <source srcset="<%= require('./task2/img/gal3.webp').default %>" type="image/webp">
-                            <img class="gal3--extra--row" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
-                        </picture></div>
-                        <div class="col-md-6">
+                                <source srcset="<%= require('./task2/img/gal3.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/gal3.webp').default %>" type="image/webp">
+                                <img class="gal3--extra--row" alt="blackberries" src="<%= require('./task2/img/gal3.jpg').default %>" />
+                            </picture>
+                        </div>
+                        <div class="col-md-6 d-none d-md-flex d-lg-none">
                             <picture>
-                            <source srcset="<%= require('./task2/img/gal4.avif').default %>" type="image/avif">
-                            <source srcset="<%= require('./task2/img/gal4.webp').default %>" type="image/webp">
-                            <img class="gal4--extra--row" alt="blueberries and a glass" src="<%= require('./task2/img/gal4.jpg').default %>" />
-                        </picture></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-0 col-sm-12 col-12">
+                                <source srcset="<%= require('./task2/img/gal4.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/gal4.webp').default %>" type="image/webp">
+                                <img class="gal4--extra--row" alt="blueberries and a glass" src="<%= require('./task2/img/gal4.jpg').default %>" />
+                            </picture>
+                        </div>
+                        <div class="col-lg-6 col-md-0 col-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal4.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal4.webp').default %>" type="image/webp">
                                 <img class="gal4" alt="blueberries and a glass" src="<%= require('./task2/img/gal4.jpg').default %>" />
                             </picture>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-md-6 col-12">
                             <picture>
                                 <source srcset="<%= require('./task2/img/gal5.avif').default %>" type="image/avif">
                                 <source srcset="<%= require('./task2/img/gal5.webp').default %>" type="image/webp">
@@ -211,8 +204,8 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="gallery--btn--div">
-                        <button type="button" class="btn--gallery">
+                    <div class="gallery-btn-div">
+                        <button type="button" class="btn-gallery">
                                 VIEW MORE
                         </button>
                     </div>
@@ -224,27 +217,27 @@
     <div class="section--five"> <!-- section 5 subscribe -->
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-12 d-flex align-items-center">
+                <div class="col-sm-8 col-12 d-flex align-items-center">
                     <div class="wrapper--subs">
-                        <div class="title--subs">
+                        <div class="title-subs">
                             Subscribe To Us
                         </div>
-                        <div class="text--subs">
+                        <div class="text-subs">
                             Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         </div>
-                        <div class="subs--form">
-                            <input class="subs--input" type="text" placeholder="Your email address...">
-                            <button class="btn--subs">
+                        <div class="subs-form">
+                            <input class="subs-input" type="text" placeholder="Your email address...">
+                            <button class="btn-subs">
                             SUBSCRIBE
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex align-items-center">
+                <div class="col-4 d-flex align-items-center">
                     <picture>
                         <source srcset="<%= require('./task2/img/backberry.avif').default %>" type="image/avif">
                         <source srcset="<%= require('./task2/img/backberry.webp').default %>" type="image/webp">
-                        <img src="<%= require('./task2/img/backberry.png').default %>" alt="jagódki" class="background--subs" />
+                        <img src="<%= require('./task2/img/backberry.png').default %>" alt="jagódki" class="background-subs" />
                     </picture>
                  </div>
                 
@@ -255,69 +248,79 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="blog--text--title text-center">
+                    <h3 class="blog-text-title text-center">
                         Blog
                     </h3>
-                    <p class="blog--text text-center">
+                    <p class="blog-text text-center">
                         Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="post -one">
-                                    <a href="#" class="post--link">
-                                        <picture>
-                                            <source srcset="<%= require('./task2/img/kiwi.avif').default %>" type="image/avif">
-                                            <source srcset="<%= require('./task2/img/kiwi.webp').default %>" type="image/webp">
-                                            <img src="<%= require('./task2/img/kiwi.png').default %>" alt="kiwi" class="post--image" />
-                                        </picture>
-                                        <div class="post--date">
-                                            <div class="day">20</div>
-                                            <div class="month">NOV</div>
-                                        </div>
-                                        <div class="post--title">Green Smoothies: Too Much of a Good Thing?
-                                        </div>
-                                        <div class="post--autor">By Auskteez - 2 hours ago
-                                        </div>
-                                    </a>
-                                </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="post -two">
-                                    <a href="#" class="post--link">
-                                        <picture>
-                                            <source srcset="<%= require('./task2/img/bean.avif').default %>" type="image/avif">
-                                            <source srcset="<%= require('./task2/img/bean.webp').default %>" type="image/webp">
-                                            <img src="<%= require('./task2/img/bean.png').default %>" alt="bean" class="post--image" />
-                                        </picture>
-                                        <div class="post--date">
-                                            <div class="day">14</div>
-                                            <div class="month">NOV</div>
-                                        </div>
-                                        <div class="post--title">Growing Food and a “Thirst” for Innovation</div>
-                                        <div class="post--autor">By Auskteez - 3 hours ago</div>
-                                    </a>
+                <div class="col-lg-4 col-12">
+                    <div class="post -one">
+                        <a href="#" class="post-link">
+                            <picture>
+                                <source srcset="<%= require('./task2/img/kiwi.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/kiwi.webp').default %>" type="image/webp">
+                                <img src="<%= require('./task2/img/kiwi.png').default %>" alt="kiwi" class="post-image" />
+                            </picture>
+                            <div class="post-date">
+                                <div class="day">20</div>
+                                <div class="month">NOV</div>
                             </div>
+                            <div class="post-title">
+                                Green Smoothies: Too Much of a Good Thing?
+                            </div>
+                            <div class="post-autor">
+                                By Auskteez - 2 hours ago
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="post -three">
-                                    <a href="#" class="post--link">
-                                        <picture>
-                                            <source srcset="<%= require('./task2/img/rasp.avif').default %>" type="image/avif">
-                                            <source srcset="<%= require('./task2/img/rasp.webp').default %>" type="image/webp">
-                                            <img src="<%= require('./task2/img/rasp.png').default %>" alt="raspberry" class="post--image" />
-                                        </picture>
-                                        <div class="post--date">
-                                            <div class="day">10</div>
-                                            <div class="month">NOV</div>
-                                        </div>
-                                        <div class="post--title">Pesticides & Food: What You Need to Know</div>
-                                        <div class="post--autor">By Auskteez - 6 hours ago</div>
-                                    </a>
-                                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="post -two">
+                        <a href="#" class="post-link">
+                            <picture>
+                                <source srcset="<%= require('./task2/img/bean.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/bean.webp').default %>" type="image/webp">
+                                <img src="<%= require('./task2/img/bean.png').default %>" alt="bean" class="post-image" />
+                            </picture>
+                            <div class="post-date">
+                                <div class="day">14</div>
+                                <div class="month">NOV</div>
+                            </div>
+                            <div class="post-title">
+                                Growing Food and a “Thirst” for Innovation
+                            </div>
+                            <div class="post-autor">
+                                By Auskteez - 3 hours ago
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="post -three">
+                        <a href="#" class="post-link">
+                            <picture>
+                                <source srcset="<%= require('./task2/img/rasp.avif').default %>" type="image/avif">
+                                <source srcset="<%= require('./task2/img/rasp.webp').default %>" type="image/webp">
+                                <img src="<%= require('./task2/img/rasp.png').default %>" alt="raspberry" class="post-image" />
+                            </picture>
+                            <div class="post-date">
+                                <div class="day">10</div>
+                                <div class="month">NOV</div>
+                            </div>
+                            <div class="post-title">
+                                Pesticides & Food: What You Need to Know
+                            </div>
+                            <div class="post-autor">
+                                By Auskteez - 6 hours ago
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-12">
-                    <div class="btn--blog--div">
-                        <button type="button" class="btn--blog">
+                    <div class="btn-blog-div">
+                        <button type="button" class="btn-blog">
                             VIEW MORE
                         </button>
                     </div>
@@ -330,10 +333,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact--text--container">
-                        <div class="contact--title">
+                        <div class="contact-title">
                             Contact
                         </div>
-                        <div class="contact--text">
+                        <div class="contact-text">
                             For new projects, ideas, business or anything
                             you'd like to discuss, contact with me!
                         </div>
@@ -341,7 +344,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-md-6 col-12">
                     <div>
                         <form class="contact--form">      
                             <input name="name" type="text" class="feedback-input" placeholder="Auskteez Tran" />  
@@ -351,7 +354,7 @@
                           </form> 
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-md-6 col-12">
                     <div class="adres">
                         <div class="street">
                             <div class="bolder">ADDRESS</div>
@@ -377,13 +380,20 @@
             <div class="col-12">
                 <div class="foot--container">
                     <div class="copyrights">&copy 2015 Company. All right reserved</div>
-                    <div class="mini--logo">
+                    <div class="mini-logo">
                         <picture>
                             <source srcset="<%= require('./task2/img/miniLogo.avif').default %>" type="image/avif">
                             <source srcset="<%= require('./task2/img/miniLogo.webp').default %>" type="image/webp">
-                            <img src="<%= require('./task2/img/miniLogo.png').default %>"" alt="mini logo"></div>
+                            <img src="<%= require('./task2/img/miniLogo.png').default %>"" alt="mini logo" />
                         </picture>
-                    <div class="creator--sing">Made with <span class="color--word--in--footer">love</span> byAuskteez</div>
+                    </div>
+                    <div class="creator-sing">
+                        Made with 
+                        <span class="color-word">
+                            love
+                        </span> 
+                        byAuskteez
+                    </div>
                 </div>
             </div>
         </div>

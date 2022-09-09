@@ -1,7 +1,6 @@
-@import  './tasks/task1/forms/tooltip.scss';
-@import  './tasks/task1/forms/buttons.scss';
-
-@import './tasks/task1/forms/defaultForm.scss';
+// @import  './tasks/task1/forms/tooltip.scss';
+// @import  './tasks/task1/forms/buttons.scss';
+// @import './tasks/task1/forms/defaultForm.scss';
 
 @import './tasks/task2/defaultStyles.scss';
 
@@ -37,8 +36,6 @@
 }
 
 html { 
-    -webkit-box-sizing:border-box; 
-            box-sizing:border-box;
     padding: 0;
     margin: 0;
 }

@@ -1,44 +1,44 @@
-button{
-    width: 100%;
-    background: var(--buttons);
-    text-shadow: 1px 0.7px var(--buttonTextShadow); 
-    border: 0.5px solid var(--buttonBorder);
-    color: var(--white);
-    border-radius: var(--border-radius);
-    font-size: 30px;
-    font-family: var(--font);
-    font-weight: var(--font-weight-medium);
-    padding: 4px;
-}
-button:hover{
-    background:  var(--buttonHover); 
-    cursor: pointer;
-}
-.btn--register, .btn--send--email {
-    margin-top: 5px;
-}  
-.btn--sing--in {
-    width: auto;
-    padding: 10px 30px 11px;
-    font-size: 25px;
-    line-height: 1;
-}
-.btn--send, .btn--done {
-    width: 165px;
-    font-size: 20px;
-}
-.btn--done {
-    margin-left: 40px;
-    background-color: var(--buttonDoneColor);
-}
-.btn--subsribe, .btn--no {
-    width: 165px;
-    font-size: 20px;
-}
-.btn--no{
-    margin-left: 40px;
-    background-color: var(--btnNoColor);
-}
-.btn--no:hover {
-    background-color: var(--btnNoHoverColor);
-}
+// button{
+//     width: 100%;
+//     background: var(--buttons);
+//     text-shadow: 1px 0.7px var(--buttonTextShadow); 
+//     border: 0.5px solid var(--buttonBorder);
+//     color: var(--white);
+//     border-radius: var(--border-radius);
+//     font-size: 30px;
+//     font-family: var(--font);
+//     font-weight: var(--font-weight-medium);
+//     padding: 4px;
+// }
+// button:hover{
+//     background:  var(--buttonHover); 
+//     cursor: pointer;
+// }
+// .btn--register, .btn--send--email {
+//     margin-top: 5px;
+// }  
+// .btn--sing--in {
+//     width: auto;
+//     padding: 10px 30px 11px;
+//     font-size: 25px;
+//     line-height: 1;
+// }
+// .btn--send, .btn--done {
+//     width: 165px;
+//     font-size: 20px;
+// }
+// .btn--done {
+//     margin-left: 40px;
+//     background-color: var(--buttonDoneColor);
+// }
+// .btn--subsribe, .btn--no {
+//     width: 165px;
+//     font-size: 20px;
+// }
+// .btn--no{
+//     margin-left: 40px;
+//     background-color: var(--btnNoColor);
+// }
+// .btn--no:hover {
+//     background-color: var(--btnNoHoverColor);
+// }

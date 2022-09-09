@@ -3,8 +3,8 @@
         padding: 40px 0px 50px;
     }
     background-color: var(--background-color-sec6);
-    padding: 82px 0px 99px 0px;
-    .blog--text--title {
+    padding: 82px 0px 118px 0px;
+    .blog-text-title {
         @media (max-width: 1499.98px) {
             font-size: 50px;
         }
@@ -19,9 +19,9 @@
         font-family: var(--fontTask2);
         font-weight: var(--font-weight-bold);   
     }
-    .blog--text {
+    .blog-text {
         @media (max-width: 767.98px) {
-            width: 100%;
+            width: 70%;
             font-size: 14px;
         }
         @media (max-width: 575.98px) {
@@ -34,120 +34,94 @@
         padding-bottom: 45px;
         margin: 0 auto;   
     }
-    .btn--blog--div{
+    .btn-blog-div{
         text-align: center;
-        .btn--blog {
-            @media (max-width: 1499.98px) {
-                width: 30%;
-            }
+        .btn-blog {
             @media (max-width: 767.98px) {
                 font-size: 14px;
-                width: 30%;
                 margin-top: 10px;
             }
             @media (max-width: 575.98px) {
                 font-size: 14px;
-                width: 50%;
                 display: block;
                 margin: auto;
             }
+            color: var(--white);
             font-family: var(--fontTask2);
             font-weight: var(--font-weight-light);
             background-color: var(--btnBlogTask2);
             font-size: 20px;
-            width: 17%;
             margin-top: 49px;
-            padding: 12px 30px;
+            padding: 12px 43px;
             border: none;
+            box-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.5);
             &:hover {
                 background-color: rgb(232, 39, 55);
             }
         }
+    }  
+}
+.post {
+    @media (max-width: 1499.98px) {
+        align-items: center;
+        padding-bottom: 15px;
     }
-    .post {
-        @media (max-width: 1499.98px) {
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            padding-bottom: 15px;
-        }
-        @media (max-width: 767.98px) {
-            padding: 10px;
-            text-align: center;
-        }
-        color: var(--white);
-        display: flex;
-        flex-direction: column;
-        .post--link {
-            .post--date {
-                @media (max-width: 1499.98px) {
-                    top: 10%;
-                    left: 29%;
-                }
-                @media (max-width: 767.98px) {
-                    left: 20%;
-                }
-                border-radius: 5px;
-                background-color: var(--footTask2);
-                width: 60px;
-                height: 60px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: 30px;
-                left: 45px;
-                >.day {
-                    font-family: var(--fontTask2);
-                    font-weight: var(--font-weight-bold);
-                    font-size: 32px;
-                    margin-top: -11px;
-                }
-                >.month {
-                    font-family: var(--fontTask2Title);
-                    font-size: 21px;
-                    margin-top: -11px;
-                }
+    @media (max-width: 767.98px) {
+        padding: 10px;
+        text-align: center;
+    }
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    .post-link {
+        position: relative;
+        .post-date {
+            @media (max-width: 1499.98px) {
+                top: 10%;
             }
-            .post--title {
-                @media (max-width: 1499.98px) {
-                    left: 29%;
-                    width: 45%;
-                }
-                @media (max-width: 767.98px) {
-                    left: 20%;
-                    width: 60%;
-                    padding-right: 0;
-                }
+            border-radius: 5px;
+            background-color: var(--footerTask2);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            >.day {
                 font-family: var(--fontTask2);
                 font-weight: var(--font-weight-bold);
-                font-size: 20px;
-                line-height: 25px;
-                position: absolute;
-                bottom: 57px;
-                left: 35px;
-                width: 88%;
-                padding-right: 10px;      
+                font-size: 32px;
+                margin-top: -11px;
             }
-            .post--autor  {
-                @media (max-width: 1499.98px) {
-                    bottom: 10%;
-                    left: 29%;
-                }
-                @media (max-width: 767.98px) {
-                    left: 20%;
-                }
-                @media (max-width: 575.98px) {
-                    left: 25%;
-                }
-                font-family: var(--fontTask2);
-                font-weight: var(--font-weight-light);
-                font-size: 13px;
-                position: absolute;
-                bottom: 22px;
-                left: 35px;     
+            >.month {
+                font-family: var(--fontTask2Title);
+                font-size: 21px;
+                margin-top: -11px;
             }
+        }
+        .post-title {
+            font-family: var(--fontTask2);
+            font-weight: var(--font-weight-bold);
+            font-size: 20px;
+            line-height: 25px;
+            position: absolute;
+            bottom: 57px;
+            padding: 10px 19px 0px;     
+            text-align: left; 
+        }
+        .post-autor  {
+            @media (max-width: 1499.98px) {
+                bottom: 10%;
+            }
+            font-family: var(--fontTask2);
+            font-weight: var(--font-weight-light);
+            font-size: 13px;
+            position: absolute;
+            bottom: 22px;  
+            padding: 2px 19px;          
         }
     }
 }

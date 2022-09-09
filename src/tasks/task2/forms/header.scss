@@ -2,59 +2,58 @@
     position: fixed;
     z-index: 1;
     width: 100%;
+}
+.header--menu {
+    @media (max-width: 767.98px) { 
+        font-size: 14px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 16px;
+    font-family: var(--footTask2);
+    font-weight: var(--font-weight-bold);
 
-    .header--menu {
+    .logo {
+        @media (max-width: 1499.98px) {
+            margin-left: 5%;
+            padding-top: 3%;
+        }
         @media (max-width: 767.98px) { 
-            font-size: 14px;
+            padding-top: 30px;
+            margin: auto;
+        }
+        @media (max-width: 575.98px) {
+            padding-top: 33px;
+            margin: auto;
+            width: 20%;
+        }
+        margin-left: 166px;
+        padding-top: 49px;
+        min-width: 127px;
+    }
+    .menu {
+        @media (max-width: 767.98px) { 
+            display: none;
         }
         display: flex;
-        justify-content: space-between;
-        align-items:center;
-        font-size: 16px;
-        font-family: var(--footTask2);
-        font-weight: var(--font-weight-bold);
+        padding-right: 165px;
 
-        .logo {
+        .menu--item, .tasks {
+            @media (max-width: 859.98px) { 
+                padding-left: 25px;
+            }
+            padding-left: 38px;
+            margin-top: 49px;
+        }
+        .tasks  {
             @media (max-width: 1499.98px) {
-                margin-left: 5%;
-                padding-top: 3%;
-            }
-            @media (max-width: 767.98px) { 
-                padding-top: 30px;
-                margin: auto;
-            }
-            @media (max-width: 575.98px) {
-                padding-top: 33px;
-                margin: auto;
-                width: 20%;
-            }
-            margin-left: 166px;
-            padding-top: 49px;
-            min-width: 127px;
-        }
-        .menu {
-            @media (max-width: 767.98px) { 
-                display: none;
-            }
-            display: flex;
-            padding-right: 165px;
-
-            .menu--item, .tasks {
-                @media (max-width: 859.98px) { 
-                    padding-left: 25px;
-                }
-                padding-left: 38px;
-                margin-top: 49px;
-            }
-            .tasks  {
-                @media (max-width: 1499.98px) {
-                    padding-left: 5%;
-                    margin-top: 8%;
-                }
+                padding-left: 5%;
+                margin-top: 8%;
             }
         }
-        
     }
+    
 }
 .mobile--menu{
     display: none;
@@ -77,7 +76,6 @@
         overflow: hidden;
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     }
-
     .mobile--menu--list {
         margin: 0;
         padding: 0;
@@ -85,16 +83,13 @@
         overflow: hidden;
         transition: 0.5s;
     }
-
     .mobile--menu input:checked ~ .mobile--menu--list {
         width: 450px;
     }
-
     .mobile--menu--list li {
         list-style: none;
         margin: 0 10px;
     }
-
     .mobile--menu--list li a {
         text-decoration: none;
         color: #666;
@@ -102,11 +97,9 @@
         font-weight: 600;
         transition: 0.5s;
     }
-
     .mobile--menu--list li a:hover {
         color: #161919;
     }
-
     .mobile--menu input {
         width: 40px;
         height: 40px;
@@ -114,7 +107,6 @@
         opacity: 0;
         margin: 4px;
     }
-
     .mobile--menu span {
         position: absolute;
         left: 30px;
@@ -125,22 +117,18 @@
         pointer-events: none;
         transition: 0.5s;
     }
-
     .mobile--menu input:checked ~ span {
         background-color: #f974a1;
     }
-
     .mobile--menu span:nth-child(2) {
         transform: translateY(-8px);
     }
-
     .mobile--menu input:checked ~ span:nth-child(2) {
         transform: translateY(0) rotate(-45deg);
     }
     .mobile--menu span:nth-child(3) {
         transform: translateY(8px);
     }
-
     .mobile--menu input:checked ~ span:nth-child(3) {
         transform: translateY(0) rotate(45deg);
     }
