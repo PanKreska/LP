@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const tasksNames = ['1','2']
+const tasksNames = ['1','2','3']
 
 module.exports = {
     mode: 'development',

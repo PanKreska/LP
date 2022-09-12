@@ -2,7 +2,9 @@
 // @import  './tasks/task1/forms/buttons.scss';
 // @import './tasks/task1/forms/defaultForm.scss';
 
-@import './tasks/task2/defaultStyles.scss';
+// @import './tasks/task2/defaultStyles.scss';
+
+@import './tasks/task3/defaultStyle.scss';
 
 :root {
     // colors
@@ -18,6 +20,7 @@
     --btnNoHoverColor: rgb(223, 84, 100);
     --btnHeader: rgb(255, 95, 51);
     --white :rgb(255, 255, 255);
+    --black : rgb(0, 0, 0);
     // font
     --font: 'Titillium Web', sans-serif;
     --font-weight-light: 300;
@@ -88,7 +91,7 @@ a {
 // }
 
 // task 2
-body {
-    font-family: var(--fontTask2);
-    font-weight: var(--font-weight-light);
-}
+// body {
+//     font-family: var(--fontTask2);
+//     font-weight: var(--font-weight-light);
+// }

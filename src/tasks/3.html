@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <base href="/" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <base href="/" />
+        <title>Task 3</title>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="header-wrapper">
+                    <div class="mobile-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="logo">MAISON</div>
+                    <div class="cart">
+                        <picture class="cart-image">
+                            <img
+                                src="<%= require('./task3/img/cartNb.png').default %>"
+                                alt="slide"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="section--one">
+            <div class="container-fluid h-100">
+                <div class="slider--container">
+                    <div class="arrow right"></div>
+                    <div class="arrow left"></div>
+                    <div class="dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot2"></div>
+                    </div>
+                    <div class="slides">
+                        <div class="slide">
+                            <picture class="image">
+                                <source
+                                    srcset="<%= require('./task3/img/slide-image.avif').default %>"
+                                    type="image/avif"
+                                />
+                                <source
+                                    srcset="<%= require('./task3/img/slide-image.webp').default %>"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="<%= require('./task3/img/slide-image.png').default %>"
+                                    alt="slide"
+                                />
+                            </picture>
+                            <div class="slide-text">
+                                Sky Planet
+                                <p>Shop now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-number">
+                        <img
+                            src="<%= require('./task3/img/number.png').default %>"
+                            alt="slide"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section--two"></div>
+        <div class="section--three"></div>
+        <footer></footer>
+    </body>
+</html>

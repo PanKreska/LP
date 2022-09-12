@@ -1,0 +1,45 @@
+header {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 16px 32px 25px;
+
+
+    .logo {
+        font-size: 32px;
+        font-family: 'Maison Bold';
+        font-size: 32px;
+        letter-spacing: 10px;
+        line-height: 27px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+
+        &:hover .bar {
+            box-shadow: 1px 1px 7px 1px RGBa(0, 0, 0, 0.3);
+        }
+
+        .bar {
+            width: 36px;
+            height: 1px;
+            border: 2px solid var(--black);
+            background: var(--black);
+            box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
+            transition: 0.4s ease;
+
+            &:not(:first-child) {
+                margin-top: 6px;
+            }
+        }
+    }
+}
