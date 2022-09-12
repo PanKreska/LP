@@ -18,6 +18,17 @@ header {
             line-height: 27px;
             margin-top: 5px;
             margin-left: 10px;
+
+            @media (max-width: 639.98px) {
+                font-size: 20px;
+            }
+        }
+
+        .cart {
+            @media (max-width: 639.98px) {
+
+                width: 12%;
+            }
         }
 
         .mobile-menu {
@@ -34,6 +45,11 @@ header {
                 background: var(--black);
                 box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
                 transition: 0.4s ease;
+
+                @media (max-width: 639.98px) {
+
+                    max-width: 70%;
+                }
 
                 &:not(:first-child) {
                     margin-top: 6px;

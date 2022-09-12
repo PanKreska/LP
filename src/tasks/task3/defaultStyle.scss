@@ -1,17 +1,21 @@
 @import './sections/section1.scss';
+@import './sections/section2.scss';
+@import './sections/section3.scss';
 @import './commons/footer.scss';
 @import './commons/header.scss';
 
 @font-face {
-    font-family:"Maison Bold";
+    font-family: "Maison Bold";
     src: url("/fonts/Maison Neue Bold.woff2");
 }
+
 @font-face {
-    font-family:"Maison Medium";
+    font-family: "Maison Medium";
     src: url("/fonts/MaisonNeue-Medium.otf");
 }
+
 @font-face {
-    font-family:"Miller";
+    font-family: "Miller";
     src: url("/fonts/Miller Display Italic.otf");
 }
 
@@ -19,7 +23,7 @@
     //colors
     --backgroundSecOne: rgb(244, 245, 244);
     //fonts
-    --fontTask3: 'Maison Medium', sans-serif; 
+    --fontTask3: 'Maison Medium', sans-serif;
     --fontBold: 'Maison Bold', sans-serif;
     --fontExtra: 'Miller', sans-serif;
     //picture

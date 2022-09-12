@@ -1,0 +1,61 @@
+.section--three {
+    background-color: var(--backgroundSecOne);
+    padding: 50px 0 50px;
+}
+
+.subscribe-title {
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-family: var(--fontExtra);
+    text-align: center;
+    margin-right: 11px;
+    padding-bottom: 25px;
+
+}
+
+.subsribe-wrapper {
+    display: flex;
+    margin: 0 24px;
+
+    .subs {
+        flex: 1 1 100%;
+        background-color: var(--white);
+
+        ::placeholder {
+            font-family: var(--fontTask3);
+            border: 3px solid #eeeeee;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 54px;
+        }
+    }
+
+    .subs-btn {
+        padding: 10px 38px;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: var(--fontTask3);
+        border: 3px solid black;
+    }
+}
+.line {
+    width: 640px;
+    margin: 10px 0;
+    border-top: 3px solid  #eeeeee;
+}
+.links {
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+
+    >p {
+        margin-left: 10px;
+        font-family: var(--fontTask3);
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 32px;
+        font-weight: 500;
+    }
+}
