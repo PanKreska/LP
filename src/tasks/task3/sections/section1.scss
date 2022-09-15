@@ -1,7 +1,5 @@
 .section--one {
     background-color: var(--backgroundSecOne);
-    // padding: 0 0 170px;
-    height: 440px;
 
     @media (max-width: 639.98px) {
         height: 100%;
@@ -42,7 +40,7 @@
         display: flex;
         position: absolute;
         left: 44.7%;
-        top: 385px;
+        top: 87%;
         z-index: 1;
 
         @media (max-width: 639.98px) {
@@ -69,12 +67,12 @@
 
     .slide-number {
         position: absolute;
-        right: 24px;
-        top: 381px;
+        right: 4%;
+        top: 86%;
 
         @media (max-width: 639.98px) {
             right: 2%;
-            top: 87%;
+            top: 86%;
         }
     }
 }
@@ -87,11 +85,14 @@
 
         .image {
             display: block;
-            margin-left: -235px;
-            margin-top: -40px;
+            margin-left: 3.7%;
+            margin-top: -5.5%;
+            width: 46%;
+            padding-bottom: 55px;
 
-            @media (max-width: 639.98px) {
-                margin-left: -40%;
+            @media (min-width: 640.98px) {
+                width: 45%;
+                margin-left: 7%;
             }
         }
     }
@@ -99,11 +100,11 @@
     .slide-text {
         position: absolute;
         left: 53.7%;
-        top: 206px;
+        top: 43.2%;
         font-family: var(--fontTask3);
         font-size: 32px;
-        letter-spacing: 3.3px;
-        line-height: 66px;
+        letter-spacing: 3.2px;
+        line-height: 58px;
 
         @media (max-width: 639.98px) {
             left: 53.7%;
@@ -117,8 +118,8 @@
 
     .slide-text>p {
         font-size: 24px;
-        letter-spacing: 2px;
-        line-height: 27px;
+        letter-spacing: 1.3px;
+        line-height: 30px;
         text-decoration: underline;
 
         @media (max-width: 639.98px) {

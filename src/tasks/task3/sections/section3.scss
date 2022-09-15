@@ -1,6 +1,6 @@
 .section--three {
     background-color: var(--backgroundSecOne);
-    padding: 50px 0 50px;
+    padding: 50px 0 25px;
 }
 
 .subscribe-title {
@@ -16,19 +16,28 @@
 .subsribe-wrapper {
     display: flex;
     margin: 0 24px;
-
+    @media (max-width: 439.98px) {
+       flex-direction: column;
+    }
     .subs {
         flex: 1 1 100%;
         background-color: var(--white);
+        border-right: none;
+        @media (max-width: 439.98px) {
+            height: 47px;
+            flex: auto;
+            border-right: 2px solid rgb(151, 151, 151);
+         }
+    }
 
-        ::placeholder {
-            font-family: var(--fontTask3);
-            border: 3px solid #eeeeee;
-            font-weight: 500;
-            font-size: 18px;
-            letter-spacing: 1px;
-            line-height: 54px;
-        }
+    ::placeholder {
+        font-family: var(--fontTask3);
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 1px;
+        @media (max-width: 439.98px) {
+            text-align: center;
+         }
     }
 
     .subs-btn {
@@ -37,24 +46,27 @@
         text-align: center;
         letter-spacing: 1px;
         font-family: var(--fontTask3);
-        border: 3px solid black;
+        border: 3px solid var(--black);
     }
 }
+
 .line {
-    width: 640px;
-    margin: 10px 0;
-    border-top: 3px solid  #eeeeee;
+    width: 105%;
+    height: 60px;
+    border-bottom: 3px solid #eeeeee;
+    margin-bottom: 39px;
+    margin-left: -15px;
 }
+
 .links {
     display: flex;
-    margin: 10px;
+    margin: 0px 50px;
     justify-content: space-evenly;
 
     >p {
-        margin-left: 10px;
         font-family: var(--fontTask3);
         font-size: 18px;
-        letter-spacing: 1px;
+        letter-spacing: 1.3px;
         line-height: 32px;
         font-weight: 500;
     }

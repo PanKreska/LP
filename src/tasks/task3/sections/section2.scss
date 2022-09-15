@@ -1,4 +1,134 @@
 .section--two {
     background-color: var(--white);
-    height: 10px;
+    padding: 45px 0;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 40px;
+
+}
+
+.left-filter,
+.right-filter {
+    display: flex;
+}
+
+.left-filter {
+    margin: -3px 6px;
+    letter-spacing: 1.4px;
+}
+
+.right-filter {
+    margin: -3px -8px;
+    letter-spacing: 1.5px;
+}
+
+.category,
+.filters {
+    font-family: var(--fontTask3);
+    font-size: 24px;
+
+}
+
+.arrowDown {
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgb(47, 47, 47);
+    margin: 13px 16px;
+}
+
+.icon-filtr {
+    margin-right: 14px;
+    margin-top: -2px;
+}
+
+.filter-menu,
+.category-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    background-color: rgb(222, 184, 135);
+    z-index: 1;
+    border: 2px solid #eeeeee;
+    padding: 30px;
+}
+
+.category-menu {
+    width: 560px;
+    height: 400px;
+}
+
+.category-menu-title {
+    font-size: 24px;
+    font-family: var(--fontTask3);
+}
+
+.category-list {
+    list-style: none;
+    font-size: 20px;
+}
+
+.filter-menu {
+    width: 560px;
+    height: 800px;
+}
+
+.product-title {
+    font-family: var(--fontTask3);
+    font-size: 18px;
+    padding-bottom: 7px;
+}
+
+.product-price {
+    font-family: var(--fontMoney);
+    font-size: 18px;
+}
+
+.product-description {
+    margin-top: 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 27px;
+    margin-bottom: 71px;
+}
+
+
+.heart {
+    // display: none;
+    position: absolute;
+    left: 71%;
+    top: 8%
+}
+
+.image-wrapper {
+    background-color: var(--backgroundImage);
+    width: 89.66%;
+}
+
+.product-image {
+    padding: 35% 0;
+    text-align: center;
+}
+
+.product {
+
+    &.three {
+
+        .product-image {
+            padding: 16.7% 0;
+        }
+    }
+}
+
+.show-more {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 48px;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: var(--fontTask3);
 }

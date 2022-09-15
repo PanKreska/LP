@@ -18,13 +18,19 @@
     font-family: "Miller";
     src: url("/fonts/Miller Display Italic.otf");
 }
+@font-face {
+    font-family: "Maison Mono";
+    src: url("/fonts/Maison Neue Mono.woff2");
+}
 
 :root {
     //colors
     --backgroundSecOne: rgb(244, 245, 244);
+    --backgroundImage: rgb(245, 245, 245);
     //fonts
     --fontTask3: 'Maison Medium', sans-serif;
     --fontBold: 'Maison Bold', sans-serif;
+    --fontMoney: 'Maison Mono', sans-serif;
     --fontExtra: 'Miller', sans-serif;
     //picture
 }
