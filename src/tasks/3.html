@@ -25,7 +25,30 @@
     <body>
         <header>
             <div class="container-fluid">
-                <div class="header-wrapper">
+                <div class="header--wrapper">
+                    <div class="logotyp">
+                        <img
+                            src="<%= require('./task3/img/logo.png').default %>"
+                            alt="slide"
+                        />
+                    </div>
+                    <div class="desktop-menu">
+                        <ul class="desk-list">
+                            <li>HOME</li>
+                            <li>SHOP</li>
+                            <li>JOURNAL</li>
+                            <li>ELEMENTS</li>
+                            <li>PAGES</li>
+                        </ul>
+                    </div>
+                    <div class="cart desktop">
+                        <picture class="cart-image">
+                            <img
+                                src="<%= require('./task3/img/cartDesk.png').default %>"
+                                alt="slide"
+                            />
+                        </picture>
+                    </div>
                     <div class="mobile-menu">
                         <div class="bar"></div>
                         <div class="bar"></div>
@@ -33,7 +56,7 @@
                     </div>
                     <!-- mobile-menu -->
                     <div class="logo">MAISON</div>
-                    <div class="cart">
+                    <div class="cart mobile">
                         <picture class="cart-image">
                             <img
                                 src="<%= require('./task3/img/cartNb.png').default %>"
@@ -50,6 +73,31 @@
         <div class="section--one">
             <div class="container-fluid h-100">
                 <div class="slider--container">
+                    <div class="desktop-menu-wrapper">
+                        <div class="logotyp">
+                            <img
+                                src="<%= require('./task3/img/logo.png').default %>"
+                                alt="slide"
+                            />
+                        </div>
+                        <div class="desktop-menu">
+                            <ul class="desk-list">
+                                <li>HOME</li>
+                                <li>SHOP</li>
+                                <li>JOURNAL</li>
+                                <li>ELEMENTS</li>
+                                <li>PAGES</li>
+                            </ul>
+                        </div>
+                        <div class="cart desktop">
+                            <picture class="cart-image">
+                                <img
+                                    src="<%= require('./task3/img/cartDesk.png').default %>"
+                                    alt="slide"
+                                />
+                            </picture>
+                        </div>
+                    </div>
                     <div class="arrow right"></div>
                     <div class="arrow left"></div>
                     <div class="dots">
@@ -117,6 +165,12 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="categories desktop">Categories</div>
+                            <div class="sorter">Sort by: A-Z</div>
+                            <div class="arrowDown desktop"></div>
+                            <div class="results">
+                                Showing 1-12 of 24 results
+                            </div>
                             <div class="right-filter">
                                 <div class="icon-filtr">
                                     <img
@@ -168,149 +222,269 @@
                         <!-- filters -->
                     </div>
                     <!-- col-12 -->
-                    <div class="col-6">
-                        <div class="product one">
-                            <div class="image-wrapper">
-                                <img
-                                    src="<%= require('./task3/img/heart.png').default %>"
-                                    alt="slide"
-                                    class="heart"
-                                />
-                                <div class="product-image">
-                                    <img
-                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                    />
-                                </div>
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">
-                                    Bottle Humidifier
-                                </div>
-                                <div class="product-price">$69.00</div>
-                            </div>
-                            <!-- product-description -->
-                        </div>
-                        <!-- product one -->
-                    </div>
-                    <!-- col-6 -->
-                    <div class="col-6">
-                        <div class="product two">
-                            <div class="image-wrapper">
-                                <div class="product-image">
-                                    <img
-                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                        alt="slide"
-                                    />
-                                </div>
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">Teapot</div>
-                                <div class="product-price">$55.00</div>
-                            </div>
-                            <!-- product-description -->
-                        </div>
-                        <!-- product two -->
-                    </div>
-                    <!-- col-6 -->
                     <div class="col-12">
-                        <div class="product three">
-                            <div class="image-wrapper">
-                                <div class="product-image">
-                                    <img
-                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                        alt="slide"
+                        <div class="row">
+                            <div class="col-12 col-xl-4 d-none d-xl-block">
+                                <div class="sidebar">
+                                    <ul class="categories-list">
+                                        <li class="product-list">
+                                            All products
+                                        </li>
+                                        <li class="product-list">Living</li>
+                                        <li class="product-list">Dining</li>
+                                        <li class="product-list">Furniture</li>
+                                        <li class="product-list">Lighting</li>
+                                        <li class="product-list">Technics</li>
+                                        <li class="product-list">
+                                            Accessories
+                                        </li>
+                                    </ul>
+                                    <div class="line-two"></div>
+                                    <div class="filterby">Filter by</div>
+                                    <div class="price">Price</div>
+                                    <input
+                                        type="range"
+                                        min="1"
+                                        max="100"
+                                        value="50"
+                                        class="range"
+                                        id="myRange"
                                     />
+                                    <div class="range-input-wraper">
+                                        <input
+                                            type="text"
+                                            placeholder="30"
+                                            class="price-input"
+                                        />
+                                        <input
+                                            type="text"
+                                            placeholder="190"
+                                            class="price-input"
+                                        />
+                                        <button class="filter-btn">
+                                            Filter
+                                        </button>
+                                    </div>
+                                    <div class="colors">Color</div>
+                                    <div class="circle-wrapper">
+                                        <div class="circle one"></div>
+                                        <div class="circle two selected"></div>
+                                        <div class="circle three"></div>
+                                        <div class="circle four"></div>
+                                        <div class="circle five"></div>
+                                    </div>
+                                    <div class="size">Size</div>
+                                    <div class="size-item">small</div>
+                                    <div class="size-item">Medium</div>
+                                    <div class="size-item">Large</div>
+                                    <div class="brands">Brands</div>
+                                    <div class="brands-item">Banshu Hamono</div>
+                                    <div class="brands-item">Bower</div>
+                                    <div class="brands-item">Braun</div>
+                                    <div class="brands-item">Elevenplus</div>
+                                    <div class="brands-item">Field</div>
+                                    <div class="brands-item">Henry Wilson</div>
+                                    <div class="brands-item">Menu</div>
+                                    <div class="line-three"></div>
+                                    <div class="tag">Popular Tags</div>
+                                    <div class="tags">
+                                        Simple, Minimalism, Furniture, White,
+                                        Black, Accessories
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-description">
-                                <div class="product-title">Align Daybed</div>
-                                <div class="product-price">$1,999.00</div>
+                            <!-- col-6 -->
+                            <div class="col-xl-8">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="product one">
+                                            <div class="image--wrapper">
+                                                <img
+                                                    src="<%= require('./task3/img/heart.png').default %>"
+                                                    alt="slide"
+                                                    class="heart"
+                                                />
+                                                <div class="product-image">
+                                                    <img
+                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="product-description">
+                                                <div class="product-title">
+                                                    Bottle Humidifier
+                                                </div>
+                                                <div class="product-price">
+                                                    $69.00
+                                                </div>
+                                            </div>
+                                            <!-- product-description -->
+                                        </div>
+                                        <!-- product one -->
+                                    </div>
+                                    <!-- col-6 -->
+                                    <div class="col-6">
+                                        <div class="product two">
+                                            <div class="image--wrapper">
+                                                <div class="product-image">
+                                                    <img
+                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        alt="slide"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="product-description">
+                                                <div class="product-title">
+                                                    Teapot
+                                                </div>
+                                                <div class="product-price">
+                                                    $55.00
+                                                </div>
+                                            </div>
+                                            <!-- product-description -->
+                                        </div>
+                                        <!-- product two -->
+                                    </div>
+                                    <!-- col-6 -->
+                                    <div
+                                        class="col-12 d-sm-block d-xl-none position-relative"
+                                    >
+                                        <div class="product three">
+                                            <div class="image--wrapper">
+                                                <div class="product-image">
+                                                    <img
+                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        alt="slide"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="product-description">
+                                                <div class="product-title">
+                                                    Align Daybed
+                                                </div>
+                                                <div class="product-price">
+                                                    $1,999.00
+                                                </div>
+                                            </div>
+                                            <!-- product-description -->
+                                        </div>
+                                        <!-- product three -->
+                                    </div>
+                                    <!-- col-12 -->
+                                    <div class="col-6">
+                                        <div class="product four">
+                                            <div class="image--wrapper">
+                                                <div class="product-image">
+                                                    <img
+                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        alt="slide"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="product-description">
+                                                <div class="product-title">
+                                                    Beolit 15
+                                                </div>
+                                                <div class="product-price">
+                                                    $599.00
+                                                </div>
+                                            </div>
+                                            <!-- product-description -->
+                                        </div>
+                                        <!-- product four -->
+                                    </div>
+                                    <!-- col-6 -->
+                                    <div class="col-6">
+                                        <div class="product five">
+                                            <div class="image--wrapper">
+                                                <div class="product-image">
+                                                    <img
+                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        alt="slide"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="product-description">
+                                                <div class="product-title">
+                                                    Grey Watch
+                                                </div>
+                                                <div class="product-price">
+                                                    $215.00
+                                                </div>
+                                            </div>
+                                            <!-- product-description -->
+                                        </div>
+                                        <!-- product five -->
+                                    </div>
+                                    <!-- col-6 -->
+                                    <div class="col-6">
+                                        <div class="product six">
+                                            <div class="image--wrapper">
+                                                <div class="product-image">
+                                                    <img
+                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        alt="slide"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="product-description">
+                                                <div class="product-title">
+                                                    Bottle Humidifier
+                                                </div>
+                                                <div class="product-price">
+                                                    $69.00
+                                                </div>
+                                            </div>
+                                            <!-- product-description -->
+                                        </div>
+                                        <!-- product six -->
+                                    </div>
+                                    <!-- col-6 -->
+                                    <div class="col-6">
+                                        <div class="product seven">
+                                            <div class="image--wrapper">
+                                                <div class="product-image">
+                                                    <img
+                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        alt="slide"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="product-description">
+                                                <div class="product-title">
+                                                    Bookends
+                                                </div>
+                                                <div class="product-price">
+                                                    $179.00
+                                                </div>
+                                            </div>
+                                            <!-- product-description -->
+                                        </div>
+                                        <!-- product seven -->
+                                    </div>
+                                    <!-- col-6 -->
+                                </div>
                             </div>
-                            <!-- product-description -->
                         </div>
-                        <!-- product three -->
+                    </div>
+                    <div class="col-12 d-xl-none">
+                        <div class="show-more">Show More</div>
                     </div>
                     <!-- col-12 -->
-                    <div class="col-6">
-                        <div class="product four">
-                            <div class="image-wrapper">
-                                <div class="product-image">
-                                    <img
-                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                        alt="slide"
-                                    />
-                                </div>
+                    <div class="col-12 d-none d-xl-block">
+                        <div class="page-numbers">
+                            <div class="num">01</div>
+                            <div class="num">02</div>
+                            <div class="num">03</div>
+                            <div class="num">04</div>
+                            <div class="num">05</div>
+                            <div class="arrow-num">
+                                <img
+                                    src="<%= require('./task3/img/arrow-pag.png').default %>"
+                                    alt="slide"
+                                />
                             </div>
-                            <div class="product-description">
-                                <div class="product-title">Beolit 15</div>
-                                <div class="product-price">$599.00</div>
-                            </div>
-                            <!-- product-description -->
                         </div>
-                        <!-- product four -->
-                    </div>
-                    <!-- col-6 -->
-                    <div class="col-6">
-                        <div class="product five">
-                            <div class="image-wrapper">
-                                <div class="product-image">
-                                    <img
-                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                        alt="slide"
-                                    />
-                                </div>
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">Grey Watch</div>
-                                <div class="product-price">$215.00</div>
-                            </div>
-                            <!-- product-description -->
-                        </div>
-                        <!-- product five -->
-                    </div>
-                    <!-- col-6 -->
-                    <div class="col-6">
-                        <div class="product six">
-                            <div class="image-wrapper">
-                                <div class="product-image">
-                                    <img
-                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                        alt="slide"
-                                    />
-                                </div>
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">
-                                    Bottle Humidifier
-                                </div>
-                                <div class="product-price">$69.00</div>
-                            </div>
-                            <!-- product-description -->
-                        </div>
-                        <!-- product six -->
-                    </div>
-                    <!-- col-6 -->
-                    <div class="col-6">
-                        <div class="product seven">
-                            <div class="image-wrapper">
-                                <div class="product-image">
-                                    <img
-                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                        alt="slide"
-                                    />
-                                </div>
-                            </div>
-                            <div class="product-description">
-                                <div class="product-title">Bookends</div>
-                                <div class="product-price">$179.00</div>
-                            </div>
-                            <!-- product-description -->
-                        </div>
-                        <!-- product seven -->
-                    </div>
-                    <!-- col-6 -->
-                    <div class="col-12">
-                        <div class="show-more">Show More</div>
                     </div>
                     <!-- col-12 -->
                 </div>
@@ -322,13 +496,22 @@
         <div class="section--three">
             <div class="container-fluid">
                 <div class="subscribe-title">Subscribe to our news</div>
-                <div class="subsribe-wrapper">
+                <div class="subsribe--wrapper">
                     <input
                         type="text"
                         class="subs"
                         placeholder="    Enter your email..."
                     />
                     <button class="subs-btn">Subscribe</button>
+                </div>
+                <div class="subsribe--wrapper-desktop">
+                    <div class="subscribe-title-desk">Get Discount 35% off</div>
+                    <input
+                        type="text"
+                        class="subs-desk"
+                        placeholder="Enter your email..."
+                    />
+                    <button class="subs-btn-desk">Send</button>
                 </div>
                 <div class="line"></div>
                 <div class="links">
@@ -343,7 +526,11 @@
         <footer>
             <div class="container-fluid">
                 <div class="footer--wrapper">
-                    <div class="copyrights">&copy; 2017 Maison</div>
+                    <div class="copyrights">
+                        &copy; 2017 Maison<span class="desk"
+                            >. All rights reserved</span
+                        >
+                    </div>
                     <div class="socials">
                         <!-- <picture class="social">
                             <img

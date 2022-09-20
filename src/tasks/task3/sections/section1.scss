@@ -9,30 +9,75 @@
 .slider--container {
     position: relative;
 
+    .desktop-menu-wrapper {
+        display: none;
+        position: absolute;
+        margin: 3.1% 0px 0px 7.3%;
+        width: 84.9%;
+        justify-content: space-between;
+        font-family: var(--fontTask3);
+        font-size: 16px;
+        letter-spacing: 6px;
+        line-height: 26px;
+        z-index: 1;
+
+        @media (min-width: 991.98px) {
+            display: flex;
+        }
+
+        .desktop-menu {
+            margin-left: -20.3%;
+            margin-top: 0.4%;
+
+            @media (min-width: 1399.98px) {
+                margin-left: 20.3%;
+            }
+
+            .desk-list {
+                display: flex;
+                list-style: none;
+
+                li {
+                    margin-right: 7.7%;
+                }
+            }
+        }
+
+        .cart {
+            margin-right: -0.5%;
+        }
+
+    }
+
     .arrow {
-        border: solid black;
+        border: solid var(--black);
         border-width: 0 2px 2px 0;
         padding: 3px;
         position: absolute;
         display: none;
-        top: 404px;
         height: 16px;
         width: 16px;
+        top: 43.3%;
 
         &.right {
             transform: rotate(-45deg);
             -webkit-transform: rotate(-45deg);
-            right: 119px;
+            right: 7.5%;
+
         }
 
         &.left {
             transform: rotate(135deg);
             -webkit-transform: rotate(135deg);
-            left: 119px;
+            left: 7.5%;
         }
 
         @media only screen and (min-width: 992px) {
             display: inline-block;
+        }
+
+        @media (min-width: 1399.98px) {
+            top: 53.4%;
         }
     }
 
@@ -55,6 +100,10 @@
             background-color: #ffffff;
             border: 3px solid #e5e5e5;
 
+            @media only screen and (min-width: 992px) {
+                display: none;
+            }
+
             &.active {
                 background-color: #e5e5e5;
             }
@@ -73,6 +122,11 @@
         @media (max-width: 639.98px) {
             right: 2%;
             top: 86%;
+        }
+
+        @media (min-width: 1399.98px) {
+            right: 7.5%;
+            top: 91.4%;
         }
     }
 }
@@ -94,6 +148,11 @@
                 width: 45%;
                 margin-left: 7%;
             }
+
+            @media (min-width: 1399.98px) {
+                margin-left: 18.8%;
+                margin-top: 0%;
+            }
         }
     }
 
@@ -114,16 +173,21 @@
             padding: 2px;
         }
 
-    }
-
-    .slide-text>p {
-        font-size: 24px;
-        letter-spacing: 1.3px;
-        line-height: 30px;
-        text-decoration: underline;
-
-        @media (max-width: 639.98px) {
-            font-size: 18px;
+        @media (min-width: 1399.98px) {
+            left: 63.5%;
+            top: 46.7%;
+        }
+        &>p {
+            font-size: 24px;
+            letter-spacing: 1.3px;
+            line-height: 33px;
+            text-decoration: underline;
+    
+            @media (max-width: 639.98px) {
+                font-size: 18px;
+            }
         }
     }
+
+    
 }
