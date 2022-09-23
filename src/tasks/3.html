@@ -24,7 +24,7 @@
     </head>
     <body>
         <header>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="header--wrapper">
                     <div class="logotyp">
                         <img
@@ -68,10 +68,10 @@
                 </div>
                 <!-- header-wrapper -->
             </div>
-            <!-- container-fluid -->
+            <!-- container -->
         </header>
         <div class="section--one">
-            <div class="container-fluid h-100">
+            <div class="container h-100">
                 <div class="slider--container">
                     <div class="desktop-menu-wrapper">
                         <div class="logotyp">
@@ -80,6 +80,7 @@
                                 alt="slide"
                             />
                         </div>
+                        <!-- logotyp -->
                         <div class="desktop-menu">
                             <ul class="desk-list">
                                 <li>HOME</li>
@@ -89,6 +90,7 @@
                                 <li>PAGES</li>
                             </ul>
                         </div>
+                        <!-- desktop-menu -->
                         <div class="cart desktop">
                             <picture class="cart-image">
                                 <img
@@ -97,15 +99,12 @@
                                 />
                             </picture>
                         </div>
+                        <!-- desktop-menu-wrapper -->
                     </div>
+                    <!-- desktop-menu-wrapper -->
                     <div class="arrow right"></div>
                     <div class="arrow left"></div>
-                    <div class="dots">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                    <!-- dots -->
+
                     <div class="slides">
                         <div class="slide">
                             <picture class="image">
@@ -131,20 +130,30 @@
                         <!-- slide -->
                     </div>
                     <!-- slides -->
-                    <div class="slide-number">
-                        <img
-                            src="<%= require('./task3/img/number.png').default %>"
-                            alt="slide"
-                        />
+                    <div class="dotsNumbers-wrapper">
+                        <div class="align-wrapper">
+                            <div class="dots">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <!-- dots -->
+                            <div class="slide-number">
+                                <img
+                                    src="<%= require('./task3/img/number.png').default %>"
+                                    alt="slide"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- slider--container -->
             </div>
-            <!-- container-fluid -->
+            <!-- container -->
         </div>
         <!-- section--one -->
         <div class="section--two">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="filters">
@@ -164,7 +173,9 @@
                                         <li>TECHICS</li>
                                     </ul>
                                 </div>
+                                <!-- category-menu -->
                             </div>
+                            <!-- left-filter -->
                             <div class="categories desktop">Categories</div>
                             <div class="sorter">Sort by: A-Z</div>
                             <div class="arrowDown desktop"></div>
@@ -265,6 +276,7 @@
                                             Filter
                                         </button>
                                     </div>
+                                    <!-- range-input-wraper -->
                                     <div class="colors">Color</div>
                                     <div class="circle-wrapper">
                                         <div class="circle one"></div>
@@ -273,6 +285,7 @@
                                         <div class="circle four"></div>
                                         <div class="circle five"></div>
                                     </div>
+                                    <!-- colors -->
                                     <div class="size">Size</div>
                                     <div class="size-item">small</div>
                                     <div class="size-item">Medium</div>
@@ -292,11 +305,12 @@
                                         Black, Accessories
                                     </div>
                                 </div>
+                                <!-- sidebar -->
                             </div>
-                            <!-- col-6 -->
+                            <!-- col-12 col-xl-4 d-none d-xl-block -->
                             <div class="col-xl-8">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-12 col-sm-6">
                                         <div class="product one">
                                             <div class="image--wrapper">
                                                 <img
@@ -310,6 +324,7 @@
                                                     />
                                                 </div>
                                             </div>
+                                            <!-- image-wrapper -->
                                             <div class="product-description">
                                                 <div class="product-title">
                                                     Bottle Humidifier
@@ -322,8 +337,8 @@
                                         </div>
                                         <!-- product one -->
                                     </div>
-                                    <!-- col-6 -->
-                                    <div class="col-6">
+                                    <!-- col-12 col-sm-6 -->
+                                    <div class="col-12 col-sm-6">
                                         <div class="product two">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
@@ -333,6 +348,7 @@
                                                     />
                                                 </div>
                                             </div>
+                                            <!-- image-wrapper -->
                                             <div class="product-description">
                                                 <div class="product-title">
                                                     Teapot
@@ -345,7 +361,7 @@
                                         </div>
                                         <!-- product two -->
                                     </div>
-                                    <!-- col-6 -->
+                                    <!-- col-12 col-sm-6 -->
                                     <div
                                         class="col-12 d-sm-block d-xl-none position-relative"
                                     >
@@ -358,6 +374,7 @@
                                                     />
                                                 </div>
                                             </div>
+                                            <!-- image-wrapper -->
                                             <div class="product-description">
                                                 <div class="product-title">
                                                     Align Daybed
@@ -370,8 +387,8 @@
                                         </div>
                                         <!-- product three -->
                                     </div>
-                                    <!-- col-12 -->
-                                    <div class="col-6">
+                                    <!-- col-12 col-sm-6 -->
+                                    <div class="col-12 col-sm-6">
                                         <div class="product four">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
@@ -381,6 +398,7 @@
                                                     />
                                                 </div>
                                             </div>
+                                            <!-- image-wrapper -->
                                             <div class="product-description">
                                                 <div class="product-title">
                                                     Beolit 15
@@ -393,8 +411,8 @@
                                         </div>
                                         <!-- product four -->
                                     </div>
-                                    <!-- col-6 -->
-                                    <div class="col-6">
+                                    <!-- col-12 col-sm-6 -->
+                                    <div class="col-12 col-sm-6">
                                         <div class="product five">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
@@ -404,6 +422,7 @@
                                                     />
                                                 </div>
                                             </div>
+                                            <!-- image-wrapper -->
                                             <div class="product-description">
                                                 <div class="product-title">
                                                     Grey Watch
@@ -416,8 +435,8 @@
                                         </div>
                                         <!-- product five -->
                                     </div>
-                                    <!-- col-6 -->
-                                    <div class="col-6">
+                                    <!-- col-12 col-sm-6 -->
+                                    <div class="col-12 col-sm-6">
                                         <div class="product six">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
@@ -427,6 +446,7 @@
                                                     />
                                                 </div>
                                             </div>
+                                            <!-- image-wrapper -->
                                             <div class="product-description">
                                                 <div class="product-title">
                                                     Bottle Humidifier
@@ -439,8 +459,8 @@
                                         </div>
                                         <!-- product six -->
                                     </div>
-                                    <!-- col-6 -->
-                                    <div class="col-6">
+                                    <!-- col-12 col-sm-6 -->
+                                    <div class="col-12 col-sm-6">
                                         <div class="product seven">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
@@ -450,6 +470,7 @@
                                                     />
                                                 </div>
                                             </div>
+                                            <!-- image-wrapper -->
                                             <div class="product-description">
                                                 <div class="product-title">
                                                     Bookends
@@ -462,16 +483,20 @@
                                         </div>
                                         <!-- product seven -->
                                     </div>
-                                    <!-- col-6 -->
+                                    <!-- col-12 col-sm-6 -->
                                 </div>
+                                <!-- row -->
                             </div>
+                            <!-- col-xl-8 -->
                         </div>
+                        <!-- row -->
                     </div>
+                    <!-- col-12 -->
                     <div class="col-12 d-xl-none">
                         <div class="show-more">Show More</div>
                     </div>
                     <!-- col-12 -->
-                    <div class="col-12 d-none d-xl-block">
+                    <div class="col-12 d-none d-xl-block position-relative">
                         <div class="page-numbers">
                             <div class="num">01</div>
                             <div class="num">02</div>
@@ -485,16 +510,17 @@
                                 />
                             </div>
                         </div>
+                        <!-- page-numbers -->
                     </div>
                     <!-- col-12 -->
                 </div>
                 <!-- row -->
             </div>
-            <!-- container-fluid -->
+            <!-- container -->
         </div>
         <!-- section--two -->
         <div class="section--three">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="subscribe-title">Subscribe to our news</div>
                 <div class="subsribe--wrapper">
                     <input
@@ -521,10 +547,11 @@
                     <p>Contact</p>
                 </div>
             </div>
+            <!-- container -->
         </div>
         <!-- section--three -->
         <footer>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="footer--wrapper">
                     <div class="copyrights">
                         &copy; 2017 Maison<span class="desk"
@@ -567,7 +594,7 @@
                 </div>
                 <!-- footer--wrapper -->
             </div>
-            <!-- container-fluid -->
+            <!-- container -->
         </footer>
     </body>
 </html>

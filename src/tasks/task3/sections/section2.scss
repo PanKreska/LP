@@ -16,6 +16,10 @@
         letter-spacing: 1px;
     }
 
+    @media (min-width: 320px) and (max-width: 380px) {
+        margin: 0 0px 40px;
+    }
+
     .left-filter,
     .right-filter {
         display: flex;
@@ -137,6 +141,7 @@
     .image--wrapper {
         background-color: var(--backgroundImage);
         width: 89.7%;
+        position: relative;
 
         @media (min-width: 1399.98px) {
             width: 91.7%;
@@ -144,8 +149,8 @@
 
         .heart {
             position: absolute;
-            left: 71%;
-            top: 8%
+            left: 80%;
+            top: 11%
         }
 
         .product-image {
@@ -198,6 +203,26 @@
         .product-description {
             margin-top: 4%;
             margin-bottom: 11.5%;
+        }
+
+        @media (max-width: 576.98px) {
+            .image--wrapper {
+                background-color: var(--backgroundImage);
+                width: 89.7%;
+            }
+
+            .product-image {
+                padding: 35% 0 !important;
+                text-align: center;
+            }
+
+            .product-description {
+                margin-top: 8.4%;
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 27px;
+                margin-bottom: 24%;
+            }
         }
     }
 }
@@ -361,13 +386,8 @@
     letter-spacing: 1px;
     line-height: 27px;
     align-items: flex-end;
-    position: absolute;
-    bottom: 0px;
-    right: 8.1%;
-
-    @media (min-width: 1399.98px) {
-        bottom: -60px;
-    }
+    justify-content: flex-end;
+    margin-right: 40px;
 
     .num {
         margin-right: 10px;

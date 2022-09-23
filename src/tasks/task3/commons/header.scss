@@ -16,8 +16,7 @@ header {
     padding: 5.5% 2.5% 5% 4%;
 
     @media (min-width: 640.98px) {
-        align-items: end;
-        background-color: transparent;
+        margin: 0 -45px;
     }
 
     @media (min-width: 1399.98px) {
@@ -37,6 +36,7 @@ header {
 
         @media (min-width: 640.98px) {
             display: block;
+            
         }
 
         .desk-list {
