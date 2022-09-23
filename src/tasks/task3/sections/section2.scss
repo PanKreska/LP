@@ -3,18 +3,18 @@
     padding: 45px 0;
 }
 
-.filters {
+.filters,
+.filter-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 40px;
     font-family: var(--fontTask3);
     font-size: 24px;
 
     @media (min-width: 1399.98px) {
-        margin: 39px 99px 30px;
         font-size: 24px;
         letter-spacing: 1px;
     }
+
 
     @media (min-width: 320px) and (max-width: 380px) {
         margin: 0 0px 40px;
@@ -77,14 +77,13 @@
     .sorter {
         font-size: 24px;
         letter-spacing: 1px;
-        margin-left: 18.6%;
+
     }
 
     .results {
         font-size: 18px;
         letter-spacing: 1px;
         line-height: 26px;
-        margin-top: 0.7%;
     }
 
     .sorter,
@@ -93,7 +92,7 @@
         letter-spacing: 1.5px;
 
         @media (min-width: 991.98px) {
-            display: block;
+            display: flex;
         }
     }
 
@@ -106,7 +105,6 @@
         margin: 13px 16px;
 
         &.desktop {
-            margin-right: 34%;
 
             @media (max-width: 991.98px) {
                 display: none;
@@ -140,12 +138,7 @@
 .product {
     .image--wrapper {
         background-color: var(--backgroundImage);
-        width: 89.7%;
         position: relative;
-
-        @media (min-width: 1399.98px) {
-            width: 91.7%;
-        }
 
         .heart {
             position: absolute;
@@ -240,8 +233,6 @@
 
 .sidebar {
     font-family: var(--fontTask3);
-    padding-left: 100px;
-    margin-top: -16px;
 
     .categories-list,
     .size-item,
@@ -387,7 +378,6 @@
     line-height: 27px;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-right: 40px;
 
     .num {
         margin-right: 10px;
