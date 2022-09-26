@@ -117,7 +117,12 @@
         justify-content: flex-end;
         padding-bottom: 20px;
         margin-top: -10px;
-        
+        .slide-number {
+            font-family: var(--fontMoney);
+            > span{
+                font-family: var(--fontExtra);
+            }
+        }
     }
 }
 
@@ -177,7 +182,5 @@
                 font-size: 18px;
             }
         }
-    }
-
-    
+    } 
 }

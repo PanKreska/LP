@@ -3,7 +3,7 @@
     padding: 53px 0 25px;
     position: relative;
 
-    @media (min-width: 1399.98px) {
+    @media (min-width: 991.98px) {
         padding: 81px 0 96px;
         margin-top: 70px;
     }
@@ -16,7 +16,11 @@
         margin-right: 11px;
         padding-bottom: 25px;
 
-        @media (min-width: 1399.98px) {
+        @media (max-width: 479.98px) {
+            font-size: 35px;
+        }
+
+        @media (min-width: 991.98px) {
             display: none;
         }
     }
@@ -28,7 +32,7 @@
         margin-bottom: 39px;
         margin-left: -15px;
 
-        @media (min-width: 1399.98px) {
+        @media (min-width: 991.98px) {
             display: none;
         }
     }
@@ -37,12 +41,29 @@
         display: flex;
         margin: 0px 50px;
         justify-content: space-evenly;
+        white-space: nowrap;
+        padding: 0 5px;
 
-        @media (min-width: 1399.98px) {
+        @media (max-width: 404.98px) {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (min-width: 991.98px) {
             position: absolute;
             margin: 0;
-            left: 62.1%;
+            left: 45%;
+            top: 114.8%;
+        }
+        @media (min-width: 1199.98px) {
+            position: absolute;
+            margin: 0;
+            left: 45%;
             top: 116.8%;
+        }
+        @media (min-width: 1399.98px) {
+            left: 62.1%;
         }
 
         >p {
@@ -51,8 +72,9 @@
             letter-spacing: 1.3px;
             line-height: 32px;
             font-weight: 500;
+            padding: 0 10px;
 
-            @media (min-width: 1399.98px) {
+            @media (min-width: 991.98px) {
                 margin-left: 36.8px;
             }
         }
@@ -67,7 +89,7 @@
         flex-direction: column;
     }
 
-    @media (min-width: 1399.98px) {
+    @media (min-width: 991.98px) {
         display: none;
     }
 
@@ -111,9 +133,14 @@
     margin-right: 100px;
     margin-left: 100px;
 
-    @media (min-width: 1399.98px) {
+    @media (min-width: 991.98px) {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    @media (min-width: 1199.98px) {
         display: flex;
-        margin: 0 -45px;
     }
 
     .subscribe-title-desk {

@@ -36,7 +36,7 @@ header {
 
         @media (min-width: 640.98px) {
             display: block;
-            
+
         }
 
         .desk-list {
@@ -72,6 +72,30 @@ header {
     .cart {
 
         &.mobile {
+            position: relative;
+            .cart-image {
+
+                >img {
+                    width: 120%;
+                    max-width: 120%;
+                }
+            }
+
+            .cartNumber {
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: var(--black);
+                color: var(--white);
+                text-align: center;
+                vertical-align: middle;   
+                font-family: var(--fontTask3);
+                border-radius: 50%;
+                padding: 1px;
+                left: 20px;
+                top: 20px;
+            }
+
             @media (min-width: 640.98px) {
                 display: none;
             }
@@ -116,12 +140,6 @@ header {
         font-size: 32px;
         letter-spacing: 10px;
         line-height: 27px;
-        margin-top: 5px;
-        margin-left: 10px;
-
-        @media (max-width: 640.98px) {
-            padding: 0 2px;
-        }
 
         @media (min-width: 640.98px) {
             display: none;

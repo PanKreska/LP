@@ -15,11 +15,6 @@
         letter-spacing: 1px;
     }
 
-
-    @media (min-width: 320px) and (max-width: 380px) {
-        margin: 0 0px 40px;
-    }
-
     .left-filter,
     .right-filter {
         display: flex;
@@ -28,6 +23,11 @@
     .left-filter {
         margin: -3px 6px;
         letter-spacing: 1.4px;
+
+        &:hover {
+            cursor: pointer;
+            filter: drop-shadow(0px 3px 4px rgba(70, 70, 70, 1));
+        }
 
         @media (min-width: 991.98px) {
             display: none;
@@ -52,6 +52,11 @@
     .right-filter {
         margin: -3px -8px;
         letter-spacing: 1.5px;
+
+        &:hover {
+            cursor: pointer;
+            filter: drop-shadow(0px 3px 4px rgba(70, 70, 70, 1));
+        }
 
         @media (min-width: 991.98px) {
             display: none;
@@ -78,6 +83,10 @@
         font-size: 24px;
         letter-spacing: 1px;
 
+        &:hover {
+            cursor: pointer;
+            filter: drop-shadow(0px 1px 1px rgba(70, 70, 70, 1));
+        }
     }
 
     .results {
@@ -102,7 +111,7 @@
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-top: 6px solid var(--black);
-        margin: 13px 16px;
+        margin: 13px 10px;
 
         &.desktop {
 
@@ -135,24 +144,42 @@
     }
 }
 
+.sizer {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
 .product {
+    position: relative;
+
     .image--wrapper {
         background-color: var(--backgroundImage);
         position: relative;
+        overflow: hidden;
+
+        @media (min-width: 991.98px) {
+            margin-bottom: 22px;
+        }
 
         .heart {
             position: absolute;
-            left: 80%;
-            top: 11%
+            top: 25px;
+            right: 25px;
         }
 
         .product-image {
             padding: 35% 0;
-            text-align: center;
 
-            @media (min-width: 1399.98px) {
-                padding: 52.7% 0;
-                margin-bottom: 22px;
+            @media (min-width: 991.98px) {
+                padding: 57% 0;
+            }
+
+            >img {
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%);
             }
         }
     }
@@ -164,7 +191,7 @@
         line-height: 27px;
         margin-bottom: 24%;
 
-        @media (min-width: 1399.98px) {
+        @media (min-width: 991.98px) {
             position: absolute;
             left: 5.8%;
             top: 79.9%;
@@ -185,12 +212,9 @@
     }
 
     &.three {
-        .image--wrapper {
-            width: 91.8%;
 
-            .product-image {
-                padding: 16.3% 0;
-            }
+        .product-image {
+            padding: 16.3% 0;
         }
 
         .product-description {
@@ -201,7 +225,6 @@
         @media (max-width: 576.98px) {
             .image--wrapper {
                 background-color: var(--backgroundImage);
-                width: 89.7%;
             }
 
             .product-image {
@@ -276,8 +299,20 @@
         letter-spacing: 1px;
     }
 
-    .range {
-        width: 100%;
+    .ranger {
+        margin-bottom: 10px;
+        height: 2px;
+        width: 79%;
+        background: rgb(189, 189, 189);
+    }
+
+    .ranger::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 13px;
+        border: 1px solid var(--black);
+        background: #ffffff;
+        cursor: pointer;
     }
 
     .range-input-wraper {
@@ -317,32 +352,43 @@
             display: inline-block;
             margin-right: 23px;
 
+            &:hover {
+                box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 1);
+            }
             &.one {
-                background-color: #c7c7c7;
+                background-color: rgb(199, 199, 199);
             }
 
             &.two {
-                border: 2px solid #f5f5f5;
+                border: 1px solid rgba(245, 245, 245, 0);
+                outline: solid 1px rgb(245, 245, 245, 1);
             }
 
             &.three {
-                background-color: #ff8b8b;
+                background-color: rgb(255, 139, 139);
             }
 
             &.four {
-                background-color: #b2e6fe;
+                background-color: rgb(178, 230, 254);
             }
 
             &.five {
-                background-color: #beffc9;
+                background-color: rgb(190, 255, 201);
             }
 
             &.selected {
-                background-image: var(--selected);
-                background-position-y: center;
-                background-position-x: center;
+                outline: solid 1px rgb(245, 245, 245, 1);
+            }
+
+            &.selected::before {
+                content: '\2713';
+                font-weight: 600;
+                display: inline-block;
+                color: var(--black);
+                padding: 6px 6px 0 11px;
             }
         }
+
     }
 
     .size {
