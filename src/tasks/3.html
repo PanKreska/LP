@@ -57,7 +57,7 @@
                             <li>
                                 <a href="http://localhost:9000/tasks/3.html"
                                     >PAGES</a
-                                ></li>
+                                >
                             </li>
                         </ul>
                     </div>
@@ -149,11 +149,21 @@
                         ><div class="arrow right"></div
                     ></a>
                     <a href="http://localhost:9000/tasks/3.html"
-                        ><div class="arrow left">></div></a
-                    >
+                        ><div class="arrow left"></div
+                    ></a>
 
                     <div class="slides">
+                        <div class="slide-text">
+                            Sky Planet
+                            <p>
+                                <a href="http://localhost:9000/tasks/3.html"
+                                    >Shop now</a
+                                >
+                            </p>
+                        </div>
+                        <!-- slide-text -->
                         <div class="slide">
+                            
                             <picture class="image">
                                 <source
                                     srcset="<%= require('./task3/img/sliderImg2.avif').default %>"
@@ -166,17 +176,10 @@
                                 <img
                                     src="<%= require('./task3/img/sliderImg2.png').default %>"
                                     alt="slide"
+                                    class="img"
                                 />
                             </picture>
-                            <div class="slide-text">
-                                Sky Planet
-                                <p>
-                                    <a href="http://localhost:9000/tasks/3.html"
-                                        >Shop now</a
-                                    >
-                                </p>
-                            </div>
-                            <!-- slide-text -->
+                            
                         </div>
                         <!-- slide -->
                     </div>
@@ -521,7 +524,6 @@
                                                     class="heart"
                                                 />
                                                 <div class="product-image">
-                                                    <div class="sizer"></div>
                                                     <img
                                                         src="<%= require('./task3/img/ImgCroped.png').default %>"
                                                     />
@@ -549,7 +551,6 @@
                                         <div class="product two">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
-                                                    <div class="sizer"></div>
                                                     <img
                                                         src="<%= require('./task3/img/ImgCroped.png').default %>"
                                                         alt="slide"
@@ -580,7 +581,6 @@
                                         <div class="product three">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
-                                                    <div class="sizer"></div>
                                                     <img
                                                         src="<%= require('./task3/img/ImgCroped.png').default %>"
                                                         alt="slide"
@@ -588,15 +588,17 @@
                                                 </div>
                                             </div>
                                             <!-- image-wrapper -->
-                                            <div class="product-description"><a
-                                                href="http://localhost:9000/tasks/3.html"
-                                            >
-                                                <div class="product-title">
-                                                    Align Daybed
-                                                </div>
-                                                <div class="product-price">
-                                                    $1,999.00
-                                                </div></a>
+                                            <div class="product-description">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                >
+                                                    <div class="product-title">
+                                                        Align Daybed
+                                                    </div>
+                                                    <div class="product-price">
+                                                        $1,999.00
+                                                    </div></a
+                                                >
                                             </div>
                                             <!-- product-description -->
                                         </div>
@@ -607,7 +609,6 @@
                                         <div class="product four">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
-                                                    <div class="sizer"></div>
                                                     <img
                                                         src="<%= require('./task3/img/ImgCroped.png').default %>"
                                                         alt="slide"
@@ -636,7 +637,6 @@
                                         <div class="product five">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
-                                                    <div class="sizer"></div>
                                                     <img
                                                         src="<%= require('./task3/img/ImgCroped.png').default %>"
                                                         alt="slide"
@@ -665,7 +665,6 @@
                                         <div class="product six">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
-                                                    <div class="sizer"></div>
                                                     <img
                                                         src="<%= require('./task3/img/ImgCroped.png').default %>"
                                                         alt="slide"
@@ -694,7 +693,6 @@
                                         <div class="product seven">
                                             <div class="image--wrapper">
                                                 <div class="product-image">
-                                                    <div class="sizer"></div>
                                                     <img
                                                         src="<%= require('./task3/img/ImgCroped.png').default %>"
                                                         alt="slide"
@@ -791,12 +789,16 @@
                     <button class="subs-btn">Subscribe</button>
                 </div>
                 <div class="subsribe--wrapper-desktop">
-                    <div class="subscribe-title-desk">Get Discount 35% off</div>
-                    <input
-                        type="text"
-                        class="subs-desk"
-                        placeholder="Enter your email..."
-                    /><button class="subs-btn-desk">Send</button>
+                    <div class="form">
+                        <div class="subscribe-title-desk">
+                            Get Discount 35% off
+                        </div>
+                        <input
+                            type="text"
+                            class="subs-desk"
+                            placeholder="Enter your email..."
+                        /><button class="subs-btn-desk">Send</button>
+                    </div>
                 </div>
                 <div class="line"></div>
                 <div class="links">

@@ -13,20 +13,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5.5% 2.5% 5% 4%;
+    padding: 5% 5%;
 
     @media (min-width: 640.98px) {
-        margin: 0 -45px;
-    }
-
-    @media (min-width: 1399.98px) {
-        padding: 2.7% 7.3% 0.5% 7.4%;
+        padding: 5% 0%;
     }
 
     .logotyp {
         display: none;
 
-        @media (min-width: 640.98px) {
+        @media (min-width: 991.98px) {
             display: block;
         }
     }
@@ -34,9 +30,9 @@ header {
     .desktop-menu {
         display: none;
 
-        @media (min-width: 640.98px) {
+        @media (min-width: 991.98px) {
             display: block;
-
+            padding: 0 5px;
         }
 
         .desk-list {
@@ -73,6 +69,7 @@ header {
 
         &.mobile {
             position: relative;
+
             .cart-image {
 
                 >img {
@@ -82,27 +79,27 @@ header {
             }
 
             .cartNumber {
+                display: flex;
+                align-items: end;
+                justify-content: center;
                 position: absolute;
                 height: 25px;
                 width: 25px;
                 background-color: var(--black);
                 color: var(--white);
-                text-align: center;
-                vertical-align: middle;   
                 font-family: var(--fontTask3);
                 border-radius: 50%;
-                padding: 1px;
                 left: 20px;
                 top: 20px;
             }
 
-            @media (min-width: 640.98px) {
+            @media (min-width: 991.98px) {
                 display: none;
             }
         }
 
         &.desktop {
-            @media (max-width: 640.98px) {
+            @media (max-width: 991.98px) {
                 display: none;
             }
         }
@@ -112,7 +109,7 @@ header {
         cursor: pointer;
         display: block;
 
-        @media (min-width: 640.98px) {
+        @media (min-width: 991.98px) {
             display: none;
         }
 
@@ -141,8 +138,42 @@ header {
         letter-spacing: 10px;
         line-height: 27px;
 
-        @media (min-width: 640.98px) {
+        @media (min-width: 991.98px) {
             display: none;
         }
     }
+}
+
+.desktop-menu-wrapper {
+    display: none;
+    position: absolute;
+    margin-top: 3.1%;
+    width: 100%;
+    justify-content: space-between;
+    font-family: var(--fontTask3);
+    font-size: 16px;
+    letter-spacing: 6px;
+    line-height: 26px;
+    z-index: 1;
+
+    @media (min-width: 991.98px) {
+        display: flex;
+    }
+
+    .desktop-menu {
+
+        .desk-list {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-right: 7.7%;
+            }
+        }
+    }
+
+    .cart {
+        margin-right: -0.5%;
+    }
+
 }

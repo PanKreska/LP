@@ -26,11 +26,13 @@
     }
 
     .line {
-        width: 102%;
-        height: 60px;
         border-bottom: 3px solid #eeeeee;
-        margin-bottom: 39px;
-        margin-left: -15px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100px;
+        @media (max-width: 459.98px) {
+            bottom: 150px;        }
 
         @media (min-width: 991.98px) {
             display: none;
@@ -39,15 +41,14 @@
 
     .links {
         display: flex;
-        margin: 0px 50px;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         white-space: nowrap;
-        padding: 0 5px;
+        text-align: center;
+        padding-top: 50px;
 
-        @media (max-width: 404.98px) {
-            display: block;
-            margin: auto;
-            text-align: center;
+        @media (min-width: 459.98px) {
+            flex-wrap: nowrap;
         }
 
         @media (min-width: 991.98px) {
@@ -55,13 +56,17 @@
             margin: 0;
             left: 45%;
             top: 114.8%;
+            flex-wrap: nowrap;
+            padding-top: 0px;
         }
+
         @media (min-width: 1199.98px) {
             position: absolute;
             margin: 0;
             left: 45%;
             top: 116.8%;
         }
+
         @media (min-width: 1399.98px) {
             left: 62.1%;
         }
@@ -72,7 +77,10 @@
             letter-spacing: 1.3px;
             line-height: 32px;
             font-weight: 500;
-            padding: 0 10px;
+            padding: 0 10px 20px 0px;
+            flex: 1 1 50%;
+            margin: 0;
+            width: 50%;
 
             @media (min-width: 991.98px) {
                 margin-left: 36.8px;
@@ -84,6 +92,7 @@
 .subsribe--wrapper {
     display: flex;
     margin: 0 24px;
+    padding-bottom: 20px;
 
     @media (max-width: 439.98px) {
         flex-direction: column;
@@ -96,12 +105,13 @@
     .subs {
         flex: 1 1 100%;
         background-color: var(--white);
+        border: 3px solid #eeeeee;
         border-right: none;
 
         @media (max-width: 439.98px) {
             height: 47px;
             flex: auto;
-            border-right: 2px solid rgb(151, 151, 151);
+            border: 3px solid #eeeeee;
         }
     }
 
@@ -130,17 +140,9 @@
 .subsribe--wrapper-desktop {
     display: none;
     margin-top: 14px;
-    margin-right: 100px;
-    margin-left: 100px;
 
     @media (min-width: 991.98px) {
         display: block;
-        text-align: center;
-        margin: 0;
-    }
-
-    @media (min-width: 1199.98px) {
-        display: flex;
     }
 
     .subscribe-title-desk {
@@ -148,35 +150,41 @@
         font-size: 42px;
         letter-spacing: 2px;
         line-height: 54px;
-        flex: 1 1 53%;
+        flex: 1 1 80%;
     }
 
-    .subs-desk {
-        margin-top: 2px;
-        flex: 1 1 51%;
+    .form {
+        display: flex;
 
-        &::placeholder {
-            font-family: var(--fontTask3);
+        .subs-desk {
+            margin-top: 2px;
+            flex: 1 1 51%;
+            border: 3px solid #eeeeee;
+
+            &::placeholder {
+                font-family: var(--fontTask3);
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 54px;
+            }
+        }
+
+        .subs-desk,
+        .subs-btn-desk {
+            padding: 12px 18px;
+        }
+
+        .subs-btn-desk {
+            margin-top: 2px;
+            padding: 11px 38px;
             font-size: 18px;
+            text-align: center;
             letter-spacing: 1px;
-            line-height: 54px;
+            font-family: var(--fontTask3);
+            border: 3px solid var(--black);
+            background-color: var(--white);
+            flex: 1 1 16.1%;
         }
     }
 
-    .subs-desk,
-    .subs-btn-desk {
-        padding: 12px 18px;
-    }
-
-    .subs-btn-desk {
-        margin-top: 2px;
-        padding: 11px 38px;
-        font-size: 18px;
-        text-align: center;
-        letter-spacing: 1px;
-        font-family: var(--fontTask3);
-        border: 3px solid var(--black);
-        background-color: var(--white);
-        flex: 1 1 16.1%;
-    }
 }

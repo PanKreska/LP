@@ -9,42 +9,6 @@
 .slider--container {
     position: relative;
 
-    .desktop-menu-wrapper {
-        display: none;
-        position: absolute;
-        margin: 3.1% 0px 0px 7.3%;
-        width: 84.9%;
-        justify-content: space-between;
-        font-family: var(--fontTask3);
-        font-size: 16px;
-        letter-spacing: 6px;
-        line-height: 26px;
-        z-index: 1;
-
-        @media (min-width: 991.98px) {
-            display: flex;
-        }
-
-        .desktop-menu {
-            margin-left: -20.3%;
-            margin-top: 0.4%;
-
-            .desk-list {
-                display: flex;
-                list-style: none;
-
-                li {
-                    margin-right: 7.7%;
-                }
-            }
-        }
-
-        .cart {
-            margin-right: -0.5%;
-        }
-
-    }
-
     .arrow {
         border: solid var(--black);
         border-width: 0 2px 2px 0;
@@ -54,6 +18,7 @@
         height: 16px;
         width: 16px;
         top: 43.3%;
+        z-index: 1;
 
         &.right {
             transform: rotate(-45deg);
@@ -106,20 +71,24 @@
             }
         }
     }
+
     .align-wrapper {
         display: flex;
         justify-content: space-between;
         width: 50%;
         align-items: baseline;
     }
-    .dotsNumbers-wrapper  {
+
+    .dotsNumbers-wrapper {
         display: flex;
         justify-content: flex-end;
         padding-bottom: 20px;
         margin-top: -10px;
+
         .slide-number {
             font-family: var(--fontMoney);
-            > span{
+
+            >span {
                 font-family: var(--fontExtra);
             }
         }
@@ -130,57 +99,76 @@
     overflow: hidden;
 
     .slide {
+        width: 50%;
         position: relative;
 
         .image {
+            height: calc(100vh - 500px);
             display: block;
-            margin-left: 3.7%;
-            margin-top: -5.5%;
-            width: 46%;
-            padding-bottom: 55px;
+            position: relative;
+            left: 120px;
+        }
 
-            @media (min-width: 640.98px) {
-                width: 45%;
-                margin-left: 7%;
+        .img {
+            position: absolute;
+            top: 38%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            object-fit: contain;
+
+            @media (max-width: 991.98px) {
+                right: 60%;
+                top: 31%;
             }
-
-            @media (min-width: 1399.98px) {
-                margin-left: 18.8%;
-                margin-top: 0%;
+            @media (max-width: 767.98px) {
+                right: 80%;
+                top: 21%;
             }
         }
     }
+}
 
-    .slide-text {
-        position: absolute;
-        left: 53.7%;
-        top: 43.2%;
-        font-family: var(--fontTask3);
-        font-size: 32px;
-        letter-spacing: 3.2px;
-        line-height: 58px;
+.slide-text {
+    position: absolute;
+    left: 65%;
+    top: 40%;
+    font-family: var(--fontTask3);
+    font-size: 32px;
+    letter-spacing: 3.2px;
+    line-height: 58px;
+    z-index: 1;
+
+    @media (max-width: 639.98px) {
+        left: 60%;
+        font-size: 20px;
+        line-height: 25px;
+        padding: 2px;
+    }
+    @media (max-width: 767.98px) {
+        top: 20% !important;
+        width: 100%;
+    }
+    @media (max-width: 991.98px) {
+        top: 31.2%;
+    }
+
+    @media (min-width: 1399.98px) {
+        left: 63.5%;
+        top: 46.7%;
+    }
+
+    &>p {
+        font-size: 24px;
+        letter-spacing: 1.3px;
+        line-height: 33px;
+        text-decoration: underline;
 
         @media (max-width: 639.98px) {
-            left: 53.7%;
-            top: 45%;
-            font-size: 20px;
-            line-height: 25px;
-            padding: 2px;
+            font-size: 18px;
         }
-
-        @media (min-width: 1399.98px) {
-            left: 63.5%;
-            top: 46.7%;
-        }
-        &>p {
-            font-size: 24px;
-            letter-spacing: 1.3px;
-            line-height: 33px;
-            text-decoration: underline;
-    
-            @media (max-width: 639.98px) {
-                font-size: 18px;
-            }
-        }
-    } 
+    }
 }
