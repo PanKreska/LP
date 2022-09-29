@@ -36,10 +36,6 @@
         @media only screen and (min-width: 992px) {
             display: inline-block;
         }
-
-        @media (min-width: 1399.98px) {
-            top: 53.4%;
-        }
     }
 
     .dots {
@@ -97,6 +93,7 @@
 
 .slides {
     overflow: hidden;
+    position: relative;
 
     .slide {
         width: 50%;
@@ -122,6 +119,14 @@
             min-height: 100%;
             object-fit: contain;
             transform: translate(-50%, -50%);
+
+            @media (max-width: 399.98px) {
+                top: 40%;
+            }
+            @media (min-width: 999.98px) {
+                top: 38%;
+                left: 66%;
+            }
         }
     }
 }
@@ -132,22 +137,15 @@
     top: 40%;
     font-family: var(--fontTask3);
     font-size: 32px;
-    letter-spacing: 3.2px;
     line-height: 58px;
     z-index: 1;
 
     @media (max-width: 639.98px) {
-        left: 60%;
         font-size: 22px;
     }
 
-    @media (max-width: 767.98px) {
-        width: 100%;
-    }
-
-    @media (min-width: 1399.98px) {
-        left: 63.5%;
-        top: 46.7%;
+    @media (max-width: 369.98px) {
+        font-size: 18px;
     }
 
     &>p {
@@ -158,6 +156,12 @@
 
         @media (max-width: 639.98px) {
             font-size: 18px;
+        }
+
+        @media (max-width: 369.98px) {
+            font-size: 16px;
+            left: 64%;
+            top: 32%;
         }
     }
 }
