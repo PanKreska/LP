@@ -75,6 +75,10 @@ header {
                 >img {
                     width: 120%;
                     max-width: 120%;
+
+                    @media (max-width: 369.98px) {
+                        width: 112%;
+                    }
                 }
             }
 
@@ -125,6 +129,10 @@ header {
             box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
             transition: 0.4s ease;
 
+            @media (max-width: 369.98px) {
+                width: 25px;
+            }
+
             &:not(:first-child) {
                 margin-top: 6px;
             }
@@ -132,11 +140,9 @@ header {
     }
 
     .logo {
-        font-size: 32px;
-        font-family: 'Maison Bold';
-        font-size: 32px;
-        letter-spacing: 10px;
-        line-height: 27px;
+        @media (max-width: 369.98px) {
+            width: 50%;
+        }
 
         @media (min-width: 991.98px) {
             display: none;

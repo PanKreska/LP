@@ -245,7 +245,10 @@
     }
 
     &.three {
-
+        .image--wrapper {
+            background-color: var(--backgroundImage);
+            padding-top: 50%;
+        }
         .product-image {
             padding: 16.3% 0;
         }
@@ -258,10 +261,10 @@
         @media (max-width: 576.98px) {
             .image--wrapper {
                 background-color: var(--backgroundImage);
+                padding-top: 90%;
             }
 
             .product-image {
-                padding: 35% 0 !important;
                 text-align: center;
             }
 
