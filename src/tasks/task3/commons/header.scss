@@ -13,11 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 5%;
-
-    @media (min-width: 640.98px) {
-        padding: 5% 0%;
-    }
+    padding: 5% 10px;
 
     .logotyp {
         display: none;
@@ -140,10 +136,6 @@ header {
     }
 
     .logo {
-        @media (max-width: 369.98px) {
-            width: 50%;
-        }
-
         @media (min-width: 991.98px) {
             display: none;
         }
