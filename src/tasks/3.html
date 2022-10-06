@@ -159,6 +159,16 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="slide swiper-slide" id="1">
+                                <div class="slide-text">
+                                    Sky Planet
+                                    <p>
+                                        <a
+                                            href="http://localhost:9000/tasks/3.html"
+                                            >Shop now</a
+                                        >
+                                    </p>
+                                </div>
+                                <!-- slide-text -->
                                 <picture class="image">
                                     <source
                                         srcset="<%= require('./task3/img/sliderImg2.avif').default %>"
@@ -171,32 +181,56 @@
                                     <img
                                         src="<%= require('./task3/img/sliderImg2.png').default %>"
                                         alt="slide"
-                                        class="img"
+                                        class="img swiper-lazy"
                                     />
                                 </picture>
+                                <div class="swiper-lazy-preloader"></div>
                             </div>
                             <!-- slide -->
                             <div class="slide swiper-slide" id="2">
+                                <div class="slide-text">
+                                    Sky Planet
+                                    <p>
+                                        <a
+                                            href="http://localhost:9000/tasks/3.html"
+                                            >Shop now</a
+                                        >
+                                    </p>
+                                </div>
+                                <!-- slide-text -->
                                 <picture class="image">
                                     <img
                                         src="<%= require('./task3/img/sliderImg1.png').default %>"
                                         alt="slide"
-                                        class="img"
+                                        class="img swiper-lazy"
                                     />
                                 </picture>
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <!-- slide swiper-slide -->
+                            <div class="slide swiper-slide" id="3">
+                                <div class="slide-text">
+                                    Sky Planet
+                                    <p>
+                                        <a
+                                            href="http://localhost:9000/tasks/3.html"
+                                            >Shop now</a
+                                        >
+                                    </p>
+                                </div>
+                                <!-- slide-text -->
+                                <picture class="image">
+                                    <img
+                                        src="<%= require('./task3/img/sliderImg3.png').default %>"
+                                        alt="slide"
+                                        class="img swiper-lazy"
+                                    />
+                                </picture>
+                                <div class="swiper-lazy-preloader"></div>
                             </div>
                             <!-- slide swiper-slide -->
                         </div>
                         <!-- swiper-wrapper -->
-                        <div class="slide-text">
-                            Sky Planet
-                            <p>
-                                <a href="http://localhost:9000/tasks/3.html"
-                                    >Shop now</a
-                                >
-                            </p>
-                        </div>
-                        <!-- slide-text -->
 
                         <div class="arrow right"></div>
                         <div class="arrow left"></div>
@@ -211,7 +245,8 @@
                                 <!-- dots -->
                                 <div class="slide-number">
                                     <span class="num">1</span>
-                                    <span class="dekor">of</span> 3
+                                    <span class="dekor">of</span>
+                                    <span class="num2">3</span>
                                 </div>
                                 <!-- slide-number -->
                             </div>
@@ -956,28 +991,46 @@
             <script>
                 // obsługa zmiany numeru slidu w tym drag mouse
                 const num = document.querySelector('.num');
+                const num2 = document.querySelector('.num2');
                 const el = document.getElementById('1');
-
+                let numOfSlides =
+                    document.querySelectorAll('.swiper-slide').length;
+                let numOfSlides2 = document.querySelectorAll('.swiper-slide');
+                
+                num2.innerHTML = numOfSlides;
+                
                 const options = {
                     attributes: true,
                 };
 
                 function callback(mutationList, observer) {
                     mutationList.forEach((mutation) => {
-                        {
+                        {   
                             if (
-                                el.classList.contains(
+                                numOfSlides2[0].classList.contains(
                                     'swiper-slide-duplicate-active'
                                 ) ||
-                                el.classList.contains('swiper-slide-active')
+                                numOfSlides2[0].classList.contains(
+                                    'swiper-slide-active'
+                                )
                             ) {
-                                num.innerHTML = '1';
+                                num.innerHTML = numOfSlides2[0].id;
+                            } else if (
+                                numOfSlides2[1].classList.contains(
+                                    'swiper-slide-duplicate-active'
+                                ) ||
+                                numOfSlides2[1].classList.contains(
+                                    'swiper-slide-active'
+                                )
+                            ) {
+                                num.innerHTML = numOfSlides2[1].id;
                             } else {
-                                num.innerHTML = '2';
+                                num.innerHTML = numOfSlides2[2].id;
                             }
                         }
                     });
                 }
+
                 const observer = new MutationObserver(callback);
                 observer.observe(el, options);
             </script>

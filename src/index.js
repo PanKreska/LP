@@ -5,10 +5,12 @@ new Swiper(".swiper", {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
+    lazy: true,
+    
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    bulletClass: 'swiper-pagination-bullet-active',
+    bulletClass: 'swiper-pagination-bullet-active', 
   },
 
   navigation: {
@@ -20,4 +22,4 @@ new Swiper(".swiper", {
     currentClass : '.active',
     clickable: 'true',
   },
-})
+});
