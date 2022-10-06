@@ -9,6 +9,10 @@
         <base href="/" />
         <link
             rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
             integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
             crossorigin="anonymous"
@@ -152,14 +156,38 @@
                         <!-- desktop-menu-wrapper -->
                     </div>
                     <!-- desktop-menu-wrapper -->
-                    <a href="http://localhost:9000/tasks/3.html"
-                        ><div class="arrow right"></div
-                    ></a>
-                    <a href="http://localhost:9000/tasks/3.html"
-                        ><div class="arrow left"></div
-                    ></a>
-
-                    <div class="slides">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="slide swiper-slide" id="1">
+                                <picture class="image">
+                                    <source
+                                        srcset="<%= require('./task3/img/sliderImg2.avif').default %>"
+                                        type="image/avif"
+                                    />
+                                    <source
+                                        srcset="<%= require('./task3/img/sliderImg2.webp').default %>"
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        src="<%= require('./task3/img/sliderImg2.png').default %>"
+                                        alt="slide"
+                                        class="img"
+                                    />
+                                </picture>
+                            </div>
+                            <!-- slide -->
+                            <div class="slide swiper-slide" id="2">
+                                <picture class="image">
+                                    <img
+                                        src="<%= require('./task3/img/sliderImg1.png').default %>"
+                                        alt="slide"
+                                        class="img"
+                                    />
+                                </picture>
+                            </div>
+                            <!-- slide swiper-slide -->
+                        </div>
+                        <!-- swiper-wrapper -->
                         <div class="slide-text">
                             Sky Planet
                             <p>
@@ -169,716 +197,790 @@
                             </p>
                         </div>
                         <!-- slide-text -->
-                        <div class="slide">
-                            <picture class="image">
-                                <source
-                                    srcset="<%= require('./task3/img/sliderImg2.avif').default %>"
-                                    type="image/avif"
-                                />
-                                <source
-                                    srcset="<%= require('./task3/img/sliderImg2.webp').default %>"
-                                    type="image/webp"
-                                />
-                                <img
-                                    src="<%= require('./task3/img/sliderImg2.png').default %>"
-                                    alt="slide"
-                                    class="img"
-                                />
-                            </picture>
-                        </div>
-                        <!-- slide -->
-                    </div>
-                    <!-- slides -->
-                    <div class="dotsNumbers-wrapper">
-                        <div class="align-wrapper">
-                            <div class="dots">
-                                <div class="dot active"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                            <!-- dots -->
-                            <div class="slide-number">1 <span>of</span> 3</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- slider--container -->
-            </div>
-            <!-- container -->
-        </div>
-        <!-- section--one -->
-        <div class="section--two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="filters">
-                            <div class="left-filter">
-                                <div class="category">Categories</div>
-                                <div class="arrowDown"></div>
-                                <div class="category-menu">
-                                    <div class="category-menu-title">
-                                        Categories by
-                                    </div>
-                                    <ul class="category-list">
-                                        <li>
-                                            <a
-                                                href="http://localhost:9000/tasks/3.html"
-                                                >LIVING</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="http://localhost:9000/tasks/3.html"
-                                                >FURNITURE</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="http://localhost:9000/tasks/3.html"
-                                                >LIGHTING</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="http://localhost:9000/tasks/3.html"
-                                                >DINING</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="http://localhost:9000/tasks/3.html"
-                                                >ACCESSORIES</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="http://localhost:9000/tasks/3.html"
-                                                >TECHICS</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- category-menu -->
-                            </div>
-                            <!-- left-filter -->
-                            <div class="categories desktop">Categories</div>
 
-                            <div class="right-filter">
-                                <div class="icon-filtr">
-                                    <img
-                                        src="<%= require('./task3/img/filtr.png').default %>"
-                                        alt="slide"
-                                    />
+                        <div class="arrow right"></div>
+                        <div class="arrow left"></div>
+
+                        <div class="dotsNumbers-wrapper">
+                            <div class="align-wrapper">
+                                <div class="dots">
+                                    <div class="dot active"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
                                 </div>
-                                <div class="filter">Filter</div>
-                                <div class="arrowDown"></div>
-                                <div class="filter-menu">
-                                    <div class="filter-menu-title">
-                                        Filter by
+                                <!-- dots -->
+                                <div class="slide-number">
+                                    <span class="num">1</span>
+                                    <span class="dekor">of</span> 3
+                                </div>
+                                <!-- slide-number -->
+                            </div>
+                            <!-- align-wrapper -->
+                        </div>
+                        <!-- dotsNumbers-wrapper -->
+                    </div>
+                    <!-- swiper -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- section--one -->
+            <div class="section--two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="filters">
+                                <div class="left-filter">
+                                    <div class="category">Categories</div>
+                                    <div class="arrowDown"></div>
+                                    <div class="category-menu">
+                                        <div class="category-menu-title">
+                                            Categories by
+                                        </div>
+                                        <ul class="category-list">
+                                            <li>
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >LIVING</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >FURNITURE</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >LIGHTING</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >DINING</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >ACCESSORIES</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >TECHICS</a
+                                                >
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="price">PRICE</div>
-                                    <input
-                                        type="range"
-                                        min="1"
-                                        max="2000"
-                                        value="50"
-                                        class="ranger"
-                                        id="myRange"
-                                    />
-                                    <input type="text" />
-                                    <input type="text" />
-                                    <button>Filter</button>
-                                    <div class="color">COLOR</div>
-                                    <div class="color-table">
-                                        <div class="color-dot"></div>
-                                        <div class="color-dot chosen"></div>
-                                        <div class="color-dot"></div>
-                                        <div class="color-dot"></div>
-                                        <div class="color-dot"></div>
-                                        <div class="color-dot"></div>
+                                    <!-- category-menu -->
+                                </div>
+                                <!-- left-filter -->
+                                <div class="categories desktop">Categories</div>
+
+                                <div class="right-filter">
+                                    <div class="icon-filtr">
+                                        <img
+                                            src="<%= require('./task3/img/filtr.png').default %>"
+                                            alt="slide"
+                                        />
                                     </div>
-                                    <!-- color-table -->
-                                    <div class="size">SIZE</div>
-                                    <div class="size-table">
-                                        <div class="small">
+                                    <div class="filter">Filter</div>
+                                    <div class="arrowDown"></div>
+                                    <div class="filter-menu">
+                                        <div class="filter-menu-title">
+                                            Filter by
+                                        </div>
+                                        <div class="price">PRICE</div>
+                                        <input
+                                            type="range"
+                                            min="1"
+                                            max="2000"
+                                            value="50"
+                                            class="ranger"
+                                            id="myRange"
+                                        />
+                                        <input type="text" />
+                                        <input type="text" />
+                                        <button>Filter</button>
+                                        <div class="color">COLOR</div>
+                                        <div class="color-table">
+                                            <div class="color-dot"></div>
+                                            <div class="color-dot chosen"></div>
+                                            <div class="color-dot"></div>
+                                            <div class="color-dot"></div>
+                                            <div class="color-dot"></div>
+                                            <div class="color-dot"></div>
+                                        </div>
+                                        <!-- color-table -->
+                                        <div class="size">SIZE</div>
+                                        <div class="size-table">
+                                            <div class="small">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Small</a
+                                                >
+                                            </div>
+                                            <div class="medium">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Medium</a
+                                                >
+                                            </div>
+                                            <div class="large">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Large</a
+                                                >
+                                            </div>
+                                        </div>
+                                        <!-- size-table -->
+                                        <div class="founded"></div>
+                                    </div>
+                                    <!-- filter-menu -->
+                                </div>
+                                <!-- right-filter -->
+                            </div>
+                            <!-- filters -->
+                        </div>
+                        <div class="col-lg-8 col-md-8">
+                            <div class="filter-wrapper">
+                                <div class="sorter">
+                                    <span>Sort by: A-Z</span>
+                                    <div class="arrowDown desktop"></div>
+                                </div>
+
+                                <div class="results">
+                                    Showing 1-12 of 24 results
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-lg-8 col-md-8 -->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 d-none d-lg-block">
+                                    <div class="sidebar">
+                                        <ul class="categories-list">
+                                            <li class="product-list">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >All products</a
+                                                >
+                                            </li>
+                                            <li class="product-list">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Living</a
+                                                >
+                                            </li>
+                                            <li class="product-list">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Dining</a
+                                                >
+                                            </li>
+                                            <li class="product-list">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Furniture</a
+                                                >
+                                            </li>
+                                            <li class="product-list">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Lighting</a
+                                                >
+                                            </li>
+                                            <li class="product-list">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Technics</a
+                                                >
+                                            </li>
+                                            <li class="product-list">
+                                                <a
+                                                    href="http://localhost:9000/tasks/3.html"
+                                                    >Accessories</a
+                                                >
+                                            </li>
+                                        </ul>
+                                        <div class="line-two"></div>
+                                        <div class="filterby">Filter by</div>
+                                        <div class="price">Price</div>
+                                        <input
+                                            type="range"
+                                            min="1"
+                                            max="100"
+                                            value="50"
+                                            class="ranger"
+                                            id="myRange"
+                                        />
+                                        <div class="range-input-wraper">
+                                            <input
+                                                type="text"
+                                                placeholder="30"
+                                                class="price-input"
+                                            />
+                                            <input
+                                                type="text"
+                                                placeholder="190"
+                                                class="price-input"
+                                            />
+                                            <button class="filter-btn">
+                                                Filter
+                                            </button>
+                                        </div>
+                                        <!-- range-input-wraper -->
+                                        <div class="colors">Color</div>
+                                        <div class="circle-wrapper">
+                                            <div class="circle one"></div>
+                                            <div
+                                                class="circle two selected"
+                                            ></div>
+                                            <div class="circle three"></div>
+                                            <div class="circle four"></div>
+                                            <div class="circle five"></div>
+                                        </div>
+                                        <!-- colors -->
+                                        <div class="size">Size</div>
+                                        <div class="size-item">
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
-                                                >Small</a
+                                                >small</a
                                             >
                                         </div>
-                                        <div class="medium">
+                                        <div class="size-item">
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
                                                 >Medium</a
                                             >
                                         </div>
-                                        <div class="large">
+                                        <div class="size-item">
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
                                                 >Large</a
                                             >
                                         </div>
-                                    </div>
-                                    <!-- size-table -->
-                                    <div class="founded"></div>
-                                </div>
-                                <!-- filter-menu -->
-                            </div>
-                            <!-- right-filter -->
-                        </div>
-                        <!-- filters -->
-                    </div>
-                    <div class="col-lg-8 col-md-8">
-                        <div class="filter-wrapper">
-                            <div class="sorter">
-                                <span>Sort by: A-Z</span>
-                                <div class="arrowDown desktop"></div>
-                            </div>
-
-                            <div class="results">
-                                Showing 1-12 of 24 results
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col-12 -->
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 col-lg-4 d-none d-lg-block">
-                                <div class="sidebar">
-                                    <ul class="categories-list">
-                                        <li class="product-list">
+                                        <div class="brands">Brands</div>
+                                        <div class="brands-item">
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
-                                                >All products</a
+                                                >Banshu Hamono</a
                                             >
-                                        </li>
-                                        <li class="product-list">
+                                        </div>
+                                        <div class="brands-item">
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
-                                                >Living</a
+                                                >Bower</a
                                             >
-                                        </li>
-                                        <li class="product-list">
+                                        </div>
+                                        <div class="brands-item">
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
-                                                >Dining</a
+                                                >Braun</a
                                             >
-                                        </li>
-                                        <li class="product-list">
+                                        </div>
+                                        <div class="brands-item">
+                                            <a
+                                                href="http://localhost:9000/tasks/3.html"
+                                                >Elevenplus</a
+                                            >
+                                        </div>
+                                        <div class="brands-item">
+                                            <a
+                                                href="http://localhost:9000/tasks/3.html"
+                                                >Field</a
+                                            >
+                                        </div>
+                                        <div class="brands-item">
+                                            <a
+                                                href="http://localhost:9000/tasks/3.html"
+                                                >Henry Wilson</a
+                                            >
+                                        </div>
+                                        <div class="brands-item">
+                                            <a
+                                                href="http://localhost:9000/tasks/3.html"
+                                                >Menu</a
+                                            >
+                                        </div>
+                                        <div class="line-three"></div>
+                                        <div class="tag">Popular Tags</div>
+                                        <div class="tags">
+                                            <a
+                                                href="http://localhost:9000/tasks/3.html"
+                                                >Simple</a
+                                            >,
+                                            <a
+                                                href="http://localhost:9000/tasks/3.html"
+                                                >Minimalism</a
+                                            >,
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
                                                 >Furniture</a
-                                            >
-                                        </li>
-                                        <li class="product-list">
+                                            >,
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
-                                                >Lighting</a
-                                            >
-                                        </li>
-                                        <li class="product-list">
+                                                >White</a
+                                            >,
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
-                                                >Technics</a
-                                            >
-                                        </li>
-                                        <li class="product-list">
+                                                >Black</a
+                                            >,
                                             <a
                                                 href="http://localhost:9000/tasks/3.html"
                                                 >Accessories</a
                                             >
-                                        </li>
-                                    </ul>
-                                    <div class="line-two"></div>
-                                    <div class="filterby">Filter by</div>
-                                    <div class="price">Price</div>
-                                    <input
-                                        type="range"
-                                        min="1"
-                                        max="100"
-                                        value="50"
-                                        class="ranger"
-                                        id="myRange"
-                                    />
-                                    <div class="range-input-wraper">
-                                        <input
-                                            type="text"
-                                            placeholder="30"
-                                            class="price-input"
-                                        />
-                                        <input
-                                            type="text"
-                                            placeholder="190"
-                                            class="price-input"
-                                        />
-                                        <button class="filter-btn">
-                                            Filter
-                                        </button>
+                                        </div>
                                     </div>
-                                    <!-- range-input-wraper -->
-                                    <div class="colors">Color</div>
-                                    <div class="circle-wrapper">
-                                        <div class="circle one"></div>
-                                        <div class="circle two selected"></div>
-                                        <div class="circle three"></div>
-                                        <div class="circle four"></div>
-                                        <div class="circle five"></div>
-                                    </div>
-                                    <!-- colors -->
-                                    <div class="size">Size</div>
-                                    <div class="size-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >small</a
-                                        >
-                                    </div>
-                                    <div class="size-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Medium</a
-                                        >
-                                    </div>
-                                    <div class="size-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Large</a
-                                        >
-                                    </div>
-                                    <div class="brands">Brands</div>
-                                    <div class="brands-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Banshu Hamono</a
-                                        >
-                                    </div>
-                                    <div class="brands-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Bower</a
-                                        >
-                                    </div>
-                                    <div class="brands-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Braun</a
-                                        >
-                                    </div>
-                                    <div class="brands-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Elevenplus</a
-                                        >
-                                    </div>
-                                    <div class="brands-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Field</a
-                                        >
-                                    </div>
-                                    <div class="brands-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Henry Wilson</a
-                                        >
-                                    </div>
-                                    <div class="brands-item">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Menu</a
-                                        >
-                                    </div>
-                                    <div class="line-three"></div>
-                                    <div class="tag">Popular Tags</div>
-                                    <div class="tags">
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Simple</a
-                                        >,
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Minimalism</a
-                                        >,
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Furniture</a
-                                        >,
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >White</a
-                                        >,
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Black</a
-                                        >,
-                                        <a
-                                            href="http://localhost:9000/tasks/3.html"
-                                            >Accessories</a
-                                        >
-                                    </div>
+                                    <!-- sidebar -->
                                 </div>
-                                <!-- sidebar -->
-                            </div>
-                            <!-- col-12 col-lg-4 d-none d-lg-block -->
-                            <div class="col-lg-8">
-                                <div class="row">
-                                    <div class="col-12 col-sm-6">
-                                        <div class="product one">
-                                            <div class="top-wrapper">
-                                                <div class="new">New</div>
-                                            </div>
-                                            <div class="image--wrapper">
-                                                <div class="product-image">
-                                                    <img
-                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                                    />
+                                <!-- col-12 col-lg-4 d-none d-lg-block -->
+                                <div class="col-lg-8">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="product one">
+                                                <div class="top-wrapper">
+                                                    <div class="new">New</div>
                                                 </div>
-                                            </div>
-                                            <!-- image-wrapper -->
-                                            <div class="product-description">
-                                                <a
-                                                    href="http://localhost:9000/tasks/3.html"
-                                                >
-                                                    <div class="product-title">
-                                                        Bottle Humidifier
+                                                <div class="image--wrapper">
+                                                    <div class="product-image">
+                                                        <img
+                                                            src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        />
                                                     </div>
-                                                    <div class="product-price">
-                                                        $69.00
-                                                    </div></a
+                                                </div>
+                                                <!-- image-wrapper -->
+                                                <div
+                                                    class="product-description"
                                                 >
+                                                    <a
+                                                        href="http://localhost:9000/tasks/3.html"
+                                                    >
+                                                        <div
+                                                            class="product-title"
+                                                        >
+                                                            Bottle Humidifier
+                                                        </div>
+                                                        <div
+                                                            class="product-price"
+                                                        >
+                                                            $69.00
+                                                        </div></a
+                                                    >
+                                                </div>
+                                                <!-- product-description -->
                                             </div>
-                                            <!-- product-description -->
+                                            <!-- product one -->
                                         </div>
-                                        <!-- product one -->
-                                    </div>
-                                    <!-- col-12 col-sm-6 -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="product two">
-                                            <div class="top-wrapper heart">
-                                                <img
-                                                    src="<%= require('./task3/img/heart.png').default %>"
-                                                    alt="slide"
-                                                    class="heart"
-                                                />
-                                            </div>
-                                            <div class="image--wrapper">
-                                                <div class="product-image">
+                                        <!-- col-12 col-sm-6 -->
+                                        <div class="col-12 col-sm-6">
+                                            <div class="product two">
+                                                <div class="top-wrapper heart">
                                                     <img
-                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                        src="<%= require('./task3/img/heart.png').default %>"
                                                         alt="slide"
+                                                        class="heart"
                                                     />
                                                 </div>
-                                            </div>
-                                            <!-- image-wrapper -->
-                                            <div class="product-description">
-                                                <a
-                                                    href="http://localhost:9000/tasks/3.html"
-                                                >
-                                                    <div class="product-title">
-                                                        Teapot
+                                                <div class="image--wrapper">
+                                                    <div class="product-image">
+                                                        <img
+                                                            src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                            alt="slide"
+                                                        />
                                                     </div>
-                                                    <div class="product-price">
-                                                        $55.00
-                                                    </div></a
+                                                </div>
+                                                <!-- image-wrapper -->
+                                                <div
+                                                    class="product-description"
                                                 >
+                                                    <a
+                                                        href="http://localhost:9000/tasks/3.html"
+                                                    >
+                                                        <div
+                                                            class="product-title"
+                                                        >
+                                                            Teapot
+                                                        </div>
+                                                        <div
+                                                            class="product-price"
+                                                        >
+                                                            $55.00
+                                                        </div></a
+                                                    >
+                                                </div>
+                                                <!-- product-description -->
                                             </div>
-                                            <!-- product-description -->
+                                            <!-- product two -->
                                         </div>
-                                        <!-- product two -->
+                                        <!-- col-12 col-sm-6 -->
+                                        <div
+                                            class="col-12 d-sm-block d-lg-none position-relative"
+                                        >
+                                            <div class="product three">
+                                                <div class="top-wrapper"></div>
+                                                <div class="image--wrapper">
+                                                    <div class="product-image">
+                                                        <img
+                                                            src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                            alt="slide"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <!-- image-wrapper -->
+                                                <div
+                                                    class="product-description"
+                                                >
+                                                    <a
+                                                        href="http://localhost:9000/tasks/3.html"
+                                                    >
+                                                        <div
+                                                            class="product-title"
+                                                        >
+                                                            Align Daybed
+                                                        </div>
+                                                        <div
+                                                            class="product-price"
+                                                        >
+                                                            $1,999.00
+                                                        </div></a
+                                                    >
+                                                </div>
+                                                <!-- product-description -->
+                                            </div>
+                                            <!-- product three -->
+                                        </div>
+                                        <!-- col-12 col-sm-6 -->
+                                        <div class="col-12 col-sm-6">
+                                            <div class="product four">
+                                                <div class="top-wrapper"></div>
+                                                <div class="image--wrapper">
+                                                    <div class="product-image">
+                                                        <img
+                                                            src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                            alt="slide"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <!-- image-wrapper -->
+                                                <div
+                                                    class="product-description"
+                                                >
+                                                    <a
+                                                        href="http://localhost:9000/tasks/3.html"
+                                                    >
+                                                        <div
+                                                            class="product-title"
+                                                        >
+                                                            Beolit 15
+                                                        </div>
+                                                        <div
+                                                            class="product-price"
+                                                        >
+                                                            $599.00
+                                                        </div></a
+                                                    >
+                                                </div>
+                                                <!-- product-description -->
+                                            </div>
+                                            <!-- product four -->
+                                        </div>
+                                        <!-- col-12 col-sm-6 -->
+                                        <div class="col-12 col-sm-6">
+                                            <div class="product five">
+                                                <div class="top-wrapper"></div>
+                                                <div class="image--wrapper">
+                                                    <div class="product-image">
+                                                        <img
+                                                            src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                            alt="slide"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <!-- image-wrapper -->
+                                                <div
+                                                    class="product-description"
+                                                >
+                                                    <a
+                                                        href="http://localhost:9000/tasks/3.html"
+                                                    >
+                                                        <div
+                                                            class="product-title"
+                                                        >
+                                                            Grey Watch
+                                                        </div>
+                                                        <div
+                                                            class="product-price"
+                                                        >
+                                                            $215.00
+                                                        </div></a
+                                                    >
+                                                </div>
+                                                <!-- product-description -->
+                                            </div>
+                                            <!-- product five -->
+                                        </div>
+                                        <!-- col-12 col-sm-6 -->
+                                        <div class="col-12 col-sm-6">
+                                            <div class="product six">
+                                                <div class="top-wrapper"></div>
+                                                <div class="image--wrapper">
+                                                    <div class="product-image">
+                                                        <img
+                                                            src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                            alt="slide"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <!-- image-wrapper -->
+                                                <div
+                                                    class="product-description"
+                                                >
+                                                    <a
+                                                        href="http://localhost:9000/tasks/3.html"
+                                                    >
+                                                        <div
+                                                            class="product-title"
+                                                        >
+                                                            Bottle Humidifier
+                                                        </div>
+                                                        <div
+                                                            class="product-price"
+                                                        >
+                                                            $69.00
+                                                        </div></a
+                                                    >
+                                                </div>
+                                                <!-- product-description -->
+                                            </div>
+                                            <!-- product six -->
+                                        </div>
+                                        <!-- col-12 col-sm-6 -->
+                                        <div class="col-12 col-sm-6">
+                                            <div class="product seven">
+                                                <div class="top-wrapper"></div>
+                                                <div class="image--wrapper">
+                                                    <div class="product-image">
+                                                        <img
+                                                            src="<%= require('./task3/img/ImgCroped.png').default %>"
+                                                            alt="slide"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <!-- image-wrapper -->
+                                                <div
+                                                    class="product-description"
+                                                >
+                                                    <a
+                                                        href="http://localhost:9000/tasks/3.html"
+                                                    >
+                                                        <div
+                                                            class="product-title"
+                                                        >
+                                                            Bookends
+                                                        </div>
+                                                        <div
+                                                            class="product-price"
+                                                        >
+                                                            $179.00
+                                                        </div></a
+                                                    >
+                                                </div>
+                                                <!-- product-description -->
+                                            </div>
+                                            <!-- product seven -->
+                                        </div>
+                                        <!-- col-12 col-sm-6 -->
                                     </div>
-                                    <!-- col-12 col-sm-6 -->
-                                    <div
-                                        class="col-12 d-sm-block d-lg-none position-relative"
+                                    <!-- row -->
+                                </div>
+                                <!-- col-lg-8 -->
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- col-12 -->
+                        <div class="col-12 d-lg-none">
+                            <div class="show-more">
+                                <a href="http://localhost:9000/tasks/3.html"
+                                    >Show More</a
+                                >
+                            </div>
+                        </div>
+                        <!-- col-12 -->
+                        <div class="col-12 d-none d-lg-block position-relative">
+                            <div class="page-numbers">
+                                <div class="num">
+                                    <a href="http://localhost:9000/tasks/3.html"
+                                        >01</a
                                     >
-                                        <div class="product three">
-                                            <div class="top-wrapper"></div>
-                                            <div class="image--wrapper">
-                                                <div class="product-image">
-                                                    <img
-                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                                        alt="slide"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <!-- image-wrapper -->
-                                            <div class="product-description">
-                                                <a
-                                                    href="http://localhost:9000/tasks/3.html"
-                                                >
-                                                    <div class="product-title">
-                                                        Align Daybed
-                                                    </div>
-                                                    <div class="product-price">
-                                                        $1,999.00
-                                                    </div></a
-                                                >
-                                            </div>
-                                            <!-- product-description -->
-                                        </div>
-                                        <!-- product three -->
-                                    </div>
-                                    <!-- col-12 col-sm-6 -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="product four">
-                                            <div class="top-wrapper"></div>
-                                            <div class="image--wrapper">
-                                                <div class="product-image">
-                                                    <img
-                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                                        alt="slide"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <!-- image-wrapper -->
-                                            <div class="product-description">
-                                                <a
-                                                    href="http://localhost:9000/tasks/3.html"
-                                                >
-                                                    <div class="product-title">
-                                                        Beolit 15
-                                                    </div>
-                                                    <div class="product-price">
-                                                        $599.00
-                                                    </div></a
-                                                >
-                                            </div>
-                                            <!-- product-description -->
-                                        </div>
-                                        <!-- product four -->
-                                    </div>
-                                    <!-- col-12 col-sm-6 -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="product five">
-                                            <div class="top-wrapper"></div>
-                                            <div class="image--wrapper">
-                                                <div class="product-image">
-                                                    <img
-                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                                        alt="slide"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <!-- image-wrapper -->
-                                            <div class="product-description">
-                                                <a
-                                                    href="http://localhost:9000/tasks/3.html"
-                                                >
-                                                    <div class="product-title">
-                                                        Grey Watch
-                                                    </div>
-                                                    <div class="product-price">
-                                                        $215.00
-                                                    </div></a
-                                                >
-                                            </div>
-                                            <!-- product-description -->
-                                        </div>
-                                        <!-- product five -->
-                                    </div>
-                                    <!-- col-12 col-sm-6 -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="product six">
-                                            <div class="top-wrapper"></div>
-                                            <div class="image--wrapper">
-                                                <div class="product-image">
-                                                    <img
-                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                                        alt="slide"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <!-- image-wrapper -->
-                                            <div class="product-description">
-                                                <a
-                                                    href="http://localhost:9000/tasks/3.html"
-                                                >
-                                                    <div class="product-title">
-                                                        Bottle Humidifier
-                                                    </div>
-                                                    <div class="product-price">
-                                                        $69.00
-                                                    </div></a
-                                                >
-                                            </div>
-                                            <!-- product-description -->
-                                        </div>
-                                        <!-- product six -->
-                                    </div>
-                                    <!-- col-12 col-sm-6 -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="product seven">
-                                            <div class="top-wrapper"></div>
-                                            <div class="image--wrapper">
-                                                <div class="product-image">
-                                                    <img
-                                                        src="<%= require('./task3/img/ImgCroped.png').default %>"
-                                                        alt="slide"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <!-- image-wrapper -->
-                                            <div class="product-description">
-                                                <a
-                                                    href="http://localhost:9000/tasks/3.html"
-                                                >
-                                                    <div class="product-title">
-                                                        Bookends
-                                                    </div>
-                                                    <div class="product-price">
-                                                        $179.00
-                                                    </div></a
-                                                >
-                                            </div>
-                                            <!-- product-description -->
-                                        </div>
-                                        <!-- product seven -->
-                                    </div>
-                                    <!-- col-12 col-sm-6 -->
                                 </div>
-                                <!-- row -->
+                                <div class="num">
+                                    <a href="http://localhost:9000/tasks/3.html"
+                                        >02</a
+                                    >
+                                </div>
+                                <div class="num">
+                                    <a href="http://localhost:9000/tasks/3.html"
+                                        >03</a
+                                    >
+                                </div>
+                                <div class="num">
+                                    <a href="http://localhost:9000/tasks/3.html"
+                                        >04</a
+                                    >
+                                </div>
+                                <div class="num">
+                                    <a href="http://localhost:9000/tasks/3.html"
+                                        >05</a
+                                    >
+                                </div>
+                                <div class="arrow-num">
+                                    <a
+                                        href="http://localhost:9000/tasks/3.html"
+                                    >
+                                        <img
+                                            src="<%= require('./task3/img/arrow-pag.png').default %>"
+                                            alt="slide"
+                                    /></a>
+                                </div>
                             </div>
-                            <!-- col-lg-8 -->
+                            <!-- page-numbers -->
                         </div>
-                        <!-- row -->
+                        <!-- col-12 -->
                     </div>
-                    <!-- col-12 -->
-                    <div class="col-12 d-lg-none">
-                        <div class="show-more">
-                            <a href="http://localhost:9000/tasks/3.html"
-                                >Show More</a
-                            >
-                        </div>
-                    </div>
-                    <!-- col-12 -->
-                    <div class="col-12 d-none d-lg-block position-relative">
-                        <div class="page-numbers">
-                            <div class="num">
-                                <a href="http://localhost:9000/tasks/3.html"
-                                    >01</a
-                                >
-                            </div>
-                            <div class="num">
-                                <a href="http://localhost:9000/tasks/3.html"
-                                    >02</a
-                                >
-                            </div>
-                            <div class="num">
-                                <a href="http://localhost:9000/tasks/3.html"
-                                    >03</a
-                                >
-                            </div>
-                            <div class="num">
-                                <a href="http://localhost:9000/tasks/3.html"
-                                    >04</a
-                                >
-                            </div>
-                            <div class="num">
-                                <a href="http://localhost:9000/tasks/3.html"
-                                    >05</a
-                                >
-                            </div>
-                            <div class="arrow-num">
-                                <a href="http://localhost:9000/tasks/3.html">
-                                    <img
-                                        src="<%= require('./task3/img/arrow-pag.png').default %>"
-                                        alt="slide"
-                                /></a>
-                            </div>
-                        </div>
-                        <!-- page-numbers -->
-                    </div>
-                    <!-- col-12 -->
+                    <!-- row -->
                 </div>
-                <!-- row -->
+                <!-- container -->
             </div>
-            <!-- container -->
-        </div>
-        <!-- section--two -->
-        <div class="section--three">
-            <div class="container">
-                <div class="subscribe-title">Subscribe to our news</div>
-                <div class="subsribe--wrapper">
-                    <input
-                        type="text"
-                        class="subs"
-                        placeholder="    Enter your email..."
-                    />
-                    <button class="subs-btn">Subscribe</button>
-                </div>
-                <div class="subsribe--wrapper-desktop">
-                    <div class="form">
-                        <div class="subscribe-title-desk">
-                            Get Discount 35% off
-                        </div>
+            <!-- section--two -->
+            <div class="section--three">
+                <div class="container">
+                    <div class="subscribe-title">Subscribe to our news</div>
+                    <div class="subsribe--wrapper">
                         <input
                             type="text"
-                            class="subs-desk"
-                            placeholder="Enter your email..."
-                        /><button class="subs-btn-desk">Send</button>
+                            class="subs"
+                            placeholder="    Enter your email..."
+                        />
+                        <button class="subs-btn">Subscribe</button>
+                    </div>
+                    <div class="subsribe--wrapper-desktop">
+                        <div class="form">
+                            <div class="subscribe-title-desk">
+                                Get Discount 35% off
+                            </div>
+                            <input
+                                type="text"
+                                class="subs-desk"
+                                placeholder="Enter your email..."
+                            /><button class="subs-btn-desk">Send</button>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="links">
+                        <p>
+                            <a href="http://localhost:9000/tasks/3.html"
+                                >Shop</a
+                            >
+                        </p>
+                        <p>
+                            <a href="http://localhost:9000/tasks/3.html"
+                                >Journal</a
+                            >
+                        </p>
+                        <p>
+                            <a href="http://localhost:9000/tasks/3.html"
+                                >About Us</a
+                            >
+                        </p>
+                        <p>
+                            <a href="http://localhost:9000/tasks/3.html"
+                                >Contact</a
+                            >
+                        </p>
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="links">
-                    <p><a href="http://localhost:9000/tasks/3.html">Shop</a></p>
-                    <p>
-                        <a href="http://localhost:9000/tasks/3.html">Journal</a>
-                    </p>
-                    <p>
-                        <a href="http://localhost:9000/tasks/3.html"
-                            >About Us</a
-                        >
-                    </p>
-                    <p>
-                        <a href="http://localhost:9000/tasks/3.html">Contact</a>
-                    </p>
-                </div>
+                <!-- container -->
             </div>
-            <!-- container -->
-        </div>
-        <!-- section--three -->
-        <footer>
-            <div class="container">
-                <div class="footer--wrapper">
-                    <div class="copyrights">
-                        &copy; 2017 Maison<span class="desk"
-                            >. All rights reserved</span
-                        >
-                    </div>
-                    <div class="socials">
-                        <!-- <picture class="social">
+            <!-- section--three -->
+            <footer>
+                <div class="container">
+                    <div class="footer--wrapper">
+                        <div class="copyrights">
+                            &copy; 2017 Maison<span class="desk"
+                                >. All rights reserved</span
+                            >
+                        </div>
+                        <div class="socials">
+                            <!-- <picture class="social">
                             <img
                                 src="<%= require('./task3/img/socials.png').default %>"
                                 alt="slide"
                             />
                         </picture> -->
-                        <picture class="social fb">
-                            <img
-                                src="<%= require('./task3/img/face.png').default %>"
-                                alt="slide"
-                            />
-                        </picture>
-                        <picture class="social tw">
-                            <img
-                                src="<%= require('./task3/img/twit.png').default %>"
-                                alt="slide"
-                            />
-                        </picture>
-                        <picture class="social pt">
-                            <img
-                                src="<%= require('./task3/img/pint.png').default %>"
-                                alt="slide"
-                            />
-                        </picture>
-                        <picture class="social yt">
-                            <img
-                                src="<%= require('./task3/img/tube.png').default %>"
-                                alt="slide"
-                            />
-                        </picture>
+                            <picture class="social fb">
+                                <img
+                                    src="<%= require('./task3/img/face.png').default %>"
+                                    alt="slide"
+                                />
+                            </picture>
+                            <picture class="social tw">
+                                <img
+                                    src="<%= require('./task3/img/twit.png').default %>"
+                                    alt="slide"
+                                />
+                            </picture>
+                            <picture class="social pt">
+                                <img
+                                    src="<%= require('./task3/img/pint.png').default %>"
+                                    alt="slide"
+                                />
+                            </picture>
+                            <picture class="social yt">
+                                <img
+                                    src="<%= require('./task3/img/tube.png').default %>"
+                                    alt="slide"
+                                />
+                            </picture>
+                        </div>
+                        <!-- socials -->
                     </div>
-                    <!-- socials -->
+                    <!-- footer--wrapper -->
                 </div>
-                <!-- footer--wrapper -->
-            </div>
-            <!-- container -->
-        </footer>
+                <!-- container -->
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                // obsługa zmiany numeru slidu w tym drag mouse
+                const num = document.querySelector('.num');
+                const el = document.getElementById('1');
+
+                const options = {
+                    attributes: true,
+                };
+
+                function callback(mutationList, observer) {
+                    mutationList.forEach((mutation) => {
+                        {
+                            if (
+                                el.classList.contains(
+                                    'swiper-slide-duplicate-active'
+                                ) ||
+                                el.classList.contains('swiper-slide-active')
+                            ) {
+                                num.innerHTML = '1';
+                            } else {
+                                num.innerHTML = '2';
+                            }
+                        }
+                    });
+                }
+                const observer = new MutationObserver(callback);
+                observer.observe(el, options);
+            </script>
+        </div>
     </body>
 </html>
