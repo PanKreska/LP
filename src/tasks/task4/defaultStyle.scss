@@ -1,0 +1,37 @@
+@import './sections/section1.scss';
+@import './sections/section2.scss';
+@import './sections/section3.scss';
+@import './sections/section4.scss';
+@import './sections/section5.scss';
+@import './sections/section6.scss';
+@import './sections/section7.scss';
+@import './commons/footer.scss';
+@import './commons/header.scss';
+
+@font-face {
+    font-family: 'Lalezar', cursive;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+    //colors
+    --backgroundSec: rgb(244, 245, 244);
+    --backgroundImages: rgb(245, 245, 245);
+    //fonts
+    --fontTask4: 'Lalezar', sans-serif;
+    --fontBold4: 'Open Sans', sans-serif;
+    --fontMoney4: 'PT Sans', sans-serif;
+    --fontExtra4: 'Source Sans Pro', sans-serif;
+    //picture
+}
