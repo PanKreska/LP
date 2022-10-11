@@ -1,0 +1,22 @@
+button {
+    background-color:#2d9079;
+    color: var(--white);
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: none;
+    font-size: 14px;
+}
+.more {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+.follow {
+    padding: 9px 30px;
+}
+.download {
+    padding: 20px 0;
+    margin: 10px 25px;
+    color: var(--white);
+    border-radius: 5px;
+}

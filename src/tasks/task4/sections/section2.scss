@@ -1,0 +1,33 @@
+.section2 {
+    padding: 0 10px 0 20px;
+    .title {
+        color: #2d9079;
+        font-size: 30px;
+        text-align: left;
+        padding: 50px 0 20px 0px;
+    }
+    .paragraf {
+        text-align: left;
+    }
+    .section-wrapper {
+        position: relative;
+        .text {
+            padding-bottom: 50px;
+        }
+    }
+    .icon {
+        padding-top: 30px;
+    }
+    .heading {
+        padding-top: 35px;
+        font-size: 25px;
+    }
+    .number{
+        position: absolute;
+        z-index: -1;
+        color: #c6e6df;
+        font-size: 100px;
+        top: 50px;
+        left: -20px;
+    }
+}

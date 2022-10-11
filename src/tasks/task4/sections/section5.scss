@@ -1,0 +1,75 @@
+.section5 {
+    background-color: #fbf3eb;
+    padding: 80px 0 320px;
+    position: relative;
+
+    .title {
+        padding: 10px 0;
+        font-size: 26px;
+    }
+
+    .text {
+        color: gray;
+    }
+
+    .photo-wrapper {
+        border-radius: 50%;
+        border: 2px solid #a0d5c8;
+        width: 170px;
+        height: 170px;
+        display: block;
+        margin: 10% 5% 10%;
+        overflow: hidden;
+        background-color: lightgray;
+    }
+
+    .photo {
+        display: block;
+        margin: auto;
+    }
+
+    .quote-icon {
+        svg {
+            fill: #2d9079;
+            position: absolute;
+            left: 145px;
+            bottom: 310px;
+        }
+    }
+
+    .slogan {
+        color: #2e919c;
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .follow {
+        svg {
+            fill: var(--white);
+            padding-right: 3px;
+        }
+    }
+
+    .download-wrapper {
+        position: absolute;
+        bottom: -520px;
+        left: 0;
+        background-color: var(--white);
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 20px;
+        .title {
+            font-weight: bold;
+        }
+        .download {
+            svg {
+                fill: var(--white);
+            }
+        }
+        .text {
+            padding: 0px 25px;
+        }
+    }
+}
