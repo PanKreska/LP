@@ -1,19 +1,41 @@
 button {
-    background-color:#2d9079;
+    background-color: #2d9079;
     color: var(--white);
     border-radius: 10px;
     padding: 10px 40px;
     border: none;
     font-size: 14px;
 }
+
+.read-more {
+    margin-top: 25.5px;
+    padding: 12px 49px 13px;
+    font-family: var(--fontOpen4);
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+
+    &.second {
+        margin: 33px auto 0;
+        padding: 11px 45px;
+    }
+}
+
 .more {
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 27px;
+    padding: 8px 50px;
+    font-family: var(--fontOpen4);
+    margin-bottom: 20px;
 }
+
 .follow {
-    padding: 9px 30px;
+    padding: 11px 22px;
+    margin-left: 12px;
+    border-radius: 8px;
+    letter-spacing: 1.4px;
 }
+
 .download {
     padding: 20px 0;
     margin: 10px 25px;

@@ -10,28 +10,20 @@
 
 @font-face {
     font-family: 'Lalezar', cursive;
-}
-
-@font-face {
     font-family: 'Open Sans', sans-serif;
-}
-
-@font-face {
     font-family: 'PT Sans', sans-serif;
-}
-
-@font-face {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 
 :root {
     //colors
     --backgroundSec: rgb(244, 245, 244);
     --backgroundImages: rgb(245, 245, 245);
     //fonts
-    --fontTask4: 'Lalezar', sans-serif;
-    --fontBold4: 'Open Sans', sans-serif;
-    --fontMoney4: 'PT Sans', sans-serif;
-    --fontExtra4: 'Source Sans Pro', sans-serif;
+    --fontLalezar4: 'Lalezar';
+    --fontOpen4: 'Open Sans';
+    --fontPT4: 'PT Sans';
+    --fontSans4: 'Source Sans Pro';
     //picture
 }

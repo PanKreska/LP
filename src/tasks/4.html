@@ -19,7 +19,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Open+Sans:wght@400;700&family=PT+Sans:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lalezar&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
     </head>
@@ -52,7 +52,7 @@
                             <div class="list">
                                 <ul>
                                     <li>Powerful and flexible them</li>
-                                    <li>Simple, trransparent pircing</li>
+                                    <li>Simple, transparent pircing</li>
                                     <li>Build tools and full documentation</li>
                                 </ul>
                             </div>
@@ -60,23 +60,25 @@
                         </div>
                         <div class="mobile-screen">
                             <div class="image-wrapper">
-                                <img
-                                    src="https://via.placeholder.com/200x300"
-                                    class="image"
-                                />
+                                <picture>
+                                    <img
+                                        src="<%= require('./task4/img/phone.png').default %>"
+                                        alt="phone"
+                                        class="phone"
+                                    />
+                                </picture>
                             </div>
                         </div>
                         <div class="info-block">
                             <div class="title">Quick & Easy Process</div>
                             <div class="paragraf">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Sunt possimus animi cupiditate
-                                natus mollitia, exercitationem sapiente quasi
-                                quisquam odio fugit suscipit omnis error alias
-                                deleniti consequatur. Aliquam alias eaque
-                                voluptate.
+                                Duis aute irure dolor in repregenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Exceptur sint occaecat cupidatat
+                                non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
                             </div>
-                            <button class="read-more">READ MORE</button>
+                            <button class="read-more second">READ MORE</button>
                         </div>
                     </div>
                 </div>
@@ -86,15 +88,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="title">
-                            We believe in Customer Satisfaction
-                        </div>
-                        <div class="paragraf">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Cupiditate inventore voluptas alias voluptate
-                            nisi. Perspiciatis maxime distinctio, voluptas harum
-                            repellat neque, sed sequi, non dicta in quia dolorum
-                            incidunt beatae!
+                        <div class="block-wrapper">
+                            <div class="title">
+                                We believe in Customer Satisfaction
+                            </div>
+                            <div class="paragraf">
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate. Cupiditate inventore voluptas alias
+                                voluptate nisi. Perspiciatis maxime.
+                            </div>
                         </div>
                         <div class="section-wrapper">
                             <div class="icon one">
@@ -105,12 +107,12 @@
                             </div>
                             <p class="heading">Business Growth</p>
                             <div class="number one">01</div>
-                            <div class="text">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Quam labore sint natus quis
-                                excepturi eaque ut hic architecto dolorem
-                                doloremque animi quisquam inventore possimus
-                                nostrum enim quibusdam, quaerat eius quia?
+                            <div class="text one">
+                                Sample text. Click to select the text box, amet
+                                consectetur adipisicing elit. Quam labore sint
+                                natus quis excepturi eaque ut hic architecto
+                                dolorem doloremque animi quisquam inventore
+                                possimus
                             </div>
                         </div>
                         <div class="section-wrapper">
@@ -122,12 +124,12 @@
                             </div>
                             <p class="heading">Strategy Planning</p>
                             <div class="number two">02</div>
-                            <div class="text">
+                            <div class="text two">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Quam labore sint natus quis
                                 excepturi eaque ut hic architecto dolorem
                                 doloremque animi quisquam inventore possimus
-                                nostrum enim quibusdam, quaerat eius quia?
+                                nostrum
                             </div>
                         </div>
                         <div class="section-wrapper">
@@ -139,12 +141,12 @@
                             </div>
                             <p class="heading">Time is Money</p>
                             <div class="number three">03</div>
-                            <div class="text">
+                            <div class="text three">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Quam labore sint natus quis
                                 excepturi eaque ut hic architecto dolorem
                                 doloremque animi quisquam inventore possimus
-                                nostrum enim quibusdam, quaerat eius quia?
+                                nostrum
                             </div>
                         </div>
                         <div class="section-wrapper">
@@ -156,12 +158,12 @@
                             </div>
                             <p class="heading">Better Investment</p>
                             <div class="number four">04</div>
-                            <div class="text">
+                            <div class="text four">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Quam labore sint natus quis
                                 excepturi eaque ut hic architecto dolorem
                                 doloremque animi quisquam inventore possimus
-                                nostrum enim quibusdam, quaerat eius quia?
+                                nostrum
                             </div>
                         </div>
                         <div class="section-wrapper">
@@ -170,16 +172,15 @@
                                     src="https://via.placeholder.com/50x50"
                                     class="image"
                                 />
-                                <p class="heading">Growth Graph</p>
-                                <div class="number five">05</div>
-                                <div class="text">
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit. Quam labore sint natus
-                                    quis excepturi eaque ut hic architecto
-                                    dolorem doloremque animi quisquam inventore
-                                    possimus nostrum enim quibusdam, quaerat
-                                    eius quia?
-                                </div>
+                            </div>
+                            <p class="heading">Growth Graph</p>
+                            <div class="number five">05</div>
+                            <div class="text five">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quam labore sint natus quis
+                                excepturi eaque ut hic architecto dolorem
+                                doloremque animi quisquam inventore possimus
+                                nostrum
                             </div>
                         </div>
                         <div class="section-wrapper">
@@ -191,12 +192,12 @@
                             </div>
                             <p class="heading">Global Buiness</p>
                             <div class="number six">06</div>
-                            <div class="text last">
+                            <div class="text six">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Quam labore sint natus quis
                                 excepturi eaque ut hic architecto dolorem
                                 doloremque animi quisquam inventore possimus
-                                nostrum enim quibusdam, quaerat eius quia?
+                                nostrum
                             </div>
                         </div>
                     </div>
@@ -211,55 +212,52 @@
                         <div class="title">Our Features & Services.</div>
                         <div class="card-wrapper">
                             <div class="card-image">
-                                <img
-                                    src="https://via.placeholder.com/200x300"
-                                    class="images"
-                                />
+                                <picture>
+                                    <img
+                                        src="<%= require('./task4/img/blog1.jpg').default %>"
+                                        alt="blog"
+                                        class="blog"
+                                    />
+                                </picture>
                             </div>
                             <div class="card-title">Communications</div>
-                            <div class="card-text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Asperiores mollitia illo
-                                ducimus itaque deserunt cum fuga veritatis
-                                pariatur repellat, deleniti libero eligendi
-                                tenetur autem, placeat vero? Dolorum aperiam ut
-                                alias!
+                            <div class="card-text first">
+                                Pretium lectus quam id leo in vitae turpis.
+                                Mattis pellentesque id nibh tortor id.
                             </div>
                             <button class="more">MORE</button>
                         </div>
                         <div class="card-wrapper">
                             <div class="card-image">
-                                <img
-                                    src="https://via.placeholder.com/200x300"
-                                    class="images"
-                                />
+                                <picture>
+                                    <img
+                                        src="<%= require('./task4/img/blog3.jpg').default %>"
+                                        alt="blog"
+                                        class="blog"
+                                    />
+                                </picture>
                             </div>
                             <div class="card-title">Inspired Design</div>
-                            <div class="card-text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Asperiores mollitia illo
-                                ducimus itaque deserunt cum fuga veritatis
-                                pariatur repellat, deleniti libero eligendi
-                                tenetur autem, placeat vero? Dolorum aperiam ut
-                                alias!
+                            <div class="card-text second">
+                                Nunc consequat interdum varius sit amet mattis
+                                vulputate enim nulla. Risus feugiat.
                             </div>
                             <button class="more">MORE</button>
                         </div>
                         <div class="card-wrapper">
                             <div class="card-image">
-                                <img
-                                    src="https://via.placeholder.com/200x300"
-                                    class="images"
-                                />
+                                <picture>
+                                    <img
+                                        src="<%= require('./task4/img/blog2.jpg').default %>"
+                                        alt="blog"
+                                        class="blog"
+                                    />
+                                </picture>
                             </div>
                             <div class="card-title">Happy Customers</div>
-                            <div class="card-text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Asperiores mollitia illo
-                                ducimus itaque deserunt cum fuga veritatis
-                                pariatur repellat, deleniti libero eligendi
-                                tenetur autem, placeat vero? Dolorum aperiam ut
-                                alias!
+                            <div class="card-text third">
+                                nisl purus in mollis nunc sed id semper. Rhoncus
+                                aenean vel elit scelerisque mauris.
                             </div>
                             <button class="more">MORE</button>
                         </div>
@@ -274,7 +272,7 @@
                         <div class="blog-card one">
                             <div class="blog-heading">App Design</div>
                             <div class="blog-title">
-                                Check our lastest blog post for more update.
+                                Check our latest blog post for more update.
                             </div>
                             <div class="link">
                                 Learn more
@@ -295,7 +293,16 @@
                                 Check our lastest blog post for more update.
                             </div>
                             <div class="link">
-                                Learn more <i class="fa fa-arrow-right"></i>
+                                Learn more
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                                    />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -306,38 +313,43 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="title">About Us</div>
-                        <div class="text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Laboriosam asperiores quidem natus! Itaque,
-                            molestias. Exercitationem deserunt hic consectetur
-                            voluptates quos fuga sunt, veniam delectus atque at
-                            cum, doloribus numquam saepe? Lorem ipsum dolor sit,
-                            amet consectetur adipisicing elit. Natus velit
-                            expedita tempore nulla quaerat unde, cumque neque.
-                            Magni, officia quam fugit quasi, eos, illum
-                            voluptatibus tempora quo facilis sint libero. Lorem
-                            ipsum dolor sit, amet consectetur adipisicing elit.
-                            Ex odio eveniet exercitationem pariatur mollitia hic
-                            doloremque, dolores quae tempora error, alias
-                            explicabo, libero eum temporibus voluptatum fuga
-                            praesentium asperiores? Nihil? Lorem ipsum dolor
-                            sit, amet consectetur adipisicing elit. Officia
-                            saepe quam pariatur sed aliquid nulla dolor error
-                            quo nisi maxime. Ex ab quos molestiae dolores facere
-                            reiciendis nesciunt, nisi delectus?
+                        <div class="block-wrapper">
+                            <div class="title">About Us</div>
+                            <div class="text">
+                                Sample text. Click to Egestas egestas fringilla
+                                phasellus faucibus scelerisque dolor sit amet
+                                consectetur adipisicing elit. Laboriosam
+                                asperiores quidem natus! Itaque, molestias.
+                                Exercitationem deserunt hic consectetur
+                                voluptates quos fuga sunt, veniam delectus atque
+                                at cum, doloribus numquam saepe? Lorem ipsum
+                                dolor sit, amet consectetur adipisicing elit.
+                                Natus velit expedita tempore nulla quaerat unde,
+                                cumque neque. Magni, officia quam fugit quasi,
+                                eos, illum voluptatibus tempora quo facilis sint
+                                libero. Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Ex odio eveniet exercitationem
+                                pariatur mollitia hic doloremque, dolores quae
+                                tempora error, alias explicabo, libero eum
+                                temporibus voluptatum fuga praesentium
+                                asperiores? Nihil? Lorem ipsum dolor sit, amet
+                                consectetur adipisicing elit.
+                            </div>
                         </div>
                         <div class="photo-wrapper">
-                            <img
-                                src="https://via.placeholder.com/200x300"
-                                class="photo"
-                            />
+                            <picture>
+                                <img
+                                    src="<%= require('./task4/img/man.jpg').default %>"
+                                    alt="man"
+                                    class="man"
+                                />
+                            </picture>
                         </div>
                         <div class="quote-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="50"
-                                height="50"
+                                width="70"
+                                height="70"
                                 viewBox="0 0 24 24"
                             >
                                 <path
@@ -409,18 +421,16 @@
                             important, with safety and comfort in mind.
                         </div>
                         <div class="more-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam soluta mollitia rerum consectetur
+                            Etiam sit amet convallis erat - class aptent taciti sociosqu ad litora torquent
                             vero ipsum odio sit totam esse, recusandae
-                            doloremque molestiae iure quibusdam enim, sequi
-                            natus, non numquam sunt?
+                            doloremque molestiae iure quibusdam 
                         </div>
                         <div class="socials">
                             <div class="social fb">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
+                                    width="28"
+                                    height="28"
                                     viewBox="0 0 24 24"
                                 >
                                     <path
@@ -431,8 +441,8 @@
                             <div class="social tw">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
+                                    width="28"
+                                    height="28"
                                     viewBox="0 0 24 24"
                                 >
                                     <path
@@ -443,8 +453,8 @@
                             <div class="social insta">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
+                                    width="28"
+                                    height="28"
                                     viewBox="0 0 24 24"
                                 >
                                     <path
@@ -455,8 +465,8 @@
                             <div class="social vk">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
+                                    width="28"
+                                    height="28"
                                     viewBox="0 0 24 24"
                                 >
                                     <path
@@ -467,8 +477,8 @@
                             <div class="social yt">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
+                                    width="28"
+                                    height="28"
                                     viewBox="0 0 24 24"
                                 >
                                     <path

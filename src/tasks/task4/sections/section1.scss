@@ -6,14 +6,16 @@
     margin-top: 60px;
     background-color: var(--white);
     display: block;
-    padding: 20px;
+    padding: 22px;
 
     .heading {
-        padding-bottom: 20px;
+        padding: 3.5px 0px 18px 0;
+        letter-spacing: 3.7px;
         display: block;
         margin: auto;
-        font-size: 16px;
+        font-size: 18px;
         color: grey;
+        font-family: var(--fontPT4);
     }
 
     .slogan {
@@ -21,55 +23,81 @@
         display: block;
         margin: auto;
         line-height: 1;
-        padding-bottom: 20px;
+        padding-bottom: 18px;
+        font-family: var(--fontOpen4);
+        line-height: 1.15;
+        letter-spacing: 0.1px;
     }
 
     .list {
         padding: 0;
-        font-size: 22px;
+        font-size: 20px;
+        font-family: var(--fontOpen4);
 
         ul {
-            padding: 0 1em;
+            padding: 0px 0em 0 1.5em;
             list-style: none;
 
             li::before {
                 content: "";
                 border-color: transparent #f29343;
                 border-style: solid;
-                border-width: 0.35em 0 0.35em 0.45em;
+                border-width: 0.30em 0 0.30em 0.45em;
                 display: block;
                 height: 0;
                 width: 0;
-                left: -1em;
+                left: -1.2em;
                 top: 1.1em;
                 position: relative;
             }
         }
+
+        li:first-of-type+li {
+            line-height: 1.32;
+        }
+
+        li:last-child {
+            line-height: 1.4;
+        }
+
     }
 }
 
 .mobile-screen {
     background-color: #f0f8f6;
+    overflow: hidden;
 
     .image-wrapper {
+        width: 100%;
+        display: block;
         margin: auto;
-        text-align: center;
-        padding: 40px 40px 0 40px;
-    }
 
+        .phone {
+            display: block;
+            margin: auto;
+        }
+    }
 }
 
+
 .info-block {
+    padding: 93px 0 63px;
+
     .title {
         color: #2d9079;
-        font-size: 30px;
+        font-size: 36px;
         text-align: center;
-        padding: 80px 0 30px;
+        font-family: var(--fontSans4);
+        padding-bottom: 25px;
     }
+
     .paragraf {
         text-align: center;
-        padding: 0 25px;
+        font-size: 17px;
+        padding: 0 9px;
+        line-height: 1.88;
     }
+
     .read-more {
         margin: 20px auto 40px;
         display: block;

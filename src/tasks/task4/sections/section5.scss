@@ -3,24 +3,38 @@
     padding: 80px 0 320px;
     position: relative;
 
+    .block-wrapper {
+        margin: 20px 12px;
+    }
+
     .title {
-        padding: 10px 0;
-        font-size: 26px;
+        padding: 8px 0 26px;
+        font-size: 32px;
+        letter-spacing: 0.6px;
     }
 
     .text {
         color: gray;
+        font-size: 18px;
+        letter-spacing: 0.12px;
+        line-height: 2.2;
     }
 
     .photo-wrapper {
         border-radius: 50%;
-        border: 2px solid #a0d5c8;
-        width: 170px;
-        height: 170px;
+        border: 10px solid #a0d5c8;
+        width: 223px;
+        height: 223px;
         display: block;
-        margin: 10% 5% 10%;
+        margin: 17.5% 3.8% 7%;
         overflow: hidden;
         background-color: lightgray;
+    }
+
+    .man {
+        max-width: 150%;
+        position: relative;
+        left: -25%;
     }
 
     .photo {
@@ -29,47 +43,56 @@
     }
 
     .quote-icon {
+        position: relative;
         svg {
             fill: #2d9079;
             position: absolute;
-            left: 145px;
-            bottom: 310px;
+            left: 164px;
+            bottom: 187px;
         }
     }
 
     .slogan {
         color: #2e919c;
-        font-size: 22px;
-        padding-bottom: 10px;
+        font-size: 28px;
+        padding-bottom: 20px;
+        padding-left: 13px;
+        line-height: 1.28;
+        padding-right: 12px;
+        letter-spacing: 0.8px;
+        font-family: var(--fontPT4);
+    }
+}
+
+.follow {
+    svg {
+        fill: var(--white);
+        padding-right: 3px;
+    }
+}
+
+.download-wrapper {
+    position: absolute;
+    bottom: -672px;
+    left: 0;
+    background-color: var(--white);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+
+    .title {
+        font-weight: bold;
     }
 
-    .follow {
+    .download {
         svg {
             fill: var(--white);
-            padding-right: 3px;
         }
     }
 
-    .download-wrapper {
-        position: absolute;
-        bottom: -520px;
-        left: 0;
-        background-color: var(--white);
-        padding: 20px 40px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 15px;
-        margin: 20px;
-        .title {
-            font-weight: bold;
-        }
-        .download {
-            svg {
-                fill: var(--white);
-            }
-        }
-        .text {
-            padding: 0px 25px;
-        }
+    .text {
+        padding: 0px 25px;
     }
 }

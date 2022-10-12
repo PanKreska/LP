@@ -1,46 +1,76 @@
 .section6 {
-    background-color:  #c6e6df;
-    padding-top: 300px;
+    background-color: #c6e6df;
+    padding-top: 412px;
 
     .title {
         color: #2d9079;
-        font-size: 22px;
+        font-size: 36px;
         font-weight: bold;
-        padding-bottom: 20px;
+        padding-bottom: 14px;
+        margin-left: 12px;
+        font-family: var(--fontSans4);
+        letter-spacing: -0.38px;
     }
+
     .text {
         font-weight: bold;
+        margin-left: 12px;
+        font-size: 18px;
+        font-family: var(--fontOpen4);
+        font-style: italic;
+        letter-spacing: 0.15px;
+        line-height: 1.8;
+        padding-right: 30px;
     }
+
     .more-text {
-        padding: 20px 0;
+        padding: 22.4px 0px;
+        margin-left: 12px;
+        font-size: 18px;
+        line-height: 1.75;
+        letter-spacing: -0.4px;
     }
+
     .socials {
         display: flex;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
+        margin-left: 12px;
+        margin-top: 7px;
+
         .social {
-            padding-right: 10px;
+            padding-right: 9px;
             fill: #2d9079;
         }
     }
+
     .contact {
         display: flex;
         flex-direction: column;
+        margin-left: 12px;
+
         ul {
             padding-left: 0px;
             list-style: none;
             padding-bottom: 30px;
         }
+
         ul li:before {
             content: '✓';
             padding-right: 10px;
-          }
+        }
     }
+
     .heading {
         font-weight: bold;
         color: #2d9079;
         padding: 20px 0;
+        font-family: var(--fontPT4);
+        font-size: 18px;
     }
-    input, textarea, button {
+
+    input,
+    textarea,
+    button {
         border: none;
         padding: 10px;
         margin: 10px auto;
@@ -48,9 +78,11 @@
         display: block;
         border-radius: 10px;
     }
+
     ::placeholder {
         color: #7a7a7a;
     }
+
     .sub {
         margin-bottom: 80px;
     }
