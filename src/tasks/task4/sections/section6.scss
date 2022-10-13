@@ -24,7 +24,7 @@
     }
 
     .more-text {
-        padding: 22.4px 0px;
+        padding: 20px 0px;
         margin-left: 12px;
         font-size: 18px;
         line-height: 1.75;
@@ -33,20 +33,28 @@
 
     .socials {
         display: flex;
-        padding-bottom: 40px;
-        margin-left: 12px;
-        margin-top: 7px;
+        padding-bottom: 38px;
+        margin-left: 12.4px;
+        margin-top: 10px;
 
         .social {
-            padding-right: 9px;
+            padding-right: 9.1px;
             fill: #2d9079;
         }
     }
 
     .contact {
-        display: flex;
-        flex-direction: column;
         margin-left: 12px;
+
+        .contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            >span {
+                font-size: 17px;
+                letter-spacing: -0.19px;
+            }
+        }
 
         ul {
             padding-left: 0px;
@@ -58,14 +66,16 @@
             content: '✓';
             padding-right: 10px;
         }
+
+        
     }
 
     .heading {
         font-weight: bold;
         color: #2d9079;
-        padding: 20px 0;
+        padding: 0px 0px 14px;
         font-family: var(--fontPT4);
-        font-size: 18px;
+        font-size: 20px;
     }
 
     input,
@@ -85,5 +95,8 @@
 
     .sub {
         margin-bottom: 80px;
+    }
+    form {
+        padding: 12px 8px;
     }
 }

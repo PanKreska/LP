@@ -44,6 +44,7 @@
 
     .quote-icon {
         position: relative;
+
         svg {
             fill: #2d9079;
             position: absolute;
@@ -54,12 +55,11 @@
 
     .slogan {
         color: #2e919c;
-        font-size: 28px;
+        font-size: 30px;
         padding-bottom: 20px;
-        padding-left: 13px;
-        line-height: 1.28;
+        padding-left: 12.5px;
+        line-height: 1.2;
         padding-right: 12px;
-        letter-spacing: 0.8px;
         font-family: var(--fontPT4);
     }
 }
@@ -73,10 +73,10 @@
 
 .download-wrapper {
     position: absolute;
-    bottom: -672px;
+    bottom: -593px;
     left: 0;
     background-color: var(--white);
-    padding: 20px 40px;
+    padding: 30px 20px 28px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -84,6 +84,9 @@
 
     .title {
         font-weight: bold;
+        font-size: 28px;
+        padding: 10px 12px 0px 13px;
+        letter-spacing: -0.4px;
     }
 
     .download {
@@ -93,6 +96,10 @@
     }
 
     .text {
-        padding: 0px 25px;
+        padding: 0px 19px 0px 19px;
+        margin: 0px 0 14px 0px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        text-align: center;
     }
 }
