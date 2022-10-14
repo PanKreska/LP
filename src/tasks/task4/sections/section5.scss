@@ -117,3 +117,30 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .section5 {
+        .tablet-wrapper {
+            display: flex;
+        }
+
+        .block-wrapper {
+            width: 50%;
+            padding-bottom: 100px;
+        }
+
+        .column-wrapper {
+            width: 50%;
+            padding-bottom: 100px;
+        }
+
+        .download-wrapper {
+            .tabler-wrapper {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                align-content: center;
+            }
+        }
+    }
+}

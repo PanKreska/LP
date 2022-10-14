@@ -92,3 +92,38 @@
         }
     }
 }
+
+
+@media only screen and (min-width: 768px) {
+    .section1 {
+        .tablet-wrapper {
+            display: flex;
+
+            .mobile-screen {
+                margin-top: 60px;
+                padding: 53px 0 0;
+            }
+        }
+    }
+
+    .section1 .mobile-screen .image-wrapper .phone {
+        margin-top: 36px;
+    }
+
+    .section1 .text-wrapper {
+        padding: 53px 0 0;
+    }
+
+    .section1 .info-block {
+        padding: 131px 0 81px;
+    }
+
+    .section1 .info-block .title {
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    .section1 .info-block .paragraf {
+        padding: 0 35px 0 38px;
+    }
+}

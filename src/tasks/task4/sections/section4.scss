@@ -75,3 +75,16 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .section4 {
+        .tablet-wrapper {
+            display: flex;
+            padding-bottom: 90px;
+        }
+
+        .blog-card.two {
+            margin-bottom: 0;
+        }
+    }
+}
