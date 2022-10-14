@@ -1,60 +1,66 @@
 .section2 {
     padding: 0 10px 0 20px;
-    .block-wrapper {
-        margin: 58px 0 1px;
-    }
-    .title {
-        color: #2d9079;
-        font-size: 28px;
-        text-align: left;
-        padding-left: 32px;
-        padding-bottom: 10px;
-        line-height: 1.2;
-    }
 
-    .paragraf {
-        text-align: left;
-        padding-left: 33px;
-        font-size: 19px;
-        letter-spacing: 0.4px;
-        line-height: 1.7;
-        padding-bottom: 65px;
+    .block-wrapper {
+        margin: 59px 0 1px;
+
+        .title {
+            padding-left: 34px;
+            padding-bottom: 12px;
+            color: #2d9079;
+            font-family: var(--fontSans4);
+            font-size: 30px;
+            text-align: left;
+            line-height: 1.1;
+        }
+
+        .paragraf {
+            padding-left: 33px;
+            padding-bottom: 65px;
+            font-family: var(--fontOpen4);
+            text-align: left;
+            font-size: 18px;
+            letter-spacing: 0.38px;
+            line-height: 1.78;
+        }
     }
 
     .section-wrapper {
         position: relative;
-        padding-bottom: 85px;
+        padding-bottom: 82px;
+
+        .icon {
+            padding-left: 40px;
+        }
+
+        .heading {
+            padding-top: 34px;
+            padding-left: 36px;
+            font-size: 26px;
+            margin-bottom: 26px;
+            font-family: var(--fontSans4);
+        }
+
+        .number {
+            position: absolute;
+            z-index: -1;
+            color: #c6e6df;
+            font-size: 151px;
+            top: 6px;
+            left: 1.5px;
+            font-family: var(--fontLalezar4);
+        }
+
         .text {
             padding-left: 35px;
-            line-height: 1.75;
-            letter-spacing: 0.1px;
-            
+            padding-right: 10px;
+            line-height: 1.793;
+            letter-spacing: -0.25px;
+            font-family: var(--fontOpen4);
         }
     }
+
     .section-wrapper:last-of-type {
-            padding-bottom: 109px;
-    }
-
-    .icon {
-        padding-left: 40px;
-    }
-
-    .heading {
-        padding-top: 35px;
-        padding-left: 35px;
-        font-size: 25px;
-        margin-bottom: 1.68rem;
-        font-family: var(--fontOpen4);
-        letter-spacing: -1.1px;
-    }
-
-    .number {
-        position: absolute;
-        z-index: -1;
-        color: #c6e6df;
-        font-size: 151px;
-        top: 7px;
-        left: 0px;
-        font-family: var(--fontLalezar4);
+        padding-bottom: 101px;
     }
 }

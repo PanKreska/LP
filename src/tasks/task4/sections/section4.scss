@@ -1,85 +1,76 @@
 .section4 {
     background-color: var(--white);
-    padding: 30px 0;
-}
+    padding: 30px 0 44px;
 
-.blog-card {
-    margin: 24px 0 0;
-    border-radius: 25px;
-    padding: 5px 43px;
-
-    &.one {
-        background: #faede0;
-
-        .blog-heading {
-            padding-bottom: 18px;
-            color: #e49652;
-            font-size: 23px;
-            font-family: var(--fontSans4);
-            font-weight: bold;
-            margin-top: 21.5px;
-            letter-spacing: 0.2px;
-
-        }
+    .blog-card {
+        margin: 24px 0 0;
+        border-radius: 25px;
+        padding: 5px 43px;
 
         .blog-title {
             font-size: 25px;
-            line-height: 1;
             font-weight: bold;
             font-family: var(--fontSans4);
-            line-height: 1.15;
+            line-height: 1.12;
+            letter-spacing: 0.2px;
+        }
+
+        .blog-heading {
+            padding-bottom: 17px;
+            color: #e49652;
+            font-size: 24px;
+            font-family: var(--fontSans4);
+            font-weight: bold;
+            margin-top: 21.3px;
+            letter-spacing: -0.2px;
 
         }
 
         .link {
             padding-top: 19px;
-            color: #e49652;
             font-size: 18px;
             font-family: var(--fontSans4);
             font-weight: bold;
             padding-bottom: 25px;
+            letter-spacing: 0.3px;
+
             svg {
                 width: 16px;
-                fill: #e49652;
-                margin-left: 6px;
+                margin-left: 5px;
             }
         }
-    }
 
-    &.two {
-        background: #d4ede7;
-        margin: 22px 0 0px;
+        &.one {
+            background: #faede0;
 
-        .blog-heading {
-            color: #2d9079;
-            padding-bottom: 18px;
-            font-size: 23px;
-            font-family: var(--fontSans4);
-            font-weight: bold;
-            margin-top: 21.5px;
-            letter-spacing: 0.2px;
+            .blog-heading {
+                color: #e49652;
+            }
+
+            .link {
+                color: #e49652;
+
+                svg {
+                    fill: #e49652;
+                }
+            }
         }
 
-        .blog-title {
-            font-size: 25px;
-            line-height: 1;
-            font-weight: bold;
-            font-family: var(--fontSans4);
-            line-height: 1.15;
+        &.two {
+            background: #d4ede7;
+            margin: 22px 0 11px;
 
-        }
+            .blog-heading {
+                color: #2d9079;
+            }
 
-        .link {
-            padding-top: 20px;
-            color: #2d9079;
-            font-size: 18px;
-            font-family: var(--fontSans4);
-            font-weight: bold;
-            padding-bottom: 25px;
-            svg {
-                width: 16px;
-                fill: #2d9079;
-                margin-left: 6px;
+            .link {
+                color: #2d9079;
+                padding-bottom: 28px;
+
+                svg {
+                    fill: #2d9079;
+                }
             }
         }
     }

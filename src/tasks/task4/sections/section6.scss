@@ -1,25 +1,25 @@
 .section6 {
     background-color: #c6e6df;
-    padding-top: 412px;
+    padding-top: 414px;
 
     .title {
         color: #2d9079;
-        font-size: 36px;
+        font-size: 37px;
         font-weight: bold;
-        padding-bottom: 14px;
+        padding-bottom: 12px;
         margin-left: 12px;
         font-family: var(--fontSans4);
-        letter-spacing: -0.38px;
+        letter-spacing: -0.7px;
     }
 
     .text {
         font-weight: bold;
-        margin-left: 12px;
-        font-size: 18px;
+        margin-left: 13px;
+        font-size: 19px;
         font-family: var(--fontOpen4);
         font-style: italic;
-        letter-spacing: 0.15px;
-        line-height: 1.8;
+        letter-spacing: 0.2px;
+        line-height: 1.72;
         padding-right: 30px;
     }
 
@@ -34,8 +34,8 @@
     .socials {
         display: flex;
         padding-bottom: 38px;
-        margin-left: 12.4px;
-        margin-top: 10px;
+        margin-left: 13.4px;
+        margin-top: 11px;
 
         .social {
             padding-right: 9.1px;
@@ -50,6 +50,7 @@
             display: flex;
             flex-direction: column;
             padding-top: 20px;
+
             >span {
                 font-size: 17px;
                 letter-spacing: -0.19px;
@@ -67,20 +68,20 @@
             padding-right: 10px;
         }
 
-        
+
     }
 
     .heading {
         font-weight: bold;
-        color: #2d9079;
-        padding: 0px 0px 14px;
-        font-family: var(--fontPT4);
-        font-size: 20px;
+    color: #2d9079;
+    padding: 0px 0px 15px;
+    font-family: var(--fontSans4);
+    font-size: 20px;
+    margin-left: 2px;
     }
 
     input,
-    textarea,
-    button {
+    textarea {
         border: none;
         padding: 10px;
         margin: 10px auto;
@@ -93,9 +94,6 @@
         color: #7a7a7a;
     }
 
-    .sub {
-        margin-bottom: 80px;
-    }
     form {
         padding: 12px 8px;
     }

@@ -8,7 +8,7 @@ button {
 }
 
 .read-more {
-    margin-top: 9px;
+    margin-top: 8px;
     padding: 12px 49px 13px;
     font-family: var(--fontOpen4);
     letter-spacing: 2px;
@@ -17,6 +17,7 @@ button {
     &.second {
         margin: 33px auto 0;
         padding: 11px 45px;
+        display: block;
     }
 }
 
@@ -24,22 +25,38 @@ button {
     display: block;
     margin: auto;
     margin-top: 27px;
-    padding: 8px 50px;
+    padding: 6px 45px 8px;
     font-family: var(--fontOpen4);
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+    letter-spacing: 2px;
 }
 
 .follow {
-    padding: 11px 22px;
-    margin-left: 12px;
+    padding: 10px 24px;
+    margin-left: 12.5px;
     border-radius: 8px;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.9px;
+    font-weight: bold;
 }
 
 .download {
-    padding: 15px 0px 25px 0px;
-    margin: 25px 25px 5px;
+    padding: 23px 11px;
+    margin: 4px 22px 27px;
     color: var(--white);
     border-radius: 5px;
-    font-size: 21px;
+    font-size: 18px;
+    font-family: var(--fontOpen4);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sub {
+    border: none;
+    padding: 10px;
+    margin: 10px auto 73px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    font-size: 17px;
+    letter-spacing: 0.8px;
 }

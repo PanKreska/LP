@@ -1,23 +1,24 @@
 .section5 {
     background-color: #fbf3eb;
-    padding: 80px 0 320px;
+    padding: 64px 0 320px;
     position: relative;
 
     .block-wrapper {
-        margin: 20px 12px;
-    }
+        margin: 12px 13px;
 
-    .title {
-        padding: 8px 0 26px;
-        font-size: 32px;
-        letter-spacing: 0.6px;
-    }
+        .title {
+            padding: 8px 0 21px;
+            font-size: 36px;
+            font-family: var(--fontSans4);
+        }
 
-    .text {
-        color: gray;
-        font-size: 18px;
-        letter-spacing: 0.12px;
-        line-height: 2.2;
+        .text {
+            color: gray;
+            font-size: 18px;
+            letter-spacing: -0.3px;
+            line-height: 2.2;
+            font-family: var(--fontOpen4);
+        }
     }
 
     .photo-wrapper {
@@ -26,7 +27,7 @@
         width: 223px;
         height: 223px;
         display: block;
-        margin: 17.5% 3.8% 7%;
+        margin: 17.5% 4% 7%;
         overflow: hidden;
         background-color: lightgray;
     }
@@ -57,7 +58,7 @@
         color: #2e919c;
         font-size: 30px;
         padding-bottom: 20px;
-        padding-left: 12.5px;
+        padding-left: 14px;
         line-height: 1.2;
         padding-right: 12px;
         font-family: var(--fontPT4);
@@ -65,6 +66,7 @@
 }
 
 .follow {
+
     svg {
         fill: var(--white);
         padding-right: 3px;
@@ -73,33 +75,45 @@
 
 .download-wrapper {
     position: absolute;
-    bottom: -593px;
+    bottom: -594px;
     left: 0;
     background-color: var(--white);
-    padding: 30px 20px 28px;
-    display: flex;
-    flex-direction: column;
     border-radius: 15px;
     margin: 20px;
 
-    .title {
-        font-weight: bold;
-        font-size: 28px;
-        padding: 10px 12px 0px 13px;
-        letter-spacing: -0.4px;
-    }
+    .download-container {
+        padding: 27px 25px;
+        display: flex;
+        flex-direction: column;
 
-    .download {
-        svg {
-            fill: var(--white);
+        .title {
+            position: relative;
+            display: block;
+            font-size: 30px;
+            padding-left: 8px;
+            margin-top: 11px;
+            margin-bottom: 16px;
+            letter-spacing: -0.2px;
+            font-family: var(--fontSans4);
+            font-weight: bold;
         }
-    }
 
-    .text {
-        padding: 0px 19px 0px 19px;
-        margin: 0px 0 14px 0px;
-        line-height: 1.6;
-        letter-spacing: 0.5px;
-        text-align: center;
+        .download {
+            svg {
+                fill: var(--white);
+            }
+        }
+
+        .download+.download {
+            margin-bottom: 0px;
+        }
+
+        .text {
+            margin: 5px 14px 14px 14px;
+            line-height: 1.5;
+            letter-spacing: -0.5px;
+            text-align: center;
+            font-size: 19px;
+        }
     }
 }
