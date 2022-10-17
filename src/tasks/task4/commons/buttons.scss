@@ -34,7 +34,7 @@ button {
 .follow {
     padding: 10px 24px;
     margin-left: 12.5px;
-    border-radius: 8px;
+    border-radius: 5px;
     letter-spacing: 0.9px;
     font-weight: bold;
 }
@@ -59,4 +59,15 @@ button {
     border-radius: 10px;
     font-size: 17px;
     letter-spacing: 0.8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .follow {
+        padding: 10px 20px;
+        margin-left: 34.5px;
+    }
+    .download {
+        padding: 22px 33px;
+        margin: 4px 12px 27px 20px;
+    }
 }

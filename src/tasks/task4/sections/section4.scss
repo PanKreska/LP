@@ -78,11 +78,22 @@
 
 @media only screen and (min-width: 768px) {
     .section4 {
+        padding: 35px 0 38px 0px;
         .tablet-wrapper {
             display: flex;
-            padding-bottom: 90px;
+            padding-bottom: 20px;
+            justify-content: space-between;
         }
-
+        .blog-card {
+            width: 49%;
+            padding: 0px 10px 5px 59px;
+            .blog-heading{
+                margin-top: 28px;
+            }
+            .blog-title {
+                font-size: 36px;
+            }
+        }
         .blog-card.two {
             margin-bottom: 0;
         }

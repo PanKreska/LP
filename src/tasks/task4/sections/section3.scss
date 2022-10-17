@@ -78,6 +78,22 @@
     }
 }
 
+@media only screen and (min-width: 992px) {
+    .section3 {
+        .tablet-wrapper {
+            flex-wrap: nowrap !important;
+        }
+        .card-wrapper:first-child { 
+            margin-left: 0;
+        }
+        .card-wrapper {
+            width: 33%;
+            padding: 10px 10px 18px 10px;
+            margin: 25px 0px 0 20px;
+        }
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .section3 .title {
         font-size: 48px;
@@ -86,6 +102,7 @@
 
     .section3 {
         padding: 30px 0 57px;
+
         .tablet-wrapper {
             display: flex;
             flex-direction: row;

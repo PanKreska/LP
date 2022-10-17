@@ -120,27 +120,63 @@
 
 @media only screen and (min-width: 768px) {
     .section5 {
+        padding: 64px 0 325px;
+
         .tablet-wrapper {
             display: flex;
         }
 
         .block-wrapper {
-            width: 50%;
+            width: 60%;
             padding-bottom: 100px;
+
+            .title {
+                font-size: 61px;
+                padding: 6px 0 17px;
+            }
         }
 
         .column-wrapper {
-            width: 50%;
+            width: 40%;
             padding-bottom: 100px;
         }
 
         .download-wrapper {
+            bottom: -582px;
+            margin: 20px 0px;
+
+            .download-container {
+                padding: 65px 50px;
+            }
+
             .tabler-wrapper {
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
                 align-content: center;
             }
+
+            .title {
+                font-size: 48px;
+                padding-left: 132px;
+                letter-spacing: -0.6px;
+            }
+            .text {
+                margin: 5px 95px 14px;
+            }
+        }
+
+        .photo-wrapper {
+            margin: 12.5% 13% 7%;
+        }
+
+        .quote-icon svg {
+            left: 190px;
+        }
+
+        .slogan {
+            padding-left: 35px;
+            padding-top: 5px;
         }
     }
 }

@@ -98,6 +98,7 @@
     .section1 {
         .tablet-wrapper {
             display: flex;
+            padding-bottom: 8px;
 
             .mobile-screen {
                 margin-top: 60px;
@@ -111,7 +112,7 @@
     }
 
     .section1 .text-wrapper {
-        padding: 53px 0 0;
+        padding: 53px 0 0 14px;
     }
 
     .section1 .info-block {
