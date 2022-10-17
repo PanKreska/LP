@@ -12,7 +12,7 @@
         letter-spacing: -0.7px;
     }
 
-    .text {
+    .slogan {
         font-weight: bold;
         margin-left: 13px;
         font-size: 19px;
@@ -23,7 +23,7 @@
         padding-right: 30px;
     }
 
-    .more-text {
+    .text {
         padding: 20px 0px;
         margin-left: 12px;
         font-size: 18px;
@@ -101,13 +101,68 @@
 
 @media only screen and (min-width: 768px) {
     .section6 {
-        padding-top: 385px;
-        .tablet-wrapper {
+        padding-top: 384px;
+        padding-bottom: 50px;
+
+        .section-wrapper {
             display: flex;
         }
 
         .column {
-            width: 33%;
+            &.one {
+                flex: 2 1 37%;
+
+                .title,
+                .slogan,
+                .text,
+                .socials {
+                    margin-left: 0;
+                    padding-right: 0;
+                }
+
+                .text {
+                    font-size: 17px;
+                    line-height: 1.88;
+                }
+            }
+
+            &.two {
+                flex: 2 1 35%;
+
+                .contact .contact-wrapper {
+                    padding-top: 0;
+                }
+            }
+
+            &.three {
+                flex: 2 1 43%;
+            }
+
+            width: 100%;
         }
+
+        .contact .contact-wrapper>span:last-child {
+            padding-bottom: 20px;
+        }
+
+        form {
+            padding: 0;
+        }
+
+        input {
+            margin: 6px auto 10px;
+            padding: 12px;
+        }
+
+        textarea {
+            padding: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .section6 .contact {
+        margin-left: 50px;
     }
 }

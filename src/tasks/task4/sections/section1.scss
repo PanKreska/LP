@@ -7,7 +7,7 @@
         display: block;
         padding: 22px;
 
-        .heading {
+        .title {
             padding: 3.5px 0px 18px 0;
             letter-spacing: 3.7px;
             display: block;
@@ -17,7 +17,7 @@
             font-family: var(--fontPT4);
         }
 
-        .slogan {
+        .heading {
             font-size: 32px;
             display: block;
             margin: auto;
@@ -55,11 +55,11 @@
         }
     }
 
-    .mobile-screen {
+    .image-wrapper {
         background-color: #f0f8f6;
         overflow: hidden;
 
-        .image-wrapper {
+        .image {
             width: 100%;
             display: block;
             margin: auto;
@@ -96,27 +96,33 @@
 
 @media only screen and (min-width: 768px) {
     .section1 {
-        .tablet-wrapper {
+        .section-wrapper {
             display: flex;
             padding-bottom: 8px;
 
-            .mobile-screen {
+            .image-wrapper {
+                width: 90%;
                 margin-top: 60px;
-                padding: 53px 0 0;
+                padding: 74px 0 0;
             }
         }
     }
 
-    .section1 .mobile-screen .image-wrapper .phone {
+    .section1 .text-wrapper .heading {
+        line-height: 1.05;
+        letter-spacing: 0.9px;
+    }
+
+    .section1 .image-wrapper .image .phone {
         margin-top: 36px;
     }
 
     .section1 .text-wrapper {
-        padding: 53px 0 0 14px;
+        padding: 53px 27px 0 14px;
     }
 
     .section1 .info-block {
-        padding: 131px 0 81px;
+        padding: 123px 0 81px;
     }
 
     .section1 .info-block .title {
@@ -125,6 +131,41 @@
     }
 
     .section1 .info-block .paragraf {
-        padding: 0 35px 0 38px;
+        padding: 0 40px 0 38px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section1 {
+        .section-wrapper {
+            .image-wrapper {
+                padding: 0;
+            }
+        }
+    }
+
+    .section1 .text-wrapper .title {
+        font-size: 20px;
+
+    }
+
+    .section1 .text-wrapper .heading {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .section1 .text-wrapper .title {
+        padding: 74.5px 0px 18px 0;
+    }
+    .section1 .text-wrapper .list {
+        font-size: 23px;
+    }
+    .section1 .image-wrapper .image .phone {
+        margin-top: 0px;
+    }
+    .section1 .info-block .paragraf {
+        padding: 0 250px 0;
     }
 }

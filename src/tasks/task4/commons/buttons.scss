@@ -39,6 +39,17 @@ button {
     font-weight: bold;
 }
 
+.follow {
+
+    svg {
+        fill: var(--white);
+        padding-right: 3px;
+    }
+}
+.buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 .download {
     padding: 23px 11px;
     margin: 4px 22px 27px;
@@ -64,10 +75,24 @@ button {
 @media only screen and (min-width: 768px) {
     .follow {
         padding: 10px 20px;
-        margin-left: 34.5px;
+        margin-left: 45px;
+    }
+    .buttons-wrapper {
+        display: flex;
+        flex-direction: row;
     }
     .download {
         padding: 22px 33px;
         margin: 4px 12px 27px 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .read-more, .read-more.second {
+        padding: 12px 55px 13px;
+        font-size: 16px;
+    }
+    .follow {
+        padding: 10px 50px;
     }
 }

@@ -38,3 +38,8 @@
 .change .bar3 {
     transform: translate(0, -8px) rotate(45deg);
 }
+
+@media only screen and (min-width: 992px) {
+    .header-wrapper {
+        justify-content: space-around;
+    }}

@@ -2,7 +2,7 @@
     background-color: #c6e6df;
     padding: 30px 0 35px;
 
-    .heading {
+    .title {
         text-align: center;
         font-size: 24px;
         padding: 26px 0 0px;
@@ -11,7 +11,7 @@
         font-family: var(--fontSans4);
     }
 
-    .title {
+    .heading {
         text-align: center;
         font-size: 36px;
         color: #2d9079;
@@ -22,7 +22,7 @@
         letter-spacing: -0.55px;
     }
 
-    .card-wrapper {
+    .card {
         background-color: var(--white);
         padding: 10px 10px 18px 10px;
         margin: 28px 3px;
@@ -80,13 +80,19 @@
 
 @media only screen and (min-width: 992px) {
     .section3 {
-        .tablet-wrapper {
+        .card-wrapper {
             flex-wrap: nowrap !important;
         }
-        .card-wrapper:first-child { 
+
+        .card:first-child {
             margin-left: 0;
         }
-        .card-wrapper {
+
+        .card:last-child {
+            margin-left: 0;
+        }
+
+        .card {
             width: 33%;
             padding: 10px 10px 18px 10px;
             margin: 25px 0px 0 20px;
@@ -95,24 +101,77 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .section3 .title {
+    .section3 .heading {
         font-size: 48px;
         padding: 24px 1px 21px;
     }
 
     .section3 {
-        padding: 30px 0 57px;
+        padding: 30px 0 60px;
 
-        .tablet-wrapper {
+        .card-wrapper {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
 
-        .card-wrapper {
+        .card:first-child {
+            margin-left: 0;
+        }
+
+        .card:last-child {
+            margin-left: 0;
+        }
+
+        .card {
             width: 47%;
-            padding: 10px 10px 18px 10px;
+            padding: 5px 10px 18px 10px;
+            margin: 25px 0px 0 20px;
+
+        }
+
+        .card .card-image {
+            margin: 0;
+        }
+
+        .card .card-image.one {
+            padding: 16px 25px 0 19px;
+        }
+
+        .card .card-image.three {
+            padding: 13px 22px 0 14px;
+        }
+
+        .card .card-title {
+            margin-bottom: 0;
+
+            &.one {
+                padding-top: 18px;
+                font-size: 25px;
+            }
+
+            &.three {
+                padding-top: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section3 {
+        padding: 30px 0 60px;
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card:last-child {
             margin: 25px 0px 0 20px;
         }
+    }
+    .section3 .card-wrapper {
+        padding: 10px 60px;
     }
 }

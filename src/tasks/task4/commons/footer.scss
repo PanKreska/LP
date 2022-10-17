@@ -2,11 +2,28 @@ footer {
     background-color: #363636;
     color: var(--white);
     padding: 43px 0;
-    
+
     .text {
         padding-top: 6px;
         font-size: 14px;
         text-align: center;
         padding-bottom: 9px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        .text {
+            margin: auto;
+            width: 60%;
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    footer {
+        .text {
+            margin: auto;
+            width: 35%;
+        }
     }
 }
