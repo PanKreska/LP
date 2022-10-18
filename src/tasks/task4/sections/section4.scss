@@ -4,14 +4,14 @@
 
     .blog-card {
         margin: 24px 0 0;
-        border-radius: 25px;
+        border-radius: 20px;
         padding: 5px 43px;
 
         .blog-title {
             font-size: 25px;
             font-weight: bold;
             font-family: var(--fontSans4);
-            line-height: 1.12;
+            line-height: 1.1;
             letter-spacing: 0.2px;
         }
 
@@ -58,7 +58,6 @@
 
         &.two {
             background: #d4ede7;
-            margin: 22px 0 11px;
 
             .blog-heading {
                 color: #2d9079;
@@ -85,17 +84,24 @@
             justify-content: space-between;
         }
         .blog-card {
-            width: 49%;
-            padding: 0px 13px 5px 15px;
+            padding: 0px 30px 0 30px;
+            margin: 28px 0 0;
+            flex: 1 1 50%;
+            &.one {
+                margin-right: 20px;
+            }
             .blog-heading{
-                margin-top: 28px;
+                margin-top: 26px;
+                padding-bottom: 16px;
             }
             .blog-title {
                 font-size: 38px;
+                letter-spacing: -0.5px;
             }
-        }
-        .blog-card.two {
-            margin-bottom: 0;
+            .link {
+                padding-top: 18px;
+                padding-bottom: 32px;
+            }
         }
     }
 }

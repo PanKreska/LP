@@ -35,7 +35,7 @@
         display: flex;
         padding-bottom: 38px;
         margin-left: 13.4px;
-        margin-top: 11px;
+        margin-top: 9px;
 
         .social {
             padding-right: 9.1px;
@@ -44,7 +44,7 @@
     }
 
     .contact {
-        margin-left: 12px;
+        margin-left: 15px;
 
         .contact-wrapper {
             display: flex;
@@ -116,8 +116,12 @@
                 .slogan,
                 .text,
                 .socials {
-                    margin-left: 0;
+                    margin-left: 9px;
                     padding-right: 0;
+                }
+
+                .title {
+                    padding-bottom: 14px;
                 }
 
                 .text {
@@ -141,8 +145,14 @@
             width: 100%;
         }
 
+        .contact {
+            margin-left: 16px;
+            padding-top: 3px;
+            padding-right: 13px;
+        }
+
         .contact .contact-wrapper>span:last-child {
-            padding-bottom: 20px;
+            padding-bottom: 19px;
         }
 
         form {
@@ -150,12 +160,13 @@
         }
 
         input {
-            margin: 6px auto 10px;
+            margin: 6px 6px 12px 4px;
             padding: 12px;
         }
 
         textarea {
-            padding: 5px;
+            padding: 3px;
+            margin: 11px 6px;
         }
     }
 }
