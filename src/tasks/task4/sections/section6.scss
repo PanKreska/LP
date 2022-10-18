@@ -149,24 +149,32 @@
             margin-left: 16px;
             padding-top: 3px;
             padding-right: 13px;
+
+            ul {
+                line-height: 25.85px;
+            }
+
+            .contact-wrapper>span:last-child {
+                padding-bottom: 19px;
+            }
         }
 
-        .contact .contact-wrapper>span:last-child {
-            padding-bottom: 19px;
-        }
+
 
         form {
             padding: 0;
         }
 
         input {
-            margin: 6px 6px 12px 4px;
-            padding: 12px;
+            margin: 6px 4px 12px;
+            padding: 12px 15px;
+            width: 94.7%;
         }
 
         textarea {
             padding: 3px;
-            margin: 11px 6px;
+            margin: 12px 4px 12px;
+            width: 94.7%;
         }
     }
 }
