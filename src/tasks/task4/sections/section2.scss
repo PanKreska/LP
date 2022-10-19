@@ -30,6 +30,16 @@
             padding-left: 34px;
         }
 
+        .number {
+            position: absolute;
+            z-index: -1;
+            color: #c6e6df;
+            font-size: 151px;
+            top: 16px;
+            left: 0px;
+            font-family: var(--fontLalezar4);
+        }
+
         .text-group {
             margin-left: 34.5px;
             margin-top: 33.4px;
@@ -48,75 +58,63 @@
             }
         }
     }
-
-    .number {
-        position: absolute;
-        z-index: -1;
-        color: #c6e6df;
-        font-size: 151px;
-        top: 16px;
-        left: 0px;
-        font-family: var(--fontLalezar4);
-    }
 }
 
 
 @media only screen and (min-width: 768px) {
-    .section2 .section-wrapper .text-group .heading {
-        margin-bottom: 16px;
-    }
-
-    .section2 .section-wrapper .text-group {
-        margin-left: 52px;
-        margin-top: 41.4px;
-    }
-
-    .section2 .section-wrapper .text-group .text {
-        padding-right: 25px;
-    }
-
-    .section2 .number {
-        top: 24px;
-        left: 14.5px;
-    }
-
-    .section2 .section-wrapper .icon {
-        padding-left: 51px;
-    }
-
-    .section2 .text-wrapper {
-        margin: 60px 51px 72px;
-    }
-
-    .section2 .text-wrapper .title {
-        padding-bottom: 12px;
-        font-size: 55px;
-        padding-top: 7px;
-        padding-right: 100px;
-    }
-
-    .section2 .text-wrapper .paragraf {
-        letter-spacing: 0.35px;
-        line-height: 1.8;
-        padding-right: 0px;
-    }
-
     .section2 {
         padding: 2px 10px 40px 20px;
+
+        .text-wrapper {
+            margin: 60px 51px 72px;
+
+            .title {
+                padding-bottom: 12px;
+                font-size: 55px;
+                padding-top: 7px;
+                padding-right: 100px;
+            }
+
+            .paragraf {
+                letter-spacing: 0.35px;
+                line-height: 1.8;
+                padding-right: 0px;
+            }
+        }
 
         .numbers-wrapper {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-        }
 
-        .section-wrapper {
-            width: 50%;
-            padding-bottom: 92.5px;
+            .section-wrapper {
+                width: 50%;
+                padding-bottom: 92.5px;
 
-            .heading {
-                letter-spacing: -0.85px;
-                margin-bottom: 16px;
+                .icon {
+                    padding-left: 51px;
+                }
+
+                .number {
+                    top: 24px;
+                    left: 14.5px;
+                }
+
+                .text-group {
+                    margin-left: 52px;
+                    margin-top: 41.4px;
+
+                    .heading {
+                        letter-spacing: -0.85px;
+                        margin-bottom: 16px;
+                    }
+
+                    .text {
+                        padding-right: 25px;
+                    }
+                }
+
+
             }
         }
     }

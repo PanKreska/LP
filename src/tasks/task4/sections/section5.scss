@@ -21,92 +21,89 @@
         }
     }
 
-    .photo-wrapper {
-        border-radius: 50%;
-        border: 10px solid #a0d5c8;
-        width: 223px;
-        height: 223px;
-        display: block;
-        margin: 17.5% 4% 7%;
-        overflow: hidden;
-        background-color: lightgray;
-    }
-
-    .man {
-        max-width: 150%;
-        position: relative;
-        left: -25%;
-    }
-
-    .photo {
-        display: block;
-        margin: auto;
-    }
-
-    .quote-icon {
-        position: relative;
-
-        svg {
-            fill: #2d9079;
-            position: absolute;
-            left: 164px;
-            bottom: 187px;
-        }
-    }
-
-    .slogan {
-        color: #2e919c;
-        font-size: 30px;
-        padding-bottom: 20px;
-        padding-left: 13px;
-        line-height: 1.2;
-        padding-right: 12px;
-        font-family: var(--fontPT4);
-    }
-}
-
-
-
-.download-wrapper {
-    position: absolute;
-    bottom: -599px;
-    left: 0;
-    background-color: var(--white);
-    border-radius: 20px;
-    margin: 20px;
-
-    .download-container {
-        padding: 27px 25px;
-        display: flex;
-        flex-direction: column;
-
-        .title {
-            position: relative;
+    .testimontial-wrapper {
+        .photo-wrapper {
+            border-radius: 50%;
+            border: 10px solid #a0d5c8;
+            width: 223px;
+            height: 223px;
             display: block;
-            font-size: 30px;
-            padding-left: 8px;
-            margin-top: 11px;
-            margin-bottom: 25px;
-            letter-spacing: -0.2px;
-            font-family: var(--fontSans4);
-            font-weight: bold;
-        }
+            margin: 17.5% 4% 7%;
+            overflow: hidden;
+            background-color: lightgray;
 
-        .download {
-            svg {
-                fill: var(--white);
+            .man {
+                max-width: 150%;
+                position: relative;
+                left: -25%;
             }
         }
 
-        .text {
-            margin: 7px 14px 19px 14px;
-            line-height: 1.5;
-            letter-spacing: -0.4px;
-            text-align: center;
-            font-size: 19px;
+        .quote-icon {
+            position: relative;
+
+            svg {
+                fill: #2d9079;
+                position: absolute;
+                left: 164px;
+                bottom: 187px;
+            }
+        }
+
+        .slogan {
+            color: #2e919c;
+            font-size: 30px;
+            padding-bottom: 20px;
+            padding-left: 13px;
+            line-height: 1.2;
+            padding-right: 12px;
+            font-family: var(--fontPT4);
+        }
+    }
+
+    .download-wrapper {
+        position: absolute;
+        bottom: -599px;
+        left: 0;
+        background-color: var(--white);
+        border-radius: 20px;
+        margin: 20px;
+
+        .download-container {
+            padding: 27px 25px;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                position: relative;
+                display: block;
+                font-size: 30px;
+                padding-left: 8px;
+                margin-top: 11px;
+                margin-bottom: 25px;
+                letter-spacing: -0.2px;
+                font-family: var(--fontSans4);
+                font-weight: bold;
+            }
+
+            .download {
+                svg {
+                    fill: var(--white);
+                }
+            }
+
+            .text {
+                margin: 7px 14px 19px 14px;
+                line-height: 1.5;
+                letter-spacing: -0.4px;
+                text-align: center;
+                font-size: 19px;
+            }
         }
     }
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .section5 {
@@ -114,17 +111,36 @@
 
         .section-wrapper {
             display: flex;
-        }
 
-        .text-wrapper {
-            width: 60%;
-            padding-bottom: 100px;
-            margin: 13px 10px 10px 30px;
-        }
+            .text-wrapper {
+                width: 60%;
+                padding-bottom: 100px;
+                margin: 13px 10px 10px 30px;
 
-        .testimontial-wrapper {
-            width: 40%;
-            padding-bottom: 100px;
+                .title {
+                    font-size: 60px;
+                    padding: 8px 0 17px;
+                }
+            }
+
+            .testimontial-wrapper {
+                width: 40%;
+                padding-bottom: 100px;
+            }
+
+            .photo-wrapper {
+                margin: 33px 42px 20px;
+            }
+
+            .quote-icon svg {
+                left: 200px;
+            }
+
+            .slogan {
+                padding-left: 42px;
+                padding-top: 4px;
+                padding-bottom: 19px;
+            }
         }
 
         .download-wrapper {
@@ -133,47 +149,28 @@
 
             .download-container {
                 padding: 65px 65px;
-            }
 
-            .buttons-wrapper {
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                align-content: center;
-            }
+                .title {
+                    font-size: 48px;
+                    letter-spacing: -0.6px;
+                    text-align: center;
+                    padding-left: 0;
+                    margin-top: 5px;
+                    margin-bottom: 22px;
+                }
 
-            .title {
-                font-size: 48px;
-                letter-spacing: -0.6px;
-                text-align: center;
-                padding-left: 0;
-                margin-top: 5px;
-                margin-bottom: 22px;
-            }
+                .buttons-wrapper {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    align-content: center;
+                }
 
-            .text {
-                margin: 34px 95px 14px;
+                .text {
+                    margin: 34px 95px 14px;
+                }
             }
         }
-
-        .photo-wrapper {
-            margin: 33px 42px 20px;
-        }
-
-        .quote-icon svg {
-            left: 200px;
-        }
-
-        .slogan {
-            padding-left: 42px;
-            padding-top: 4px;
-            padding-bottom: 19px;
-        }
-    }
-
-    .section5 .text-wrapper .title {
-        font-size: 60px;
-        padding: 8px 0 17px;
     }
 }
 

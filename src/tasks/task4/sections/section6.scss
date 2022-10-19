@@ -2,106 +2,107 @@
     background-color: #c6e6df;
     padding-top: 406px;
 
-    .title {
-        color: #2d9079;
-        font-size: 37px;
-        font-weight: bold;
-        padding-bottom: 13px;
-        margin-left: 12px;
-        font-family: var(--fontSans4);
-        letter-spacing: -0.7px;
-    }
-
-    .slogan {
-        font-weight: bold;
-        margin-left: 13px;
-        font-size: 19px;
-        font-family: var(--fontOpen4);
-        font-style: italic;
-        letter-spacing: 0.2px;
-        line-height: 1.72;
-        padding-right: 30px;
-    }
-
-    .text {
-        padding: 20px 0px;
-        margin-left: 12px;
-        font-size: 18px;
-        line-height: 1.75;
-        letter-spacing: -0.4px;
-    }
-
-    .socials {
-        display: flex;
-        padding-bottom: 38px;
-        margin-left: 13px;
-        margin-top: 11px;
-
-        .social {
-            padding-right: 9.1px;
-            fill: #2d9079;
+    .column {
+        .title {
+            color: #2d9079;
+            font-size: 37px;
+            font-weight: bold;
+            padding-bottom: 13px;
+            margin-left: 12px;
+            font-family: var(--fontSans4);
+            letter-spacing: -0.7px;
         }
-    }
 
-    .contact {
-        margin-left: 13px;
+        .slogan {
+            font-weight: bold;
+            margin-left: 13px;
+            font-size: 19px;
+            font-family: var(--fontOpen4);
+            font-style: italic;
+            letter-spacing: 0.2px;
+            line-height: 1.72;
+            padding-right: 30px;
+        }
 
-        .contact-wrapper {
+        .text {
+            padding: 20px 0px;
+            margin-left: 12px;
+            font-size: 18px;
+            line-height: 1.75;
+            letter-spacing: -0.4px;
+        }
+
+        .socials {
             display: flex;
-            flex-direction: column;
-            padding-top: 19px;
+            padding-bottom: 38px;
+            margin-left: 13px;
+            margin-top: 11px;
 
-            >span {
-                font-size: 17px;
-                letter-spacing: -0.19px;
+            .social {
+                padding-right: 9.1px;
+                fill: #2d9079;
             }
         }
 
-        ul {
-            padding-left: 0px;
-            list-style: none;
-            padding-bottom: 30px;
-            line-height: 1.6;
+        .contact {
+            margin-left: 13px;
+
+            .contact-wrapper {
+                display: flex;
+                flex-direction: column;
+                padding-top: 19px;
+
+                >span {
+                    font-size: 17px;
+                    letter-spacing: -0.19px;
+                }
+
+                .heading {
+                    font-weight: bold;
+                    color: #2d9079;
+                    padding: 0px 0px 15px;
+                    font-family: var(--fontSans4);
+                    font-size: 20px;
+                }
+
+                ul {
+                    padding-left: 0px;
+                    list-style: none;
+                    padding-bottom: 30px;
+                    line-height: 1.6;
+                }
+
+                ul li:before {
+                    content: '✓';
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    form {
+        padding: 5px 4px;
+
+        input,
+        textarea {
+            border: none;
+            padding: 11px 12px 13px;
+            margin: 10px 0;
+            width: 97%;
+            display: block;
+            border-radius: 10px;
         }
 
-        ul li:before {
-            content: '✓';
-            padding-right: 10px;
+        textarea {
+            padding: 12px 12px 17px;
+            margin: 13px 0 0px;
         }
-
-
     }
 
-    .heading {
-        font-weight: bold;
-        color: #2d9079;
-        padding: 0px 0px 15px;
-        font-family: var(--fontSans4);
-        font-size: 20px;
-    }
-
-    input,
-    textarea {
-        border: none;
-        padding: 11px 12px 13px;
-        margin: 10px 0;
-        width: 97%;
-        display: block;
-        border-radius: 10px;
-    }
-
-    textarea {
-        padding: 12px 12px 17px;
-        margin: 13px 0 0px;
-    }
 }
 
 ::placeholder {
     color: #7a7a7a;
-}
-
-form {
-    padding: 5px 4px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -182,19 +183,21 @@ form {
 
         form {
             padding: 0;
+
+            input {
+                margin: 6px 4px 12px;
+                padding: 12px 15px;
+                width: 94.7%;
+            }
+
+            textarea {
+                padding: 14px;
+                margin: 12px 4px 12px;
+                width: 94.7%;
+            }
         }
 
-        input {
-            margin: 6px 4px 12px;
-            padding: 12px 15px;
-            width: 94.7%;
-        }
 
-        textarea {
-            padding: 14px;
-            margin: 12px 4px 12px;
-            width: 94.7%;
-        }
     }
 }
 
