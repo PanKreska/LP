@@ -1,8 +1,8 @@
 .section2 {
-    padding: 0 10px 0 20px;
+    padding: 0 10px 29px 20px;
 
     .text-wrapper {
-        margin: 59px 51px 72px;
+        margin: 59px 0px 57px 32px;
 
         .title {
             padding-bottom: 12px;
@@ -24,19 +24,19 @@
 
     .section-wrapper {
         position: relative;
-        padding-bottom: 82px;
+        padding-bottom: 72.5px;
 
         .icon {
-            padding-left: 51px;
+            padding-left: 34px;
         }
 
         .text-group {
-            margin-left: 52px;
-            margin-top: 41.4px;
+            margin-left: 34.5px;
+            margin-top: 33.4px;
 
             .heading {
                 font-size: 26px;
-                margin-bottom: 16px;
+                margin-bottom: 26px;
                 font-family: var(--fontSans4);
             }
 
@@ -54,14 +54,32 @@
         z-index: -1;
         color: #c6e6df;
         font-size: 151px;
-        top: 24px;
-        left: 14.5px;
+        top: 16px;
+        left: 0px;
         font-family: var(--fontLalezar4);
     }
 }
 
 
 @media only screen and (min-width: 768px) {
+    .section2 .section-wrapper .text-group .heading {
+        margin-bottom: 16px;
+    }
+
+    .section2 .section-wrapper .text-group {
+        margin-left: 52px;
+        margin-top: 41.4px;
+    }
+
+    .section2 .number {
+        top: 24px;
+        left: 14.5px;
+    }
+
+    .section2 .section-wrapper .icon {
+        padding-left: 51px;
+    }
+
     .section2 .text-wrapper {
         margin: 60px 51px 72px;
     }
