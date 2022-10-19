@@ -28,7 +28,6 @@
             padding-left: 1px;
             font-family: var(--fontSans4);
             line-height: 1;
-            letter-spacing: 0.1px;
         }
 
         .list {
@@ -66,6 +65,7 @@
             width: 100%;
             display: block;
             margin: auto;
+            margin-bottom: -21px;
 
             .phone {
                 display: block;
@@ -75,7 +75,7 @@
     }
 
     .info-block {
-        padding: 93px 0 63px;
+        padding: 116px 0 63px;
 
         .title {
             color: #2d9079;
