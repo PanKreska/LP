@@ -62,6 +62,10 @@
 
 
 @media only screen and (min-width: 768px) {
+    .section2 .text-wrapper {
+        margin: 60px 51px 72px;
+    }
+
     .section2 .text-wrapper .title {
         padding-bottom: 12px;
         font-size: 55px;
@@ -76,7 +80,7 @@
     }
 
     .section2 {
-        padding: 2px 10px 23px 20px;
+        padding: 2px 10px 40px 20px;
 
         .numbers-wrapper {
             display: flex;
