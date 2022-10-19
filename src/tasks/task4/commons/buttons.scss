@@ -32,8 +32,8 @@ button {
 }
 
 .follow {
-    padding: 10px 24px;
-    margin-left: 12.5px;
+    padding: 10px 20px;
+    margin-left: 12px;
     border-radius: 5px;
     letter-spacing: 0.9px;
     font-weight: bold;
@@ -53,8 +53,8 @@ button {
 }
 
 .download {
-    padding: 23px 11px;
-    margin: 4px 22px 27px;
+    padding: 22px 11px;
+    margin: 0 21px;
     color: var(--white);
     border-radius: 5px;
     font-size: 18px;
@@ -62,6 +62,9 @@ button {
     font-weight: bold;
     letter-spacing: 1px;
     outline: solid 5px #fef4ea;
+}
+.download + .download {
+    margin-top: 28px;
 }
 
 .sub {
@@ -89,6 +92,9 @@ button {
     .download {
         padding: 22px 33px;
         margin: 0px 15px;
+    }
+    .download + .download {
+        margin-top: 0px;
     }
 }
 

@@ -41,7 +41,7 @@
             }
 
             .text {
-                padding-right: 25px;
+                padding-right: 10px;
                 line-height: 1.793;
                 letter-spacing: -0.25px;
                 font-family: var(--fontOpen4);
@@ -69,6 +69,10 @@
     .section2 .section-wrapper .text-group {
         margin-left: 52px;
         margin-top: 41.4px;
+    }
+
+    .section2 .section-wrapper .text-group .text {
+        padding-right: 25px;
     }
 
     .section2 .number {
