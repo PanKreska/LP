@@ -1,6 +1,6 @@
 .section3 {
     background-color: #c6e6df;
-    padding: 30px 0 35px;
+    padding: 30px 0 61px;
 
     .title {
         text-align: center;
@@ -25,12 +25,14 @@
     .card {
         background-color: var(--white);
         padding: 10px 10px 18px 10px;
-        margin: 28px 3px;
+        margin: 28px 3px 0;
         border-radius: 20px;
+        overflow: hidden;
 
         .card-image {
             display: block;
             margin: auto;
+            overflow: hidden;
 
             &.one {
                 padding: 10px 21px 0 22px;
@@ -41,6 +43,7 @@
                 margin-top: 0;
                 max-height: 285px;
                 width: auto;
+
                 .card-img {
                     object-fit: cover;
                 }
@@ -53,15 +56,12 @@
 
         .card-title {
             text-align: center;
-            padding-top: 21px;
             font-size: 24px;
             font-weight: 700;
             color: #2d9079;
             font-family: var(--fontSans4);
-
-            &.two {
-                padding-top: 9px
-            }
+            margin-bottom: 0;
+            padding-top: 22px
         }
 
         .card-text {
@@ -84,27 +84,7 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .section3 {
-        .card-wrapper {
-            flex-wrap: nowrap !important;
-        }
 
-        .card:first-child {
-            margin-left: 0;
-        }
-
-        .card:last-child {
-            margin-left: 0;
-        }
-
-        .card {
-            width: 33%;
-            padding: 10px 10px 18px 10px;
-            margin: 25px 0px 0 20px;
-        }
-    }
-}
 
 @media only screen and (min-width: 768px) {
     .section3 {
@@ -129,15 +109,18 @@
             }
 
             .card {
-                width: 48%;
                 padding: 5px 10px 18px 10px;
                 margin: 25px 0px 0 28px;
 
                 .card-image {
-                    margin: 0;
 
                     &.one {
                         padding: 14px 32px 0 34px;
+                    }
+
+                    &.two {
+                        margin-top: -11px;
+                        margin-bottom: 11px;
                     }
 
                     &.three {
@@ -153,10 +136,12 @@
                         font-size: 25px;
                         letter-spacing: -0.7px;
                     }
+
                     &.two {
                         margin-top: 6px;
                         padding: 0;
                     }
+
                     &.three {
                         padding-top: 21px;
                     }
@@ -166,6 +151,28 @@
                     padding: 0px 10px;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .section3 {
+        .card-wrapper {
+            flex-wrap: nowrap !important;
+        }
+
+        .card:first-child {
+            margin-left: 0;
+        }
+
+        .card:last-child {
+            margin-left: 0;
+        }
+
+        .card {
+            width: 33%;
+            padding: 10px 10px 18px 10px;
+            margin: 25px 0px 0 20px;
         }
     }
 }
