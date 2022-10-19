@@ -1,12 +1,12 @@
 .section6 {
     background-color: #c6e6df;
-    padding-top: 414px;
+    padding-top: 406px;
 
     .title {
         color: #2d9079;
         font-size: 37px;
         font-weight: bold;
-        padding-bottom: 12px;
+        padding-bottom: 13px;
         margin-left: 12px;
         font-family: var(--fontSans4);
         letter-spacing: -0.7px;
@@ -34,8 +34,8 @@
     .socials {
         display: flex;
         padding-bottom: 38px;
-        margin-left: 13.4px;
-        margin-top: 9px;
+        margin-left: 13px;
+        margin-top: 11px;
 
         .social {
             padding-right: 9.1px;
@@ -44,12 +44,12 @@
     }
 
     .contact {
-        margin-left: 15px;
+        margin-left: 13px;
 
         .contact-wrapper {
             display: flex;
             flex-direction: column;
-            padding-top: 20px;
+            padding-top: 19px;
 
             >span {
                 font-size: 17px;
@@ -61,6 +61,7 @@
             padding-left: 0px;
             list-style: none;
             padding-bottom: 30px;
+            line-height: 1.6;
         }
 
         ul li:before {
@@ -77,32 +78,48 @@
         padding: 0px 0px 15px;
         font-family: var(--fontSans4);
         font-size: 20px;
-        margin-left: 2px;
     }
 
     input,
     textarea {
         border: none;
-        padding: 10px;
-        margin: 10px auto;
-        width: 100%;
+        padding: 11px 12px 13px;
+        margin: 10px 0;
+        width: 97%;
         display: block;
         border-radius: 10px;
     }
 
-    ::placeholder {
-        color: #7a7a7a;
-    }
-
-    form {
-        padding: 12px 8px;
+    textarea {
+        padding: 12px 12px 17px;
+        margin: 13px 0 0px;
     }
 }
 
+::placeholder {
+    color: #7a7a7a;
+}
+
+form {
+    padding: 5px 4px;
+}
+
 @media only screen and (min-width: 768px) {
+
     .section6 {
         padding-top: 384px;
         padding-bottom: 50px;
+
+        .socials {
+            display: flex;
+            padding-bottom: 39px;
+            margin-left: 9.4px;
+            margin-top: 8px;
+        }
+
+        .heading {
+            margin-left: 2px;
+        }
 
         .section-wrapper {
             display: flex;
@@ -114,19 +131,19 @@
 
                 .title,
                 .slogan,
-                .text,
-                .socials {
+                .text {
                     margin-left: 9px;
                     padding-right: 0;
                 }
 
                 .title {
-                    padding-bottom: 14px;
+                    padding-bottom: 13px;
                 }
 
                 .text {
                     font-size: 17px;
                     line-height: 1.88;
+                    padding: 18px 0px 23px;
                 }
             }
 
@@ -159,7 +176,9 @@
             }
         }
 
-
+        .slogan {
+            letter-spacing: 0.2px;
+        }
 
         form {
             padding: 0;
@@ -172,7 +191,7 @@
         }
 
         textarea {
-            padding: 3px;
+            padding: 14px;
             margin: 12px 4px 12px;
             width: 94.7%;
         }

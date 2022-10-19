@@ -70,8 +70,8 @@ button {
 .sub {
     border: none;
     padding: 10px;
-    margin: 10px 3px 74px;
-    width: 95%;
+    margin: 12px 0px 87px 0px;
+    width: 97%;
     display: block;
     border-radius: 10px;
     font-size: 17px;
@@ -95,6 +95,9 @@ button {
     }
     .download + .download {
         margin-top: 0px;
+    }
+    .sub { 
+        margin: 11px 0px;
     }
 }
 
