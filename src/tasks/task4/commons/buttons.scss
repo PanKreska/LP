@@ -63,7 +63,8 @@ button {
     letter-spacing: 1px;
     outline: solid 5px #fef4ea;
 }
-.download + .download {
+
+.download+.download {
     margin-top: 28px;
 }
 
@@ -93,20 +94,27 @@ button {
         padding: 22px 33px;
         margin: 0px 15px;
     }
-    .download + .download {
+
+    .download+.download {
         margin-top: 0px;
     }
-    .sub { 
+
+    .sub {
         margin: 11px 0px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
 
-    .read-more,
+    .read-more {
+        padding: 12px 50px 13px 49px;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
     .read-more.second {
-        padding: 12px 55px 13px;
-        font-size: 16px;
+        padding: 10px 44px 11px;
+        font-size: 14px;
     }
 
     .follow {

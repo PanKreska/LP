@@ -152,45 +152,48 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .section1 {
         .section-wrapper {
+            padding: 0px 43px;
 
             .text-wrapper {
+                padding: 111px 25px 0 30px;
+
                 .title {
-                    font-size: 20px;
+                    font-size: 17px;
+                    letter-spacing: 4.5px;
+                    padding-bottom: 17px;
                 }
 
                 .heading {
-                    font-size: 50px;
+                    font-size: 49px;
+                    line-height: 1;
+                    letter-spacing: -0.5px;
                 }
             }
 
             .image-wrapper {
                 padding: 0;
-            }
-        }
-    }
-}
 
-@media only screen and (min-width: 1200px) {
-    .section1 {
+                .image {
+                    width: 83%;
+                    margin-bottom: 17px;
 
-        .text-wrapper {
-            .title {
-                padding: 74.5px 0px 18px 0;
+                    .phone {
+                        margin-top: 25px;
+                    }
+                }
             }
-            .list {
-                font-size: 23px;
-            }
+
         }
 
-        .image-wrapper .image .phone {
-            margin-top: 0px;
-        }
+        .info-block {
+            padding: 130px 0 81px;
 
-        .info-block .paragraf {
-            padding: 0 250px 0;
+            .paragraf {
+                padding: 0 250px;
+            }
         }
     }
 }
