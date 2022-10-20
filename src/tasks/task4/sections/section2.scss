@@ -116,6 +116,8 @@
 
 @media only screen and (min-width: 1200px) {
     .section2 {
+        padding: 2px 10px 31px 20px;
+
         .text-wrapper {
             margin: 52px 65px 74px;
 
@@ -132,9 +134,10 @@
         }
 
         .section-wrapper {
+            padding-bottom: 89px;
 
             .icon {
-                left: 56px;
+                padding-left: 56px;
             }
 
             .number {
@@ -147,8 +150,12 @@
                 margin-left: 57px;
                 margin-top: 41.4px;
 
+                .heading {
+                    letter-spacing: -0.4px;
+                }
+
                 .text {
-                    padding-right: 35px;
+                    padding-right: 20px;
                 }
             }
         }
