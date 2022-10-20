@@ -39,14 +39,9 @@
             }
 
             &.two {
-                padding: 0px 8px;
-                margin-top: 0;
-                max-height: 270px;
-                width: auto;
-
-                .card-img {
-                    object-fit: cover;
-                }
+                padding: 8px 8px 0;
+                margin-top: -10px;
+                margin-bottom: -14px;
             }
 
             &.three {
@@ -119,8 +114,8 @@
                     }
 
                     &.two {
-                        margin-top: -11px;
-                        margin-bottom: 25px;
+                        margin-top: -21px;
+                        margin-bottom: -9px;
                     }
 
                     &.three {
