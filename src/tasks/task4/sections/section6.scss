@@ -111,12 +111,7 @@
         padding-top: 384px;
         padding-bottom: 50px;
 
-        .socials {
-            display: flex;
-            padding-bottom: 39px;
-            margin-left: 9.4px;
-            margin-top: 8px;
-        }
+
 
         .heading {
             margin-left: 2px;
@@ -127,6 +122,27 @@
         }
 
         .column {
+            .socials {
+                display: flex;
+                padding-bottom: 39px;
+                margin-left: 10px;
+                margin-top: 9px;
+            }
+
+            .contact {
+                margin-left: 17px;
+                padding-top: 3px;
+                padding-right: 13px;
+
+                ul {
+                    line-height: 25.85px;
+                }
+
+                .contact-wrapper>span:last-child {
+                    padding-bottom: 19px;
+                }
+            }
+
             &.one {
                 flex: 2 1 37%;
 
@@ -163,20 +179,6 @@
             width: 100%;
         }
 
-        .contact {
-            margin-left: 16px;
-            padding-top: 3px;
-            padding-right: 13px;
-
-            ul {
-                line-height: 25.85px;
-            }
-
-            .contact-wrapper>span:last-child {
-                padding-bottom: 19px;
-            }
-        }
-
         .slogan {
             letter-spacing: 0.2px;
         }
@@ -197,13 +199,63 @@
             }
         }
 
-
     }
 }
 
 @media only screen and (min-width: 1200px) {
 
-    .section6 .contact {
-        margin-left: 50px;
+    .section6 {
+        padding-top: 421px;
+        padding-bottom: 50px;
+
+
+
+        .column {
+            .contact {
+                margin-left: 24px;
+                padding-top: 2px;
+            }
+
+
+
+            &.one {
+                .title {
+                    padding-right: 180px;
+                    line-height: 1.19;
+                    padding-top: 4px;
+
+                }
+
+                .slogan {
+                    padding-top: 7px;
+                    padding-right: 40px;
+                }
+            }
+
+            &.two {
+                flex: 2 1 32%;
+            }
+
+            &.three {
+                flex: 1 1 43.8%;
+            }
+
+            .socials {
+                margin-left: 4px;
+                margin-top: 7px;
+
+                .social {
+                    padding-bottom: 9%;
+                    padding-right: 42.2px;
+                    position: relative;
+
+                    svg {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
