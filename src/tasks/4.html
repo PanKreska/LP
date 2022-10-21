@@ -30,10 +30,48 @@
                     <div class="col-12">
                         <div class="header-wrapper">
                             <div class="logo">logo</div>
-                            <div class="hamburger" onclick="myFunction(this)">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
+                            
+                            <input type="checkbox" class="toggler" />
+                            <div class="hamburger"><div></div></div>
+                            <div class="menu">
+                                <div class="x-cros" onclick="myFunction(this)">
+                                    <div class="bar one"></div>
+                                    <div class="bar two"></div>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <a
+                                                href="http://localhost:9000/index.html"
+                                                >Powrót</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="http://localhost:9000/tasks/1.html"
+                                                >zad 1</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="http://localhost:9000/tasks/2.html"
+                                                >zad 2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="http://localhost:9000/tasks/3.html"
+                                                >zad 3</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="http://localhost:9000/tasks/4.html"
+                                                >zad 4</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -620,7 +658,8 @@
     </body>
     <script>
         function myFunction(x) {
-            x.classList.toggle('change');
+            a = document.querySelector('.menu').style.display = 'none';
+            b = document.querySelector('.toggler').checked = false;
         }
     </script>
 </html>
