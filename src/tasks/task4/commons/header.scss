@@ -21,7 +21,7 @@
     height: 30px;
     width: 30px;
     top: 25px;
-    right: 0;
+    right: 15px;
     cursor: pointer;
     opacity: 0;
 
@@ -109,7 +109,7 @@
 }
 .menu {
     background: var(--black);
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 200px;
@@ -166,23 +166,6 @@
                 transform: rotate(45deg);
             }
 
-        }
-    }
-}
-@media only screen and (min-width: 576px) {
-    .menu{
-        left: calc(-30px - 20px);
-        width: 300px;
-        &>ul {
-            padding-left: 80px;
-        }
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .menu{
-        left: calc(-30px - 50px);
-        &>ul {
-            padding-left: 80px;
         }
     }
 }
